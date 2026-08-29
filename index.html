@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>US Stock Watchlist — Haerin</title>
+<style>
+  :root{
+    --bg:#0b0e14; --card:#131722; --line:#1f2534; --txt:#dbe1ee; --dim:#8195b0;
+    --green:#2ecc71; --red:#ff5c5c; --amber:#ffb020; --blue:#4da3ff; --violet:#b48cff;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font:14px/1.5 "Noto Sans Thai",-apple-system,system-ui,sans-serif;padding:24px}
+  header{display:flex;flex-wrap:wrap;gap:12px;align-items:baseline;margin-bottom:6px}
+  h1{font-size:20px;font-weight:700}
+  .meta{color:var(--dim);font-size:12px}
+  .pill{display:inline-block;padding:2px 10px;border-radius:99px;font-size:12px;font-weight:600}
+  .pill.open{background:#123b24;color:var(--green)}
+  .pill.closed{background:#3b1f24;color:var(--red)}
+  .toolbar{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+  .fbtn{background:var(--card);border:1px solid var(--line);color:var(--dim);padding:5px 12px;border-radius:8px;cursor:pointer;font:inherit;font-size:13px}
+  .fbtn.on{border-color:var(--blue);color:var(--txt);background:#182236}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:10px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;position:relative;overflow:hidden}
+  .card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--line)}
+  .card.NEAR-BUY::before{background:var(--amber)}
+  .card.BUY-ZONE::before{background:var(--green)}
+  .card.DEEP-BUY::before{background:var(--blue)}
+  .card.TARGET::before,.card.NEAR-TARGET::before{background:var(--violet)}
+  .sym{font-size:16px;font-weight:800;letter-spacing:.3px}
+  .price{font-size:22px;font-weight:700;margin:2px 0 8px}
+  .flag{position:absolute;top:12px;right:12px;font-size:10px;font-weight:800;letter-spacing:.5px;padding:2px 8px;border-radius:6px;background:#232a3b;color:var(--dim)}
+  .NEAR-BUY .flag{background:#3b2c10;color:var(--amber)}
+  .BUY-ZONE .flag{background:#123b24;color:var(--green)}
+  .DEEP-BUY .flag{background:#12283b;color:var(--blue)}
+  .TARGET .flag,.NEAR-TARGET .flag{background:#2a1f3b;color:var(--violet)}
+  .lv{display:flex;justify-content:space-between;font-size:11.5px;color:var(--dim)}
+  .bar{height:5px;border-radius:3px;background:#232a3b;margin:8px 0 4px;position:relative}
+  .dot{position:absolute;top:-3px;width:11px;height:11px;border-radius:50%;background:var(--txt);transform:translateX(-50%);border:2px solid var(--bg)}
+  .dist{font-size:11px;color:var(--dim)}
+  section{margin-top:26px}
+  h2{font-size:14px;color:var(--dim);font-weight:600;margin-bottom:8px}
+  table{width:100%;border-collapse:collapse;font-size:12.5px}
+  td,th{padding:5px 8px;border-bottom:1px solid var(--line);text-align:left}
+  th{color:var(--dim);font-weight:600}
+  .chg{font-size:11px;font-weight:700}
+  .up{color:var(--green)} .down{color:var(--red)}
+  footer{margin-top:28px;color:var(--dim);font-size:11px}
+  button.ref{background:var(--card);border:1px solid var(--line);color:var(--txt);border-radius:8px;padding:5px 12px;cursor:pointer;font:inherit;font-size:13px}
+</style>
+</head>
+<body>
+<header>
+  <h1>📊 US Stock Watchlist</h1>
+  <span id="sess" class="pill closed">…</span>
+  <span class="meta" id="upd"></span>
+  <button class="ref" onclick="location.reload()">↻ รีเฟรช</button>
+</header>
+<div class="meta" style="margin-top:4px">อัปเดตอัตโนมัติทุก 15 นาที (ตามรอบ cron) · จัดการโดย แฮริน 💕</div>
+
+<div class="toolbar" id="filters"></div>
+<div class="grid" id="grid"></div>
+
+<section id="histWrap" hidden>
+  <h2>🕘 การเปลี่ยนแปลงระดับล่าสุด</h2>
+  <table id="hist"></table>
+</section>
+
+<footer>ข้อมูลจาก TradingView scanner · ไม่ใช่คำแนะนำการลงทุน · ระดับซื้อ/เป้าตั้งแบบ manual ตรวจสอบก่อนใช้จริง</footer>
+
+<script src="data/stocks.js"></script>
+<script>
+const D = window.DASH;
+const FLAG_ORDER = ["DEEP-BUY","BUY-ZONE","NEAR-BUY","HOLD","NEAR-TARGET","TARGET","?"];
+const $ = id => document.getElementById(id);
+
+$("sess").textContent = D.session === "open" ? "ตลาดเปิด" : "ตลาดปิด";
+$("sess").className = "pill " + (D.session === "open" ? "open" : "closed");
+$("upd").textContent = D.updated ? ("อัปเดต: " + new Date(D.updated).toLocaleString("th-TH")) : "";
+
+// summary counts + filter buttons
+const counts = {};
+D.stocks.forEach(s => counts[s.flag] = (counts[s.flag]||0)+1);
+let active = "ALL";
+function drawFilters(){
+  const f = ["ALL", ...FLAG_ORDER.filter(k=>counts[k])];
+  $("filters").innerHTML = f.map(k=>{
+    const n = k==="ALL" ? D.stocks.length : counts[k];
+    return `<button class="fbtn ${active===k?'on':''}" onclick="setF('${k}')">${k} <b>${n}</b></button>`;
+  }).join("");
+}
+window.setF = k => { active=k; drawFilters(); drawGrid(); };
+
+function drawGrid(){
+  let rows = D.stocks.slice().sort((a,b)=>FLAG_ORDER.indexOf(a.flag)-FLAG_ORDER.indexOf(b.flag));
+  if(active!=="ALL") rows = rows.filter(s=>s.flag===active);
+  $("grid").innerHTML = rows.map(s=>{
+    // position dot: deep..target range
+    let posPct = "";
+    if(s.price){
+      const lo = s.deep, hi = s.target;
+      const p = Math.max(0, Math.min(1, (s.price-lo)/(hi-lo)))*100;
+      posPct = `<div class="bar"><div class="dot" style="left:${p.toFixed(1)}%"></div></div>`;
+    }
+    const distBuy = s.price ? ((s.price/s.buy-1)*100) : null;
+    const distTgt = s.price ? ((s.price/s.target-1)*100) : null;
+    const dd = (v)=> v==null ? "—" : `<span class="chg ${v>0?'up':'down'}">${v>0?'+':''}${v.toFixed(1)}%</span>`;
+    return `<div class="card ${s.flag}">
+      <div class="flag">${s.flag}</div>
+      <div class="sym">${s.sym}</div>
+      <div class="price">${s.price? s.price.toFixed(2): "—"} <span style="font-size:11px;color:var(--dim)">USD</span></div>
+      <div class="lv"><span>ซื้อ ${s.buy}</span><span>ลึก ${s.deep}</span><span>เป้า ${s.target}</span></div>
+      ${posPct}
+      <div class="dist">จากซื้อ1 ${dd(distBuy)} · จากเป้า ${dd(distTgt)}</div>
+    </div>`;
+  }).join("");
+}
+
+function drawHist(){
+  if(!D.history || !D.history.length) return;
+  $("histWrap").hidden = false;
+  const rows = D.history.slice().reverse().slice(0,40).map(h=>{
+    const arrow = FLAG_ORDER.indexOf(h.to) < FLAG_ORDER.indexOf(h.from) && h.to!=="HOLD" ? "🎯" : (h.to.includes("TARGET")?"💰":"·");
+    return `<tr><td>${new Date(h.t).toLocaleString("th-TH",{day:"2-digit",month:"short",hour:"2-digit",minute:"2-digit"})}</td>
+      <td><b>${h.s}</b></td><td>${h.from} → ${arrow} ${h.to}</td></tr>`;
+  });
+  $("hist").innerHTML = `<tr><th>เวลา</th><th>หุ้น</th><th>การเปลี่ยนระดับ</th></tr>` + rows.join("");
+}
+
+drawFilters(); drawGrid(); drawHist();
+// live-ish refresh while page open: reload every 5 min
+setTimeout(()=>location.reload(), 5*60*1000);
+</script>
+</body>
+</html>
