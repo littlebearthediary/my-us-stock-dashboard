@@ -29,6 +29,8 @@
   .card.TARGET::before,.card.NEAR-TARGET::before{background:var(--violet)}
   .sym{font-size:16px;font-weight:800;letter-spacing:.3px}
   .price{font-size:22px;font-weight:700;margin:2px 0 8px}
+  .price.flash{animation:slide .18s ease}
+  @keyframes slide{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
   .flag{position:absolute;top:12px;right:12px;font-size:10px;font-weight:800;letter-spacing:.5px;padding:2px 8px;border-radius:6px;background:#232a3b;color:var(--dim)}
   .NEAR-BUY .flag{background:#3b2c10;color:var(--amber)}
   .BUY-ZONE .flag{background:#123b24;color:var(--green)}
@@ -47,6 +49,7 @@
   .up{color:var(--green)} .down{color:var(--red)}
   footer{margin-top:28px;color:var(--dim);font-size:11px}
   button.ref{background:var(--card);border:1px solid var(--line);color:var(--txt);border-radius:8px;padding:5px 12px;cursor:pointer;font:inherit;font-size:13px}
+  button.ref.spin{color:var(--blue);pointer-events:none}
 </style>
 </head>
 <body>
@@ -54,9 +57,9 @@
   <h1>📊 US Stock Watchlist</h1>
   <span id="sess" class="pill closed">…</span>
   <span class="meta" id="upd"></span>
-  <button class="ref" onclick="location.reload()">↻ รีเฟรช</button>
+  <button class="ref" id="refBtn" onclick="refresh()">↻ รีเฟรช</button>
 </header>
-<div class="meta" style="margin-top:4px">อัปเดตอัตโนมัติทุก 15 นาที (ตามรอบ cron) · จัดการโดย แฮริน 💕</div>
+<div class="meta" style="margin-top:4px">อัปเดตอัตโนมัติทุก 5 นาที (ข้อมูลขยับตามรอบ cron 15 นาที) · จัดการโดย แฮริน 💕</div>
 
 <div class="toolbar" id="filters"></div>
 <div class="grid" id="grid"></div>
@@ -70,19 +73,22 @@
 
 <script src="data/stocks.js"></script>
 <script>
-const D = window.DASH;
 const FLAG_ORDER = ["DEEP-BUY","BUY-ZONE","NEAR-BUY","HOLD","NEAR-TARGET","TARGET","?"];
 const $ = id => document.getElementById(id);
-
-$("sess").textContent = D.session === "open" ? "ตลาดเปิด" : "ตลาดปิด";
-$("sess").className = "pill " + (D.session === "open" ? "open" : "closed");
-$("upd").textContent = D.updated ? ("อัปเดต: " + new Date(D.updated).toLocaleString("th-TH")) : "";
-
-// summary counts + filter buttons
-const counts = {};
-D.stocks.forEach(s => counts[s.flag] = (counts[s.flag]||0)+1);
+let D = window.DASH;
 let active = "ALL";
+let changed = new Set();   // symbols whose price moved on last swap
+
+function drawHeader(){
+  $("sess").textContent = D.session === "open" ? "ตลาดเปิด" : "ตลาดปิด";
+  $("sess").className = "pill " + (D.session === "open" ? "open" : "closed");
+  $("upd").textContent = D.updated ? ("อัปเดต: " + new Date(D.updated).toLocaleString("th-TH")) : "";
+}
+
+const counts = {};
 function drawFilters(){
+  for(const k in counts) delete counts[k];
+  D.stocks.forEach(s => counts[s.flag] = (counts[s.flag]||0)+1);
   const f = ["ALL", ...FLAG_ORDER.filter(k=>counts[k])];
   $("filters").innerHTML = f.map(k=>{
     const n = k==="ALL" ? D.stocks.length : counts[k];
@@ -95,7 +101,6 @@ function drawGrid(){
   let rows = D.stocks.slice().sort((a,b)=>FLAG_ORDER.indexOf(a.flag)-FLAG_ORDER.indexOf(b.flag));
   if(active!=="ALL") rows = rows.filter(s=>s.flag===active);
   $("grid").innerHTML = rows.map(s=>{
-    // position dot: deep..target range
     let posPct = "";
     if(s.price){
       const lo = s.deep, hi = s.target;
@@ -105,10 +110,11 @@ function drawGrid(){
     const distBuy = s.price ? ((s.price/s.buy-1)*100) : null;
     const distTgt = s.price ? ((s.price/s.target-1)*100) : null;
     const dd = (v)=> v==null ? "—" : `<span class="chg ${v>0?'up':'down'}">${v>0?'+':''}${v.toFixed(1)}%</span>`;
+    const fl = changed.has(s.sym) ? "flash" : "";
     return `<div class="card ${s.flag}">
       <div class="flag">${s.flag}</div>
       <div class="sym">${s.sym}</div>
-      <div class="price">${s.price? s.price.toFixed(2): "—"} <span style="font-size:11px;color:var(--dim)">USD</span></div>
+      <div class="price ${fl}">${s.price? s.price.toFixed(2): "—"} <span style="font-size:11px;color:var(--dim)">USD</span></div>
       <div class="lv"><span>ซื้อ ${s.buy}</span><span>ลึก ${s.deep}</span><span>เป้า ${s.target}</span></div>
       ${posPct}
       <div class="dist">จากซื้อ1 ${dd(distBuy)} · จากเป้า ${dd(distTgt)}</div>
@@ -127,9 +133,42 @@ function drawHist(){
   $("hist").innerHTML = `<tr><th>เวลา</th><th>หุ้น</th><th>การเปลี่ยนระดับ</th></tr>` + rows.join("");
 }
 
-drawFilters(); drawGrid(); drawHist();
-// live-ish refresh while page open: reload every 5 min
-setTimeout(()=>location.reload(), 5*60*1000);
+function renderAll(){ drawHeader(); drawFilters(); drawGrid(); drawHist(); }
+
+async function refresh(){
+  const btn = $("refBtn");
+  btn.classList.add("spin");
+  try{
+    const r = await fetch("data/stocks.js?_=" + Date.now(), {cache:"no-store"});
+    if(!r.ok) throw new Error("http " + r.status);
+    const txt = await r.text();
+    const next = JSON.parse(txt.slice(txt.indexOf("{")).trim().replace(/;+$/,""));
+    if(next.updated !== D.updated){
+      const oldPrice = {};
+      D.stocks.forEach(s => oldPrice[s.sym] = s.price);
+      changed = new Set(next.stocks.filter(s =>
+        oldPrice[s.sym] != null && s.price != null && oldPrice[s.sym] !== s.price
+      ).map(s => s.sym));
+      D = next;
+      renderAll();
+      setTimeout(()=>{ changed.clear(); }, 400);
+    }
+  }catch(e){
+    $("upd").textContent = "⚠ รีเฟรชไม่สำเร็จ — ใช้ข้อมูลล่าสุดที่มี";
+  }finally{
+    btn.classList.remove("spin");
+  }
+}
+window.refresh = refresh;
+
+renderAll();
+setInterval(refresh, 5*60*1000);
+// when tab comes back to front after >60s away, fetch quietly
+let hiddenAt = 0;
+document.addEventListener("visibilitychange", () => {
+  if(document.hidden) hiddenAt = Date.now();
+  else if(Date.now() - hiddenAt > 60*1000) refresh();
+});
 </script>
 </body>
 </html>
