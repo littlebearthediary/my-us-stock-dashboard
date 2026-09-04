@@ -164,14 +164,18 @@ async function refresh(manual){
 }
 window.refresh = refresh;
 
-// ---- countdown to next auto-refresh ----
-const REFRESH_MS = 5*60*1000;
-let nextFetchAt = Date.now() + REFRESH_MS;
+// ---- countdown to next auto-refresh (aligned to wall clock :00/:05/:10...) ----
+function msToNextBoundary(){
+  const d = new Date();
+  return (5 - (d.getMinutes() % 5)) * 60000 - d.getSeconds() * 1000 - d.getMilliseconds();
+}
+let nextFetchAt = Date.now() + msToNextBoundary();
 let timerId = null;
 function scheduleReset(){
-  nextFetchAt = Date.now() + REFRESH_MS;
-  if(timerId) clearInterval(timerId);
-  timerId = setTimeout(()=>{ refresh(); scheduleReset(); }, REFRESH_MS);
+  nextFetchAt = Date.now() + msToNextBoundary();
+  if(timerId) clearTimeout(timerId);
+  timerId = setTimeout(()=>{ refresh(); scheduleReset(); },
+                       Math.max(1000, nextFetchAt - Date.now()));
 }
 setInterval(()=>{
   const el = $("cd");
