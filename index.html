@@ -61,7 +61,7 @@
   <span class="meta" id="cd"></span>
   <button class="ref" id="refBtn" onclick="refresh(true)">↻ รีเฟรช</button>
 </header>
-<div class="meta" style="margin-top:4px">อัปเดตอัตโนมัติทุก 5 นาที (ข้อมูลขยับตามรอบ cron 15 นาที) · จัดการโดย แฮริน 💕</div>
+<div class="meta" style="margin-top:4px">ตรวจสอบข้อมูลอัตโนมัติทุก 1 นาที (ราคาขยับตามรอบ cron 15 นาที) · จัดการโดย แฮริน 💕</div>
 
 <div class="toolbar" id="filters"></div>
 <div class="grid" id="grid"></div>
@@ -164,10 +164,10 @@ async function refresh(manual){
 }
 window.refresh = refresh;
 
-// ---- countdown to next auto-refresh (aligned to wall clock :00/:05/:10...) ----
+// ---- countdown to next auto-refresh (aligned to wall clock, every minute :00s) ----
 function msToNextBoundary(){
   const d = new Date();
-  return (5 - (d.getMinutes() % 5)) * 60000 - d.getSeconds() * 1000 - d.getMilliseconds();
+  return 60000 - d.getSeconds() * 1000 - d.getMilliseconds();
 }
 let nextFetchAt = Date.now() + msToNextBoundary();
 let timerId = null;
@@ -180,9 +180,8 @@ function scheduleReset(){
 setInterval(()=>{
   const el = $("cd");
   if(!el) return;
-  let s = Math.max(0, Math.round((nextFetchAt - Date.now())/1000));
-  const m = Math.floor(s/60); s %= 60;
-  el.textContent = "⏳ ถัดไป " + m + ":" + String(s).padStart(2,"0");
+  const s = Math.max(0, Math.round((nextFetchAt - Date.now())/1000));
+  el.textContent = "⏳ ถัดไป " + s + "s";
 }, 1000);
 
 renderAll();
