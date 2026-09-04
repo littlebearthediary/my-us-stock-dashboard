@@ -27,8 +27,7 @@
   .card.BUY-ZONE::before{background:var(--green)}
   .card.DEEP-BUY::before{background:var(--blue)}
   .card.TARGET::before,.card.NEAR-TARGET::before{background:var(--violet)}
-  .sym{font-size:16px;font-weight:800;letter-spacing:.3px;display:flex;align-items:center;gap:6px}
-  .logo{border-radius:4px;flex:none;background:#fff}
+  .sym{font-size:16px;font-weight:800;letter-spacing:.3px}
   .price{font-size:22px;font-weight:700;margin:2px 0 8px}
   .price.flash{animation:slide .18s ease}
   @keyframes slide{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
@@ -89,28 +88,6 @@ function drawHeader(){
 }
 
 const counts = {};
-// company domains for logo icons (Google favicon service)
-const SYM2DOM = {
-  AAPL:"apple.com", MSFT:"microsoft.com", GOOGL:"abc.xyz", AMZN:"amazon.com",
-  META:"meta.com", TSLA:"tesla.com", NVDA:"nvidia.com", AMD:"amd.com",
-  AVGO:"broadcom.com", TSM:"tsmc.com", PLTR:"palantir.com", CRWD:"crowdstrike.com",
-  ANET:"arista.com", VRT:"vertiv.com", MU:"micron.com", ARM:"arm.com",
-  ASML:"asml.com", SKHY:"skhynix.com", MRVL:"marvell.com", CIEN:"ciena.com",
-  SNPS:"www.synopsys.com", SYK:"stryker.com", STX:"seagate.com", APP:"applovin.com",
-  WDC:"wd.com", ADI:"analog.com", WMT:"walmart.com", NFLX:"netflix.com",
-  QCOM:"qualcomm.com", BSX:"bostonscientific.com", INTU:"intuit.com",
-  ISRG:"intersurgical.com", ACN:"accenture.com", CEG:"constellationenergy.com",
-  GEV:"ge.com", UBER:"uber.com", SPOT:"spotify.com", AEM:"agnicoeagle.com",
-  NET:"cloudflare.com", "BRK.B":"brk.com", LLY:"lilly.com", COST:"costco.com",
-  SNDK:"sandisk.com", ORCL:"oracle.com", KLAC:"klac.com", INTC:"intel.com",
-  AMAT:"appliedmaterials.com", KO:"coca-colacompany.com", V:"visa.com",
-  JNJ:"jnj.com", MA:"mastercard.com", LRCX:"lamresearch.com", BAC:"bankofamerica.com",
-};
-function logo(sym){
-  const d = SYM2DOM[sym];
-  if(!d) return "";
-  return `<img class="logo" loading="lazy" width="20" height="20" src="https://www.google.com/s2/favicons?domain=${d}&sz=64" onerror="this.remove()" alt="">`;
-}
 function drawFilters(){
   for(const k in counts) delete counts[k];
   D.stocks.forEach(s => counts[s.flag] = (counts[s.flag]||0)+1);
@@ -138,7 +115,7 @@ function drawGrid(){
     const fl = changed.has(s.sym) ? "flash" : "";
     return `<div class="card ${s.flag}">
       <div class="flag">${s.flag}</div>
-      <div class="sym">${logo(s.sym)}${s.sym}</div>
+      <div class="sym">${s.sym}</div>
       <div class="price ${fl}">${s.price? s.price.toFixed(2): "—"} <span style="font-size:11px;color:var(--dim)">USD</span></div>
       <div class="lv"><span>ซื้อ ${s.buy}</span><span>ลึก ${s.deep}</span><span>เป้า ${s.target}</span></div>
       ${posPct}
