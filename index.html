@@ -50,6 +50,7 @@
   footer{margin-top:28px;color:var(--dim);font-size:11px}
   button.ref{background:var(--card);border:1px solid var(--line);color:var(--txt);border-radius:8px;padding:5px 12px;cursor:pointer;font:inherit;font-size:13px}
   button.ref.spin{color:var(--blue);pointer-events:none}
+  #cd{font-variant-numeric:tabular-nums;color:var(--blue);font-weight:600}
 </style>
 </head>
 <body>
@@ -57,7 +58,8 @@
   <h1>📊 US Stock Watchlist</h1>
   <span id="sess" class="pill closed">…</span>
   <span class="meta" id="upd"></span>
-  <button class="ref" id="refBtn" onclick="refresh()">↻ รีเฟรช</button>
+  <span class="meta" id="cd"></span>
+  <button class="ref" id="refBtn" onclick="refresh(true)">↻ รีเฟรช</button>
 </header>
 <div class="meta" style="margin-top:4px">อัปเดตอัตโนมัติทุก 5 นาที (ข้อมูลขยับตามรอบ cron 15 นาที) · จัดการโดย แฮริน 💕</div>
 
@@ -135,9 +137,10 @@ function drawHist(){
 
 function renderAll(){ drawHeader(); drawFilters(); drawGrid(); drawHist(); }
 
-async function refresh(){
+async function refresh(manual){
   const btn = $("refBtn");
   btn.classList.add("spin");
+  if(manual) scheduleReset();
   try{
     const r = await fetch("data/stocks.js?_=" + Date.now(), {cache:"no-store"});
     if(!r.ok) throw new Error("http " + r.status);
@@ -161,13 +164,30 @@ async function refresh(){
 }
 window.refresh = refresh;
 
+// ---- countdown to next auto-refresh ----
+const REFRESH_MS = 5*60*1000;
+let nextFetchAt = Date.now() + REFRESH_MS;
+let timerId = null;
+function scheduleReset(){
+  nextFetchAt = Date.now() + REFRESH_MS;
+  if(timerId) clearInterval(timerId);
+  timerId = setTimeout(()=>{ refresh(); scheduleReset(); }, REFRESH_MS);
+}
+setInterval(()=>{
+  const el = $("cd");
+  if(!el) return;
+  let s = Math.max(0, Math.round((nextFetchAt - Date.now())/1000));
+  const m = Math.floor(s/60); s %= 60;
+  el.textContent = "⏳ ถัดไป " + m + ":" + String(s).padStart(2,"0");
+}, 1000);
+
 renderAll();
-setInterval(refresh, 5*60*1000);
-// when tab comes back to front after >60s away, fetch quietly
+scheduleReset();
+// when tab comes back to front after >60s away, fetch quietly + reset countdown
 let hiddenAt = 0;
 document.addEventListener("visibilitychange", () => {
   if(document.hidden) hiddenAt = Date.now();
-  else if(Date.now() - hiddenAt > 60*1000) refresh();
+  else if(Date.now() - hiddenAt > 60*1000){ refresh(); scheduleReset(); }
 });
 </script>
 </body>
