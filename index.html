@@ -28,7 +28,10 @@
   .card.DEEP-BUY::before{background:var(--blue)}
   .card.TARGET::before,.card.NEAR-TARGET::before{background:var(--violet)}
   .sym{font-size:16px;font-weight:800;letter-spacing:.3px}
-  .price{font-size:22px;font-weight:700;margin:2px 0 8px}
+  .price{font-size:22px;font-weight:700;margin:2px 0 2px}
+  .zchg{font-size:11px;font-weight:700;margin:0 0 7px}
+  .zchg.down{color:var(--red)} .zchg.up{color:var(--green)}
+  .zchg.same{color:var(--dim);font-weight:500}
   .price.flash{animation:slide .18s ease}
   @keyframes slide{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
   .flag{position:absolute;top:12px;right:12px;font-size:10px;font-weight:800;letter-spacing:.5px;padding:2px 8px;border-radius:6px;background:#232a3b;color:var(--dim)}
@@ -100,6 +103,19 @@ function drawFilters(){
 window.setF = k => { active=k; drawFilters(); drawGrid(); };
 
 function drawGrid(){
+  // latest zone change per symbol (history is append-order → last wins)
+  const zoneOf = {};
+  (D.history||[]).forEach(h => { zoneOf[h.s] = h; });
+  function zoneLine(sym){
+    const h = zoneOf[sym];
+    if(!h) return `<div class="zchg same">═ zone เท่าเดิม</div>`;
+    const hrs = (Date.now() - new Date(h.t).getTime()) / 3600000;
+    if(hrs < 0 || hrs > 24) return `<div class="zchg same">═ zone เท่าเดิม</div>`;
+    const ri = s => FLAG_ORDER.indexOf(s);
+    const deeper = ri(h.to) < ri(h.from);          // rank ลง = ราคาไหลเข้าโซนลึก
+    const ago = hrs < 1 ? `${Math.max(1,Math.round(hrs*60))} นาที` : `${hrs.toFixed(1)} ชม.`;
+    return `<div class="zchg ${deeper?'down':'up'}">${deeper?'▼':'▲'} ${h.from} → ${h.to} · ${ago}ที่แล้ว</div>`;
+  }
   let rows = D.stocks.slice().sort((a,b)=>FLAG_ORDER.indexOf(a.flag)-FLAG_ORDER.indexOf(b.flag));
   if(active!=="ALL") rows = rows.filter(s=>s.flag===active);
   $("grid").innerHTML = rows.map(s=>{
@@ -117,6 +133,7 @@ function drawGrid(){
       <div class="flag">${s.flag}</div>
       <div class="sym">${s.sym}</div>
       <div class="price ${fl}">${s.price? s.price.toFixed(2): "—"} <span style="font-size:11px;color:var(--dim)">USD</span></div>
+      ${zoneLine(s.sym)}
       <div class="lv"><span>ซื้อ ${s.buy}</span><span>ลึก ${s.deep}</span><span>เป้า ${s.target}</span></div>
       ${posPct}
       <div class="dist">จากซื้อ1 ${dd(distBuy)} · จากเป้า ${dd(distTgt)}</div>
