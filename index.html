@@ -50,6 +50,9 @@
   th{color:var(--dim);font-weight:600}
   .chg{font-size:11px;font-weight:700}
   .up{color:var(--green)} .down{color:var(--red)}
+  .adv{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.5px;margin-top:1px;cursor:default}
+  .adv.buy{color:var(--green)} .adv.hold{color:var(--dim)} .adv.avoid{color:var(--red)}
+  .legend{color:var(--dim);font-size:11.5px;margin:2px 0 10px}
   footer{margin-top:28px;color:var(--dim);font-size:11px}
   button.ref{background:var(--card);border:1px solid var(--line);color:var(--txt);border-radius:8px;padding:5px 12px;cursor:pointer;font:inherit;font-size:13px}
   button.ref.spin{color:var(--blue);pointer-events:none}
@@ -65,6 +68,7 @@
   <button class="ref" id="refBtn" onclick="refresh(true)">↻ รีเฟรช</button>
 </header>
 <div class="meta" style="margin-top:4px">ตรวจสอบข้อมูลอัตโนมัติทุก 1 นาที (ราคาขยับตามรอบ cron 5 นาที) · จัดการโดย แฮริน 💕</div>
+<div class="legend" id="legend">✅/⛔ = คำแนะนำจากข่าว+ความเสี่ยง ณ รอบวิเคราะห์ล่าสุด · ●●● ไม้หนัก / ●● กลาง / ● เบา · 🟢🟡🟠🔴 = ความเสี่ยง · ชี้ที่ badge เพื่อดูเหตุผล</div>
 
 <div class="toolbar" id="filters"></div>
 <div class="grid" id="grid"></div>
@@ -83,6 +87,31 @@ const $ = id => document.getElementById(id);
 let D = window.DASH;
 let active = "ALL";
 let changed = new Set();   // symbols whose price moved on last swap
+let ADV = {};              // sym -> {verdict,risk,weight,why} from data/advice.json
+let ADV_UPDATED = "";
+
+async function loadAdvice(){
+  try{
+    const r = await fetch("data/advice.json?_=" + Date.now(), {cache:"no-store"});
+    if(!r.ok) return;
+    const j = await r.json();
+    ADV = j.advice || {}; ADV_UPDATED = j.updated || "";
+    const n = Object.keys(ADV).length;
+    if(n && typeof drawGrid === "function" && D){ drawFilters(); drawGrid(); }
+    const el = document.getElementById("legend");
+    if(el && ADV_UPDATED) el.title = "วิเคราะห์ล่าสุด: " + ADV_UPDATED + " (" + n + " ตัว)";
+  }catch(e){/* keep ADV empty — cards render fine without badges */}
+}
+
+const VICON = {buy:"✅", hold:"·", avoid:"⛔"};
+const RICON = {low:"🟢", med:"🟡", high:"🟠", extreme:"🔴"};
+const WICON = {heavy:"●●●", mid:"●●", light:"●"};
+function advBadge(sym){
+  const a = ADV[sym];
+  if(!a) return "";
+  const t = (a.why||"").replace(/"/g,"&quot;");
+  return `<div class="adv ${a.verdict}" title="${t}">${VICON[a.verdict]||""} ไม้${WICON[a.weight]||"?"} ${RICON[a.risk]||""} <span style="font-weight:500">${a.verdict==="buy"?"แนะนำ":a.verdict==="avoid"?"เลี่ยง":"รอจังหวะ"}</span></div>`;
+}
 
 function drawHeader(){
   $("sess").textContent = D.session === "open" ? "ตลาดเปิด" : "ตลาดปิด";
@@ -95,10 +124,15 @@ function drawFilters(){
   for(const k in counts) delete counts[k];
   D.stocks.forEach(s => counts[s.flag] = (counts[s.flag]||0)+1);
   const f = ["ALL", ...FLAG_ORDER.filter(k=>counts[k])];
-  $("filters").innerHTML = f.map(k=>{
+  let html = f.map(k=>{
     const n = k==="ALL" ? D.stocks.length : counts[k];
     return `<button class="fbtn ${active===k?'on':''}" onclick="setF('${k}')">${k} <b>${n}</b></button>`;
   }).join("");
+  const nb = D.stocks.filter(s=>(ADV[s.sym]||{}).verdict==="buy").length;
+  const na = D.stocks.filter(s=>(ADV[s.sym]||{}).verdict==="avoid").length;
+  if(nb) html += `<button class="fbtn ${active==='adv:buy'?'on':''}" onclick="setF('adv:buy')" title="แนะนำจากข่าว/ความเสี่ยงล่าสุด">👍 แนะนำ <b>${nb}</b></button>`;
+  if(na) html += `<button class="fbtn ${active==='adv:avoid'?'on':''}" onclick="setF('adv:avoid')" title="มีสัญญาณความเสี่ยง/ไม่ควรรับมีด">⛔ เลี่ยง <b>${na}</b></button>`;
+  $("filters").innerHTML = html;
 }
 window.setF = k => { active=k; drawFilters(); drawGrid(); };
 
@@ -117,7 +151,9 @@ function drawGrid(){
     return `<div class="zchg ${deeper?'down':'up'}">${deeper?'▼':'▲'} ${h.from} → ${h.to} · ${ago}ที่แล้ว</div>`;
   }
   let rows = D.stocks.slice().sort((a,b)=>FLAG_ORDER.indexOf(a.flag)-FLAG_ORDER.indexOf(b.flag));
-  if(active!=="ALL") rows = rows.filter(s=>s.flag===active);
+  if(active==="adv:buy") rows = rows.filter(s=>(ADV[s.sym]||{}).verdict==="buy");
+  else if(active==="adv:avoid") rows = rows.filter(s=>(ADV[s.sym]||{}).verdict==="avoid");
+  else if(active!=="ALL") rows = rows.filter(s=>s.flag===active);
   $("grid").innerHTML = rows.map(s=>{
     let posPct = "";
     if(s.price){
@@ -134,6 +170,7 @@ function drawGrid(){
       <div class="sym">${s.sym}</div>
       <div class="price ${fl}">${s.price? s.price.toFixed(2): "—"} <span style="font-size:11px;color:var(--dim)">USD</span></div>
       ${zoneLine(s.sym)}
+      ${advBadge(s.sym)}
       <div class="lv"><span>ซื้อ ${s.buy}</span><span>ลึก ${s.deep}</span><span>เป้า ${s.target}</span></div>
       ${posPct}
       <div class="dist">จากซื้อ1 ${dd(distBuy)} · จากเป้า ${dd(distTgt)}</div>
@@ -202,6 +239,7 @@ setInterval(()=>{
 }, 1000);
 
 renderAll();
+loadAdvice();
 scheduleReset();
 // when tab comes back to front after >60s away, fetch quietly + reset countdown
 let hiddenAt = 0;
