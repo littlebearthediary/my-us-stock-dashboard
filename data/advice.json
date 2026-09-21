@@ -1,49 +1,265 @@
 {
-  "updated": "2026-09-22T00:05+07:00",
+  "updated": "2026-09-22T00:20+07:00",
   "by": "haerin-news-review",
+  "macro": "Fed ขึ้นดอกเบี้ย +25bp (16 ก.ย. = ครั้งแรกในรอบ 3 ปี) ส่งสัญญาณขึ้นอีกอย่างน้อย 1 ครั้งก่อนสิ้นปี + oil $106 Hormuz — สวนทาง AI melt-up ทำ new highs; กลุ่ม high-multiple = valuation headwind",
   "advice": {
-    "AAPL":  {"verdict": "buy",    "risk": "low",  "weight": "heavy", "why": "P/E ~22 ถูกสุดในกลุ่ม megacap growth, services margin สูงสุดประวัติ, NEAR-BUY 310"},
-    "MSFT":  {"verdict": "buy",    "risk": "low",  "weight": "heavy", "why": "Azure+Copilot monetization ชัด, โซนซื้อ 500-480, defensive-grade tech"},
-    "GOOGL": {"verdict": "buy",    "risk": "med",  "weight": "heavy", "why": "อยู่ BUY-ZONE 345-325, antitrust ประเมินไปแล้ว, Gemini+YouTube ทำกำไรจริง"},
-    "AMZN":  {"verdict": "buy",    "risk": "med",  "weight": "mid",   "why": "โซน 255-235, AWS margin ดีแต่ Capex หนัก—รอลึก, ไม้กลาง"},
-    "META":  {"verdict": "buy",    "risk": "med",  "weight": "mid",   "why": "ดีดจาก 585 ไป 610 แล้ว — ไล่ตามแพง, รอโซนเดิม NEAR-BUY ไม้กลาง"},
-    "TSLA":  {"verdict": "avoid",  "risk": "high", "weight": "light", "why": "สงครามราคา EV กิน margin, robotaxi execution ยังไม่พิสูจน์ — เลี่ยงจนกว่าฐานใหม่ชัด"},
-    "NVDA":  {"verdict": "hold",   "risk": "med",  "weight": "mid",   "why": "cycle leader ตัวจริง แต่ +50% YTD ราคาวิ่งล่วงหน้า — รอย่อ 200"},
-    "AMD":   {"verdict": "hold",   "risk": "high", "weight": "light", "why": "MI series promising แต่ valuation เต็มตัว, แข่งกับ NVDA ecosystem ยาก"},
-    "AVGO":  {"verdict": "hold",   "risk": "med",  "weight": "mid",   "why": "กำไร record แต่ guidance อ่อนกว่า NVDA — ASIC แข่งเดือด, รอ 340"},
-    "TSM":   {"verdict": "buy",    "risk": "med",  "weight": "mid",   "why": "founder monopoly จริง, earnings แรง; ความเสี่ยงภูมิรัฐศาสตร์จำกัดไม้ให้กลาง"},
-    "PLTR":  {"verdict": "avoid",  "risk": "high", "weight": "light", "why": "P/E สุดขั้ว priced for perfection + political exposure — ไม่เหมาะไม้หนักทุกกรณี"},
-    "CRWD":  {"verdict": "hold",   "risk": "med",  "weight": "mid",   "why": "cyber demand มั่นคง โซน 450-430, valuation สูงแต่คุณภาพคู่ควร"},
-    "ANET":  {"verdict": "avoid",  "risk": "high", "weight": "light", "why": "แพงเทียบ in-housing ของ hyperscalers ที่กิน market ส่วนตัว"},
-    "VRT":   {"verdict": "hold",   "risk": "high", "weight": "light", "why": "AI cooling demand จริง แต่ร่วง −30% จากยอด = momentum ลบ รอ 240"},
-    "MU":    {"verdict": "hold",   "risk": "high", "weight": "light", "why": "HBM ขายหมดถึงปีหน้า แต่ memory = cycle — ระวัง peak, ไม้เบาเมื่อหลุดโซน"},
-    "ARM":   {"verdict": "avoid",  "risk": "high", "weight": "light", "why": "ธุรกิจ A+ แต่ P/E ~120x vs Morningstar FV $80 = จ่ายเกินพื้นฐาน, รอ 200-225"},
-    "ASML":  {"verdict": "buy",    "risk": "med",  "weight": "mid",   "why": "EUV monopoly ไม่มี substitutes, NEAR-BUY 780-750, backlog ใหญ่"},
-    "KLAC":  {"verdict": "hold",   "risk": "med",  "weight": "light", "why": "semicap cyclic ดีแต่ล้อตาม capex — ไม่มี edge เฉพาะตัวชัด ไม้เบา"},
-    "INTC":  {"verdict": "avoid",  "risk": "high", "weight": "light", "why": "turnaround ยังไม่ proof ในงบ, cash burn สูง — speculation ล้วน"},
-    "ORCL":  {"verdict": "avoid",  "risk": "high", "weight": "light", "why": "OCIโตแรงแต่ debt-funded capex + margin สัญญา AI ต่ำ — ความเสี่ยง hidden leverage"},
-    "MRVL":  {"verdict": "hold",   "risk": "high", "weight": "light", "why": "custom ASIC มีดีลจริงแต่ lumpiness สูง — เล็กพอหอมปากไม้เบา"},
-    "SKHY":  {"verdict": "hold",   "risk": "high", "weight": "light", "why": "HBM catch-up bet, ประวัติเป็นบริษัทใหม่ — ไม่มีโซนซื้อ reliable ไม้เบาสุด"},
-    "SNPS":  {"verdict": "buy",    "risk": "med",  "weight": "heavy", "why": "หลุด DEEP-BUY! EDA oligopoly + AI chip-design boom, ฐานลูกค้าไม่เปลี่ยน vendor"},
-    "ADI":   {"verdict": "hold",   "risk": "med",  "weight": "light", "why": "analog ฟื้นฟูช้ากว่า digital cycle — ถือเบาได้ ห้ามไล่"},
-    "STX":   {"verdict": "hold",   "risk": "high",  "weight": "light", "why": "nearline demand ดีแต่ NAND/HBM หนุน sibling — cycle peak risk"},
-    "WDC":   {"verdict": "hold",   "risk": "high",  "weight": "light", "why": "เหมือน STX — HDD duopoly แข็งแต่ขึ้นกับ storage cycle"},
-    "APP":   {"verdict": "hold",   "risk": "med",  "weight": "mid",   "why": "growth เด่นสุดกลุ่ม adtech แต่แพง + sensitive ต่อ iOS privacy"},
-    "QCOM":  {"verdict": "hold",   "risk": "med",  "weight": "light", "why": "Apple modem หมดสิทธิ์ + China risk ถ่วง — NEAR-BUY 152 แต่ไม่เร่ง"},
-    "INTU":  {"verdict": "buy",    "risk": "med",  "weight": "mid",   "why": "DEEP-BUY แล้ว 346-330 — sticky fintech, AI-assistant monetize ต่อยอดได้จริง"},
-    "AEM":   {"verdict": "buy",    "risk": "low",  "weight": "mid",   "why": "gold miner คุณภาพ = hedge พอร์ตช่วง yield ผันผวน, โซน 200-185"},
-    "CEG":   {"verdict": "buy",    "risk": "med",  "weight": "mid",   "why": "nuclear+AI power contracts ไล่ปิดดีลยักษ์, NEAR-BUY 240-225"},
-    "GEV":   {"verdict": "hold",   "risk": "high", "weight": "light", "why": "grid supercycle จริง แต่ +80% จากยอดย่อ — รอ 700 ราคาถึงเริ่มน่าสนใจ"},
-    "UBER":  {"verdict": "buy",    "risk": "med",  "weight": "mid",   "why": "โซน 75-72, profitability ผ่าน proof; AV disruption = overhang คุมไม้กลาง"},
-    "SPOT":  {"verdict": "buy",    "risk": "med",  "weight": "mid",   "why": "เข้า BUY-ZONE รอบนี้ 480-450, margin expansion on track, ราคา oversold"},
-    "ISRG":  {"verdict": "buy",    "risk": "med",  "weight": "mid",   "why": "หลุด BUY-ZONE 380-360 — medtech คุณภาพสูง คู่แข่งใหม่ยังใช้เวลา"},
-    "ACN":   {"verdict": "buy",    "risk": "low",  "weight": "heavy", "why": "P/E 15 ถูกสุดรอบหลายปี + AI consulting demand จริง,โซน 700-650"},
-    "AMAT":  {"verdict": "buy",    "risk": "med",  "weight": "mid",   "why": "NEAR-BUY 441/420 — semicap equipment orders ยังโต กระจายไม้กับ ASML"},
-    "NET":   {"verdict": "hold",   "risk": "high", "weight": "light", "why": "AI infra story จริง แต่ P/E สูง + earnings หลัง ต.ค. — รอ 285 ไม้เบา"},
-    "BRK.B": {"verdict": "buy",    "risk": "low",  "weight": "heavy", "why": "P/E 12.7 + ฐานเงินสด record = anchor พอร์ต, zone 480-464"},
-    "LLY":   {"verdict": "hold",   "risk": "high", "weight": "mid",   "why": "GLP-1 = mega-trend จริง แต่ street แยกทาง rec −0.22 — ไม้แรกเบา รอ 1100"},
-    "COST":  {"verdict": "buy",    "risk": "low",  "weight": "heavy", "why": "dip = timing FCF (capex 6.5B), business ปกติ 19 StrongBuy, zone 900-850"},
-    "SYK":   {"verdict": "buy",    "risk": "low",  "weight": "heavy", "why": "DEEP-BUY! Q2 beat+คง guidance, cyber drag priced แล้ว, เป้า 386"},
-    "RKLB":  {"verdict": "avoid",  "risk": "extreme", "weight": "light", "why": "ยังไม่กำไร FCF −$371M, all-or-nothing กับ Neutron — ไม้เล็กมากเท่านั้น if ever"}
+    "AAPL": {
+      "verdict": "hold",
+      "risk": "low",
+      "weight": "mid",
+      "why": "338 พ้นโซนซื้อ (310) ไกล + ใกล้เป้า 350 — ไม้เดิมถือได้ ห้ามไล่ รอ pullback"
+    },
+    "MSFT": {
+      "verdict": "buy",
+      "risk": "med",
+      "weight": "mid",
+      "why": "ร่วงเข้า BUY-ZONE 496 ครั้งแรก: กังวล AI capex > returns + Stifel หั่นเป้า + Fed hike — ไม้กลาง ไม้แรก 496 เพิ่ม 470"
+    },
+    "GOOGL": {
+      "verdict": "hold",
+      "risk": "med",
+      "weight": "mid",
+      "why": "355 เด้งพ้นโซน 345 แล้ว — thesis เดิมยังดี แต่เข้าตอนนี้คือไล่ราคา รอ 345"
+    },
+    "AMZN": {
+      "verdict": "buy",
+      "risk": "med",
+      "weight": "mid",
+      "why": "NEAR-BUY 257.6 (โซน 255-235) — AWS margin ดีแต่ Fed hike กด consumer; ไม้กลางตามแผน"
+    },
+    "META": {
+      "verdict": "avoid",
+      "risk": "med",
+      "weight": "light",
+      "why": "แตะ TARGET 720 (เป้า 720) = สัญญาณขายทำกำไร ไม่ใช่ซื้อ — ถืออยู่ทยอยเก็บกำไร ห้ามไม้ใหม่"
+    },
+    "TSLA": {
+      "verdict": "avoid",
+      "risk": "high",
+      "weight": "light",
+      "why": "374 — robotaxi/margin ยังไม่ proof, ขึ้นตามตลาดไม่ใช่ปัจจัยตัวเอง; ไม่มีโซนซื้อรับ"
+    },
+    "NVDA": {
+      "verdict": "hold",
+      "risk": "med",
+      "weight": "mid",
+      "why": "226 ผู้นำ cycle ตัวจริง แต่ Fed hike = multiple headwind — รอ 200 คือจุดเข้า"
+    },
+    "AMD": {
+      "verdict": "avoid",
+      "risk": "high",
+      "weight": "light",
+      "why": "แตะ TARGET 610 (เป้า 600) — ถึงคิวทำกำไรตามแผน ไม่ใช่จังหวะเข้าใหม่"
+    },
+    "AVGO": {
+      "verdict": "hold",
+      "risk": "med",
+      "weight": "mid",
+      "why": "ASIC แข่งเดือดแต่ backlog หนา; รอย่อโซนเดิม 340"
+    },
+    "TSM": {
+      "verdict": "hold",
+      "risk": "med",
+      "weight": "mid",
+      "why": "442 พ้นโซน 400 ขึ้นไป — earnings ไม่เปลี่ยน แต่ราคาวิ่งล่วงหน้า รอ pullback 400"
+    },
+    "PLTR": {
+      "verdict": "avoid",
+      "risk": "high",
+      "weight": "light",
+      "why": "181 valuation สุดขั้ว + political exposure — ไม่เหมาะไม้หนักทุกกรณี"
+    },
+    "CRWD": {
+      "verdict": "avoid",
+      "risk": "med",
+      "weight": "light",
+      "why": "แตะ TARGET 246 (เป้า 240) — ทำกำไรส่วนเกิน ไม่ใช่โซนซื้อใหม่"
+    },
+    "ANET": {
+      "verdict": "avoid",
+      "risk": "high",
+      "weight": "light",
+      "why": "202 ดีดเข้าใกล้เป้า 220 — ยิ่งห้ามไล่; in-housing risk ยังอยู่ครบ"
+    },
+    "VRT": {
+      "verdict": "hold",
+      "risk": "high",
+      "weight": "light",
+      "why": "254 เหนือโซน 235 — AI cooling demand จริง แต่ราคายังไม่ให้ออกตัวเข้า"
+    },
+    "MU": {
+      "verdict": "hold",
+      "risk": "high",
+      "weight": "light",
+      "why": "1040 ใกล้เป้า 1150 — HBM melt-up ยังวิ่งแต่ cycle peak risk = ห้ามไม้ใหญ่ตรงนี้"
+    },
+    "ARM": {
+      "verdict": "avoid",
+      "risk": "high",
+      "weight": "light",
+      "why": "พุ่ง +16% วันนี้ 319 (AGI CPU re-rate) — P/E ยาวขึ้นไปอีก vs FV; ห่างโซน 225 ไกล = ห้ามไล่"
+    },
+    "ASML": {
+      "verdict": "hold",
+      "risk": "med",
+      "weight": "mid",
+      "why": "1708 พ้นโซน 1650 — EUV thesis ไม่เปลี่ยน แต่ราคาทิ้ง buy zone แล้ว รอ 1650"
+    },
+    "KLAC": {
+      "verdict": "hold",
+      "risk": "med",
+      "weight": "light",
+      "why": "semicap cyclic ล้อตาม capex — ไม่มี edge เฉพาะตัวชัด ไม้เบา"
+    },
+    "INTC": {
+      "verdict": "avoid",
+      "risk": "extreme",
+      "weight": "light",
+      "why": "melt-up +481% แตะ TARGET 120 — consensus $101 ต่ำกว่าราคา = priced for perfection; selling zone"
+    },
+    "ORCL": {
+      "verdict": "avoid",
+      "risk": "high",
+      "weight": "light",
+      "why": "149 — debt-funded capex + margin สัญญา AI ต่ำ; cycle ดอกเบี้ยขึ้นเจ็บกลุ่ม leverage สูง"
+    },
+    "MRVL": {
+      "verdict": "hold",
+      "risk": "high",
+      "weight": "light",
+      "why": "254 ใกล้เป้า 265 — นี่คือโซนขาย ไม่ใช่ซื้อ; lumpiness สูง"
+    },
+    "SKHY": {
+      "verdict": "hold",
+      "risk": "high",
+      "weight": "light",
+      "why": "188 ใกล้เป้า 200 — HBM catch-up วิ่งก่อนพื้นฐาน; ไม้เบาสุดถ้าจะเล่น"
+    },
+    "SNPS": {
+      "verdict": "buy",
+      "risk": "med",
+      "weight": "heavy",
+      "why": "BUY-ZONE 401 ชิด DEEP 400 — EDA oligopoly + AI chip-design demand หนุน; ไม้หนัก 400-380"
+    },
+    "ADI": {
+      "verdict": "hold",
+      "risk": "med",
+      "weight": "light",
+      "why": "analog ฟื้นช้ากว่า digital cycle — ถือเบา ห้ามไล่ 350"
+    },
+    "STX": {
+      "verdict": "hold",
+      "risk": "high",
+      "weight": "light",
+      "why": "873 พ้นโซน 780 ไกล — HDD ดีมานด์จริงแต่ขึ้นกับ storage cycle"
+    },
+    "WDC": {
+      "verdict": "hold",
+      "risk": "high",
+      "weight": "light",
+      "why": "443 เลียด NEAR-BUY 440 — cycle peak ยังเป็นคำถาม; ไม้เบาเมื่อหลุด 440"
+    },
+    "APP": {
+      "verdict": "hold",
+      "risk": "med",
+      "weight": "light",
+      "why": "326 growth เด่นแต่แพง + iOS privacy sensitive — รอ 300"
+    },
+    "QCOM": {
+      "verdict": "hold",
+      "risk": "med",
+      "weight": "light",
+      "why": "192 ใกล้เป้า 200 — Apple modem หมดสิทธิ์ + China risk; โซนขาย"
+    },
+    "INTU": {
+      "verdict": "buy",
+      "risk": "med",
+      "weight": "heavy",
+      "why": "DEEP-BUY 302 (<320) — ร่วงเพราะ Fed hike ไม่ใช่พื้นฐาน; sticky fintech ไม้หนักโซนนี้"
+    },
+    "AEM": {
+      "verdict": "buy",
+      "risk": "med",
+      "weight": "mid",
+      "why": "196 ในโซน 200-185 — gold ยังเป็น hedge cycle ดอกเบี้ยขึ้น+oil shock; ไม้แรก 196 เพิ่ม 185"
+    },
+    "CEG": {
+      "verdict": "buy",
+      "risk": "med",
+      "weight": "mid",
+      "why": "265 BUY-ZONE (270-245) — nuclear+AI power contracts ไม่เปลี่ยน; utility โดน yield กด = โอกาส"
+    },
+    "GEV": {
+      "verdict": "hold",
+      "risk": "high",
+      "weight": "light",
+      "why": "955 เหนือโซน 880 — grid supercycle จริง แต่ราคาทิ้งจุดเข้า; รอ 880"
+    },
+    "UBER": {
+      "verdict": "buy",
+      "risk": "med",
+      "weight": "mid",
+      "why": "70.9 เข้าโซน 76-70 ชิด DEEP 70 — consumer headwind จาก hike = เหตุผลร่วง, กำไรยังโต; ไม้แรกตรงนี้"
+    },
+    "SPOT": {
+      "verdict": "buy",
+      "risk": "med",
+      "weight": "mid",
+      "why": "517 กลางโซนใหม่ 530-490 — margin expansion on track; ไม้กลางตามแผน"
+    },
+    "ISRG": {
+      "verdict": "hold",
+      "risk": "med",
+      "weight": "mid",
+      "why": "398 เด้งพ้นโซน 360 แล้ว — medtech ดีแต่ไม่ใช่ราคาวันนี้; รอ 360"
+    },
+    "ACN": {
+      "verdict": "hold",
+      "risk": "high",
+      "weight": "light",
+      "why": "185 (-74% จากยุค 700) = ตลาด price AI disruption โมเดล billable-hours; ถูกแบบ thesis เปลี่ยน — รอฐาน 170 ให้ชัดก่อน"
+    },
+    "AMAT": {
+      "verdict": "buy",
+      "risk": "med",
+      "weight": "mid",
+      "why": "NEAR-BUY 463 (โซน 450-400) — equipment orders ยังโต; กระจายไม้กับ SNPS/ASML"
+    },
+    "NET": {
+      "verdict": "hold",
+      "risk": "high",
+      "weight": "light",
+      "why": "346 ดีดจาก 285 มาชิดเป้า 365 — AI infra จริงแต่รอบนี้วิ่งก่อน; โซนขายมากกว่าซื้อ"
+    },
+    "BRK.B": {
+      "verdict": "hold",
+      "risk": "low",
+      "weight": "mid",
+      "why": "506 พ้นโซน 480-464 — anchor พอร์ตยังถูก แต่ราคาทิ้งจุดเข้า; cash ใหญ่ได้ประโยชน์จาก hike"
+    },
+    "LLY": {
+      "verdict": "hold",
+      "risk": "high",
+      "weight": "mid",
+      "why": "GLP-1 mega-trend แต่ street แยกทาง + valuation สูง — ไม้แรกเบา รอดีพ 1100"
+    },
+    "COST": {
+      "verdict": "buy",
+      "risk": "low",
+      "weight": "heavy",
+      "why": "896 BUY-ZONE (900-850) — thesis FCF-timing ไม่เปลี่ยน 19 StrongBuy; ไม้หนักตามแผน"
+    },
+    "SYK": {
+      "verdict": "buy",
+      "risk": "low",
+      "weight": "heavy",
+      "why": "DEEP-BUY 273 (<282) — Q2 beat+คง guidance, healthcare ถูก yield กด = โอกาสสะสมไม้หนัก"
+    },
+    "RKLB": {
+      "verdict": "avoid",
+      "risk": "extreme",
+      "weight": "light",
+      "why": "69.7 ไล่ขึ้นจากโซน 60 แล้ว — Neutron ยังไม่ launch; ผิดทางเจ็บลึก ไม้จิ๋ว if ever"
+    }
   }
 }
