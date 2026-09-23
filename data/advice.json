@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-24T00:31+07:00",
+  "updated": "2026-09-24T00:37+07:00",
   "by": "haerin-news-review",
   "macro": "Fed ขึ้นดอกเบี้ย +25bp (16 ก.ย. = ครั้งแรกในรอบ 3 ปี) ส่งสัญญาณขึ้นอีกอย่างน้อย 1 ครั้งก่อนสิ้นปี + oil $106 Hormuz — สวนทาง AI melt-up ทำ new highs; กลุ่ม high-multiple = valuation headwind",
   "advice": {
@@ -115,7 +115,7 @@
       "verdict": "avoid",
       "risk": "extreme",
       "weight": "light",
-      "why": "melt-up +481% แตะ TARGET 120 — consensus $101 ต่ำกว่าราคา = priced for perfection; selling zone"
+      "why": "แตะ TARGET 120 (120.31) melt-up ต่อ — consensus $101 ต่ำกว่าราคา priced for perfection; ขายทำกำไร"
     },
     "ORCL": {
       "verdict": "avoid",
@@ -127,7 +127,7 @@
       "verdict": "hold",
       "risk": "high",
       "weight": "light",
-      "why": "254 ใกล้เป้า 265 — นี่คือโซนขาย ไม่ใช่ซื้อ; lumpiness สูง"
+      "why": "ดีด 258 ใกล้เป้า 265 — โซนทยอยขาย ไม่ใช่ซื้อ; lumpiness สูง ถือรอดู"
     },
     "SKHY": {
       "verdict": "hold",
@@ -214,10 +214,10 @@
       "why": "398 เด้งพ้นโซน 360 แล้ว — medtech ดีแต่ไม่ใช่ราคาวันนี้; รอ 360"
     },
     "ACN": {
-      "verdict": "hold",
+      "verdict": "buy",
       "risk": "high",
       "weight": "light",
-      "why": "185 (-74% จากยุค 700) = ตลาด price AI disruption โมเดล billable-hours; ถูกแบบ thesis เปลี่ยน — รอฐาน 170 ให้ชัดก่อน"
+      "why": "ย่อเข้า BUY-ZONE 185-170 เหตุ rotation หนกลุ่ม consulting -30% YTD แต่มี buyback +$2B รับ — เก็บน้ำหนักเบา"
     },
     "AMAT": {
       "verdict": "hold",
