@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-22T00:20+07:00",
+  "updated": "2026-09-24T00:31+07:00",
   "by": "haerin-news-review",
   "macro": "Fed ขึ้นดอกเบี้ย +25bp (16 ก.ย. = ครั้งแรกในรอบ 3 ปี) ส่งสัญญาณขึ้นอีกอย่างน้อย 1 ครั้งก่อนสิ้นปี + oil $106 Hormuz — สวนทาง AI melt-up ทำ new highs; กลุ่ม high-multiple = valuation headwind",
   "advice": {
@@ -25,7 +25,7 @@
       "verdict": "buy",
       "risk": "med",
       "weight": "mid",
-      "why": "NEAR-BUY 257.6 (โซน 255-235) — AWS margin ดีแต่ Fed hike กด consumer; ไม้กลางตามแผน"
+      "why": "เข้า BUY-ZONE 248 (โซน 255-235) — AWS margin ดีแต่ Fed hike กด consumer; ไม้กลาง เพิ่มไม้ตามโซน"
     },
     "META": {
       "verdict": "avoid",
@@ -139,7 +139,7 @@
       "verdict": "buy",
       "risk": "med",
       "weight": "heavy",
-      "why": "BUY-ZONE 401 ชิด DEEP 400 — EDA oligopoly + AI chip-design demand หนุน; ไม้หนัก 400-380"
+      "why": "BUY-ZONE 413 ชิด DEEP 400 — EDA oligopoly + AI chip-design demand หนุน; ไม้หนัก 400-380"
     },
     "ADI": {
       "verdict": "hold",
@@ -175,7 +175,7 @@
       "verdict": "buy",
       "risk": "med",
       "weight": "heavy",
-      "why": "DEEP-BUY 302 (<320) — ร่วงเพราะ Fed hike ไม่ใช่พื้นฐาน; sticky fintech ไม้หนักโซนนี้"
+      "why": "DEEP-BUY ลึกขึ้น 288 (<320) — ร่วงเพราะ Fed hike ไม่ใช่พื้นฐาน; sticky fintech ไม้หนักโซนนี้"
     },
     "AEM": {
       "verdict": "buy",
@@ -198,8 +198,8 @@
     "UBER": {
       "verdict": "buy",
       "risk": "med",
-      "weight": "mid",
-      "why": "70.9 เข้าโซน 76-70 ชิด DEEP 70 — consumer headwind จาก hike = เหตุผลร่วง, กำไรยังโต; ไม้แรกตรงนี้"
+      "weight": "heavy",
+      "why": "DEEP-BUY 69.6 (<70) —ร่วงจาก robotaxi fear+ปลดคน 10% แต่ CEO ซื้อหุ้นเอง $10M, เป้า $100-118, ~12x 2028E; ไม้หนักที่ลึกนี้"
     },
     "SPOT": {
       "verdict": "buy",
@@ -220,10 +220,10 @@
       "why": "185 (-74% จากยุค 700) = ตลาด price AI disruption โมเดล billable-hours; ถูกแบบ thesis เปลี่ยน — รอฐาน 170 ให้ชัดก่อน"
     },
     "AMAT": {
-      "verdict": "buy",
+      "verdict": "hold",
       "risk": "med",
       "weight": "mid",
-      "why": "NEAR-BUY 463 (โซน 450-400) — equipment orders ยังโต; กระจายไม้กับ SNPS/ASML"
+      "why": "468 พ้นโซน NEAR-BUY ขึ้นไปแล้ว — orders ยังโต แต่ราคาทิ้งจุดเข้า 450; รอ pullback"
     },
     "NET": {
       "verdict": "hold",
@@ -246,8 +246,8 @@
     "COST": {
       "verdict": "buy",
       "risk": "low",
-      "weight": "heavy",
-      "why": "896 BUY-ZONE (900-850) — thesis FCF-timing ไม่เปลี่ยน 19 StrongBuy; ไม้หนักตามแผน"
+      "weight": "mid",
+      "why": "900.6 เลียดขอบบนโซน 900-850 — thesis ไม่เปลี่ยน แต่ราคาอยู่ปากโซน; ไม้กลางก่อน เข้าหนักเมื่อในโซน"
     },
     "SYK": {
       "verdict": "buy",
