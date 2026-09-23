@@ -95,9 +95,11 @@ async function loadAdvice(){
     const r = await fetch("data/advice.json?_=" + Date.now(), {cache:"no-store"});
     if(!r.ok) return;
     const j = await r.json();
-    ADV = j.advice || {}; ADV_UPDATED = j.updated || "";
+    ADV = j.advice || {};
+    const fresh = (j.updated||"") !== ADV_UPDATED;
+    ADV_UPDATED = j.updated || "";
     const n = Object.keys(ADV).length;
-    if(n && typeof drawGrid === "function" && D){ drawFilters(); drawGrid(); }
+    if(fresh && n && typeof drawGrid === "function" && D){ drawFilters(); drawGrid(); }
     const el = document.getElementById("legend");
     if(el && ADV_UPDATED) el.title = "วิเคราะห์ล่าสุด: " + ADV_UPDATED + " (" + n + " ตัว)";
   }catch(e){/* keep ADV empty — cards render fine without badges */}
@@ -195,6 +197,7 @@ async function refresh(manual){
   const btn = $("refBtn");
   btn.classList.add("spin");
   if(manual) scheduleReset();
+  loadAdvice();   // keep hover analysis fresh too (redraws only if stamp changed)
   try{
     const r = await fetch("data/stocks.js?_=" + Date.now(), {cache:"no-store"});
     if(!r.ok) throw new Error("http " + r.status);
