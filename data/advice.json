@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-24T20:58+07:00",
+  "updated": "2026-09-24T21:07+07:00",
   "by": "haerin-news-review",
   "macro": "Fed ขึ้นดอกเบี้ย +25bp (16 ก.ย. = ครั้งแรกในรอบ 3 ปี) ส่งสัญญาณขึ้นอีกอย่างน้อย 1 ครั้งก่อนสิ้นปี + oil $106 Hormuz — สวนทาง AI melt-up ทำ new highs; กลุ่ม high-multiple = valuation headwind",
   "advice": {
@@ -166,10 +166,10 @@
       "why": "326 growth เด่นแต่แพง + iOS privacy sensitive — รอ 300"
     },
     "QCOM": {
-      "verdict": "hold",
+      "verdict": "avoid",
       "risk": "med",
       "weight": "light",
-      "why": "192 ใกล้เป้า 200 — Apple modem หมดสิทธิ์ + China risk; โซนขาย"
+      "why": "192 NEAR-TARGET (เป้า 200) — AWS AI-chip deal หนุนราคาไปถึงเป้าแล้ว วันนี้ย่อจาก yield กด; โซนทยอยขายทำกำไร ห้ามไล่"
     },
     "INTU": {
       "verdict": "buy",
