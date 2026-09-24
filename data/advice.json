@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-25T00:07+07:00",
+  "updated": "2026-09-25T00:33+07:00",
   "by": "haerin-news-review",
   "macro": "Fed ขึ้นดอกเบี้ย +25bp (16 ก.ย. = ครั้งแรกในรอบ 3 ปี) ส่งสัญญาณขึ้นอีกอย่างน้อย 1 ครั้งก่อนสิ้นปี + oil $106 Hormuz — สวนทาง AI melt-up ทำ new highs; กลุ่ม high-multiple = valuation headwind",
   "advice": {
@@ -166,10 +166,10 @@
       "why": "326 growth เด่นแต่แพง + iOS privacy sensitive — รอ 300"
     },
     "QCOM": {
-      "verdict": "avoid",
+      "verdict": "hold",
       "risk": "med",
       "weight": "light",
-      "why": "194 NEAR-TARGET เป้า 200 — บวกต่อเนื่องจากดีล AWS AI-chip วันนี้ย่อ -1.7%; โซนทยอยขายทำกำไรใกล้ 200 ห้ามไล่"
+      "why": "หลุดโซนขายใกล้เป้า 200 ย่อ -1.3% เหลือ 194.6 ยังเหนือ buy zone 160 — ถือต่อ รอจังหวะ"
     },
     "INTU": {
       "verdict": "buy",
