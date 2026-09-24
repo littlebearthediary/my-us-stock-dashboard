@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-24T00:47+07:00",
+  "updated": "2026-09-24T20:35+07:00",
   "by": "haerin-news-review",
   "macro": "Fed ขึ้นดอกเบี้ย +25bp (16 ก.ย. = ครั้งแรกในรอบ 3 ปี) ส่งสัญญาณขึ้นอีกอย่างน้อย 1 ครั้งก่อนสิ้นปี + oil $106 Hormuz — สวนทาง AI melt-up ทำ new highs; กลุ่ม high-multiple = valuation headwind",
   "advice": {
@@ -16,10 +16,10 @@
       "why": "ร่วงเข้า BUY-ZONE 496 ครั้งแรก: กังวล AI capex > returns + Stifel หั่นเป้า + Fed hike — ไม้กลาง ไม้แรก 496 เพิ่ม 470"
     },
     "GOOGL": {
-      "verdict": "hold",
+      "verdict": "buy",
       "risk": "med",
       "weight": "mid",
-      "why": "355 เด้งพ้นโซน 345 แล้ว — thesis เดิมยังดี แต่เข้าตอนนี้คือไล่ราคา รอ 345"
+      "why": "ร่วง -3.8% เหลือ 338 เข้าโซน 345-325: ขึ้น capex รอบ 2 ของปี + Gemini 3.5 delay + ค่าปรับ 462M ไม้แรกกลาง 338 เพิ่ม 325"
     },
     "AMZN": {
       "verdict": "buy",
