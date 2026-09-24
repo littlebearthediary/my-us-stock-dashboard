@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-24T20:53+07:00",
+  "updated": "2026-09-24T20:58+07:00",
   "by": "haerin-news-review",
   "macro": "Fed ขึ้นดอกเบี้ย +25bp (16 ก.ย. = ครั้งแรกในรอบ 3 ปี) ส่งสัญญาณขึ้นอีกอย่างน้อย 1 ครั้งก่อนสิ้นปี + oil $106 Hormuz — สวนทาง AI melt-up ทำ new highs; กลุ่ม high-multiple = valuation headwind",
   "advice": {
@@ -13,7 +13,7 @@
       "verdict": "buy",
       "risk": "med",
       "weight": "mid",
-      "why": "หลุดเข้าโซนจริง 500-470 ที่ ~499: Azure ชะลอ + Xbox หั่นคน 268 + yield 10ปี 5.1% กด multiple — ไม้กลาง 499 เพิ่ม 470"
+      "why": "หลุดเข้าโซนลึก 493 (<496): 'It's starting to crack' investor call + OpenAI agent hack ข่าวลบรัว ทั้งที่ Stifel upg Buy — ไม้กลาง 493 เพิ่ม 470"
     },
     "GOOGL": {
       "verdict": "buy",
@@ -127,7 +127,7 @@
       "verdict": "hold",
       "risk": "high",
       "weight": "light",
-      "why": "ดีด 258 ใกล้เป้า 265 — โซนทยอยขาย ไม่ใช่ซื้อ; lumpiness สูง ถือรอดู"
+      "why": "258.7 ใกล้เป้า 265 — โซนทยอยขาย ไม่ใช่ซื้อ; ดีดแรงจากยอด 26% ถือรอจังหวะขาย"
     },
     "SKHY": {
       "verdict": "hold",
