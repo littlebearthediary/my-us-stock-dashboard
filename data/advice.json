@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-24T20:35+07:00",
+  "updated": "2026-09-24T20:47+07:00",
   "by": "haerin-news-review",
   "macro": "Fed ขึ้นดอกเบี้ย +25bp (16 ก.ย. = ครั้งแรกในรอบ 3 ปี) ส่งสัญญาณขึ้นอีกอย่างน้อย 1 ครั้งก่อนสิ้นปี + oil $106 Hormuz — สวนทาง AI melt-up ทำ new highs; กลุ่ม high-multiple = valuation headwind",
   "advice": {
@@ -13,7 +13,7 @@
       "verdict": "buy",
       "risk": "med",
       "weight": "mid",
-      "why": "ร่วงเข้า BUY-ZONE 496 ครั้งแรก: กังวล AI capex > returns + Stifel หั่นเป้า + Fed hike — ไม้กลาง ไม้แรก 496 เพิ่ม 470"
+      "why": "หลุดเข้าโซนจริง 500-470 ที่ ~499: Azure ชะลอ + Xbox หั่นคน 268 + yield 10ปี 5.1% กด multiple — ไม้กลาง 499 เพิ่ม 470"
     },
     "GOOGL": {
       "verdict": "buy",
@@ -52,10 +52,10 @@
       "why": "แตะ TARGET 610 (เป้า 600) — ถึงคิวทำกำไรตามแผน ไม่ใช่จังหวะเข้าใหม่"
     },
     "AVGO": {
-      "verdict": "hold",
+      "verdict": "buy",
       "risk": "med",
       "weight": "mid",
-      "why": "ASIC แข่งเดือดแต่ backlog หนา; รอย่อโซนเดิม 340"
+      "why": "เข้าโซน 350-320 ที่ 349 (-1.7%): ยังไม่ฟื้นจาก earnings (-26% จากยอด) ASIC แข่งเดือด แต่ backlog หนา — ไม้กลาง เพิ่ม 320"
     },
     "TSM": {
       "verdict": "hold",
@@ -82,10 +82,10 @@
       "why": "202 ดีดเข้าใกล้เป้า 220 — ยิ่งห้ามไล่; in-housing risk ยังอยู่ครบ"
     },
     "VRT": {
-      "verdict": "hold",
+      "verdict": "buy",
       "risk": "high",
       "weight": "light",
-      "why": "254 เหนือโซน 235 — AI cooling demand จริง แต่ราคายังไม่ให้ออกตัวเข้า"
+      "why": "ใกล้โซน 235 ที่ 241 (pre -3.2%): yield 5.1% ทุบกลุ่ม data center, RBC หั่นเป้า 418→337 ยัง Outperform — ย่อ 235 ไม้แรกเบา"
     },
     "MU": {
       "verdict": "hold",
@@ -118,10 +118,10 @@
       "why": "แตะ TARGET 120 (120.31) melt-up ต่อ — consensus $101 ต่ำกว่าราคา priced for perfection; ขายทำกำไร"
     },
     "ORCL": {
-      "verdict": "avoid",
+      "verdict": "buy",
       "risk": "high",
       "weight": "light",
-      "why": "149 — debt-funded capex + margin สัญญา AI ต่ำ; cycle ดอกเบี้ยขึ้นเจ็บกลุ่ม leverage สูง"
+      "why": "เข้าโซน 140-120 ที่ 137.9: bond selloff ทดสอบหนี้ $130B ที่ทุน AI capex — ไม้แรกเบา strict เพิ่มเฉพาะ 120"
     },
     "MRVL": {
       "verdict": "hold",
