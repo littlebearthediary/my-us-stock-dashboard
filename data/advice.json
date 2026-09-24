@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-24T20:47+07:00",
+  "updated": "2026-09-24T20:53+07:00",
   "by": "haerin-news-review",
   "macro": "Fed ขึ้นดอกเบี้ย +25bp (16 ก.ย. = ครั้งแรกในรอบ 3 ปี) ส่งสัญญาณขึ้นอีกอย่างน้อย 1 ครั้งก่อนสิ้นปี + oil $106 Hormuz — สวนทาง AI melt-up ทำ new highs; กลุ่ม high-multiple = valuation headwind",
   "advice": {
@@ -216,14 +216,14 @@
     "ACN": {
       "verdict": "buy",
       "risk": "high",
-      "weight": "light",
-      "why": "หลุดเข้าโซนจริง 184.4 — เด้งข่าว Anthropic แตะ 189 แล้วย่อ, Guggenheim หั่น Neutral ไร้พื้นฐานหนุน; buyback $2B คุ้ม downside, earnings 1 ต.ค. — ไม้เบา"
+      "weight": "mid",
+      "why": "ลึกเข้าโซน 181 — ดีล Gemini+Google Cloud ไม่หยุด rotation กลุ่ม consulting (YTD -30%); FwdPE 12.8 + buyback $2B คุ้ม downside, earnings 1 ต.ค. — ไม้กลาง"
     },
     "AMAT": {
-      "verdict": "hold",
+      "verdict": "buy",
       "risk": "med",
-      "weight": "mid",
-      "why": "468 พ้นโซน NEAR-BUY ขึ้นไปแล้ว — orders ยังโต แต่ราคาทิ้งจุดเข้า 450; รอ pullback"
+      "weight": "light",
+      "why": "466 (-1.7%) เข้า NEAR-BUY ขอบโซน 450 — ร่วงเพราะ crowded positioning ไม่ใช่พื้นฐาน, orders ยังทำนิวไฮ; ไม้แรกเมื่อแตะ 450"
     },
     "NET": {
       "verdict": "hold",
