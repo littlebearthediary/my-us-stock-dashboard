@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-25T21:03+07:00",
+  "updated": "2026-09-25T21:17+07:00",
   "by": "haerin-news-review",
   "macro": "Fed ขึ้นดอกเบี้ย +25bp (16 ก.ย. = ครั้งแรกในรอบ 3 ปี) ส่งสัญญาณขึ้นอีกอย่างน้อย 1 ครั้งก่อนสิ้นปี + oil $106 Hormuz — สวนทาง AI melt-up ทำ new highs; กลุ่ม high-multiple = valuation headwind",
   "advice": {
@@ -13,7 +13,7 @@
       "verdict": "buy",
       "risk": "med",
       "weight": "mid",
-      "why": "497.93 BUY-ZONE — เข้าโซน 500-470 — ข่าวลบ crack call+OpenAI agent hack รัว แต่ Stifel upg; ไม้กลาง เพิ่ม 470"
+      "why": "497.93 NEAR-BUY 500 — เลียดขอบโซนบน — Azure/AI momentum แข็ง + 2 PT bumps (Stifel upg Buy เป้า 575) 21 ก.ย.; แตะ 490 ลงไปให้ไม้กลาง"
     },
     "GOOGL": {
       "verdict": "buy",
@@ -121,7 +121,7 @@
       "verdict": "buy",
       "risk": "high",
       "weight": "light",
-      "why": "139.54 BUY-ZONE — ชิดขอบโซน 140-120 — bond selloff ทดสอบหนี้ $130B ทุน AI capex; ไม้แรกเบา เพิ่ม strict 120"
+      "why": "139.80 หลุดเข้า BUY-ZONE 140-120 — ข่าว force majeure โครงการ data center New Mexico กลัวต้นทุนดีเลย์ ร่วง 3.5% (พฤ.) + หนี้ $130B ทุน AI; ไม้แรกเบา เพิ่ม strict 120"
     },
     "MRVL": {
       "verdict": "hold",
