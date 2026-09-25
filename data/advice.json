@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-25T23:25+07:00",
+  "updated": "2026-09-25T23:41+07:00",
   "by": "haerin-news-review",
   "macro": "Fed ขึ้นดอกเบี้ย +25bp (16 ก.ย. = ครั้งแรกในรอบ 3 ปี) ส่งสัญญาณขึ้นอีกอย่างน้อย 1 ครั้งก่อนสิ้นปี + oil $106 Hormuz — สวนทาง AI melt-up ทำ new highs; กลุ่ม high-multiple = valuation headwind",
   "advice": {
@@ -10,10 +10,10 @@
       "why": "334.83 NEAR-TARGET 350 — new ATH 345 +17% ใน 10 วัน พ้นเป้า analyst 328 แล้ว; ไม้เดิมถือ/ทยอยทำกำไร ห้ามไล่"
     },
     "MSFT": {
-      "verdict": "hold",
+      "verdict": "buy",
       "risk": "med",
       "weight": "mid",
-      "why": "ดีดหลุดโซนซื้อ 512.80 (+3%) ขานรับ Stifel upgrade เป้า 575 — รอ pullback แถว 490-500 ค่อยพิจารณาใหม่"
+      "why": "498 NEAR-BUY โซน 500 — Azure พ้น $100B run-rate, BofA up PT 600; yield 5% กดราคา = พื้นฐานยังแข็ง ไม้แรกตามโซน"
     },
     "GOOGL": {
       "verdict": "buy",
@@ -127,7 +127,7 @@
       "verdict": "avoid",
       "risk": "high",
       "weight": "light",
-      "why": "แตะเป้า 265 แล้ว แรงหนุนดีลชิป Google+AI networking — ขายทำกำไรตามแผน คงไว้บ้างถ้ายึด 52w high"
+      "why": "265+ TARGET — MS up PT 268 ล้อดีล Celestial AI + AI networking; ขายทำกำไรตามแผน ไม่ไล่ราคา"
     },
     "SKHY": {
       "verdict": "hold",
