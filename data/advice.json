@@ -1,7 +1,7 @@
 {
-  "updated": "2026-09-26T01:25+07:00",
+  "updated": "2026-09-29T01:50+07:00",
   "by": "haerin-news-review",
-  "macro": "Fed ขึ้นดอกเบี้ย +25bp (16 ก.ย. = ครั้งแรกในรอบ 3 ปี) ส่งสัญญาณขึ้นอีกอย่างน้อย 1 ครั้งก่อนสิ้นปี + oil $106 Hormuz — สวนทาง AI melt-up ทำ new highs; กลุ่ม high-multiple = valuation headwind",
+  "macro": "28 ก.ย.: สหรัฐปฏิเสธข้อเสนออิหร่านเปิดช่องแคบ Hormuz → น้ำมันเด้ง WTI $94.8, 10y 5.22%; hike ต.ค. odds 70%; OpenAI pause ฝึกโมเดลหลัก ทุบ AI capex chain; ทอง -3.3% เหลือ $4,176; สัปดาห์นี้ MU/ACN งบ + payrolls ศุกร์",
   "advice": {
     "AAPL": {
       "verdict": "hold",
@@ -13,25 +13,25 @@
       "verdict": "buy",
       "risk": "med",
       "weight": "mid",
-      "why": "498 NEAR-BUY โซน 500 — Azure พ้น $100B run-rate, BofA up PT 600; yield 5% กดราคา = พื้นฐานยังแข็ง ไม้แรกตามโซน"
+      "why": "511 NEAR-BUY โซน 500 — ปรับ Copilot ชี้ชะตากับ Claude ทำ +3.7%ศุกร์; street target $566; Azure โต 40% — ไม้แรกตามโซน"
     },
     "GOOGL": {
       "verdict": "buy",
       "risk": "med",
       "weight": "mid",
-      "why": "345.24 BUY-ZONE 345-325 — Meta Muse + OpenAI/Anthropic ลดราคาโมเดล ทุบ Gemini margin, capex สูงเป็นประวัติการณ์ ยังพื้นฐานแข็ง ทยอยเก็บ"
+      "why": "342 ใน BUY-ZONE 345-325 — ลง 4 เดือนติดจาก capex $195-205B + จีน open-weight กด token price; cloud โต 48% พื้นฐานไม่เปลี่ยน — ทยอยเก็บ"
     },
     "AMZN": {
       "verdict": "buy",
       "risk": "med",
       "weight": "mid",
-      "why": "249.38 BUY-ZONE — ในโซน 255-235 — AWS margin ดี แต่ Fed hike กด consumer; ไม้กลางตามโซน"
+      "why": "246 ในโซน 255-235 — -16% จากยอด พ.ค. จาก capex $200B; forward PE 30 vs ค่าเฉลี่ย 45, เป้าเฉลี่ย $316 Strong Buy — ไม้กลาง"
     },
     "META": {
       "verdict": "avoid",
       "risk": "med",
       "weight": "light",
-      "why": "777.59 TARGET — ล้ำเป้า 720 — ขายทำกำไรเต็มตัว ไม่ใช่จังหวะเข้าใหม่"
+      "why": "723 ย่อแตะ TARGET 720 พอดี — +11% จาก Muse เมื่อศุกร์ที่แล้ว กลับ -2.7% วันนี้จาก OpenAI pause; ล้ำเป้าคงขายทำกำไรตามแผน"
     },
     "TSLA": {
       "verdict": "avoid",
@@ -43,13 +43,13 @@
       "verdict": "hold",
       "risk": "med",
       "weight": "mid",
-      "why": "226 ผู้นำ cycle ตัวจริง แต่ Fed hike = multiple headwind — รอ 200 คือจุดเข้า"
+      "why": "229 สวนกระแส +1% — ประกาศ buyback $150B ใหญ่สุดในประวัติศาสตร์ + AI safety platform; ผู้นำจริงแต่ odds hike ต.ค. 70% = multiple headwind รอ 200"
     },
     "AMD": {
       "verdict": "avoid",
       "risk": "high",
       "weight": "light",
-      "why": "629.26 TARGET — ล้ำเป้า 600 — ถึงคิวขายทำกำไรตามแผน"
+      "why": "605 ยังเหนือ TARGET 600 — แตะ $1T market cap 21 ก.ย. แล้วเย็นลงตาม OpenAI pause; ขายทำกำไรตามแผน"
     },
     "AVGO": {
       "verdict": "buy",
@@ -91,19 +91,19 @@
       "verdict": "hold",
       "risk": "high",
       "weight": "light",
-      "why": "1040 ใกล้เป้า 1150 — HBM melt-up ยังวิ่งแต่ cycle peak risk = ห้ามไม้ใหญ่ตรงนี้"
+      "why": "1055 ใกล้เป้า 1150 + งบ 30 ก.ย. นี้ (ทุกธุรกิจ HBM โตสามหลัก) — event risk สด ห้ามเปิดไม้ใหม่ก่อนงบ"
     },
     "ARM": {
       "verdict": "avoid",
       "risk": "high",
       "weight": "light",
-      "why": "พุ่ง +16% วันนี้ 319 (AGI CPU re-rate) — P/E ยาวขึ้นไปอีก vs FV; ห่างโซน 225 ไกล = ห้ามไล่"
+      "why": "285 (-11% จาก 319) ลงตาม OpenAI pause แต่ยังห่างโซน 225 — P/E ยาว vs FV คงห้ามไล่"
     },
     "ASML": {
       "verdict": "hold",
       "risk": "med",
       "weight": "mid",
-      "why": "1708 พ้นโซน 1650 — EUV thesis ไม่เปลี่ยน แต่ราคาทิ้ง buy zone แล้ว รอ 1650"
+      "why": "1782 ทิ้งโซน 1650 ไกลขึ้น — EUV thesis ไม่เปลี่ยน ถือรอ 1650"
     },
     "KLAC": {
       "verdict": "hold",
@@ -112,22 +112,22 @@
       "why": "semicap cyclic ล้อตาม capex — ไม่มี edge เฉพาะตัวชัด ไม้เบา"
     },
     "INTC": {
-      "verdict": "avoid",
-      "risk": "extreme",
+      "verdict": "hold",
+      "risk": "high",
       "weight": "light",
-      "why": "127.39 TARGET — ล้ำเป้า 120 — consensus $101 priced for perfection; ขายทำกำไร"
+      "why": "115 ย่อหลุดเป้า 120 แล้ว — +14% 21 ก.ย. ตามด้วยข่าวออกหุ้นสามัญ $15B = เจือจาง + profit-taking; consensus $101 ยังแพง ไม่รับไม้ใหญ่"
     },
     "ORCL": {
       "verdict": "buy",
       "risk": "high",
       "weight": "light",
-      "why": "139.80 หลุดเข้า BUY-ZONE 140-120 — ข่าว force majeure โครงการ data center New Mexico กลัวต้นทุนดีเลย์ ร่วง 3.5% (พฤ.) + หนี้ $130B ทุน AI; ไม้แรกเบา เพิ่ม strict 120"
+      "why": "133.6 ใน BUY-ZONE 140-120 — force majeure New Mexico 24 ก.ย. + OpenAI pause 28 ก.ย. ทุบ narrative capex ต่อ; ไม้แรกเบา เพิ่ม strict 120"
     },
     "MRVL": {
       "verdict": "avoid",
       "risk": "high",
       "weight": "light",
-      "why": "265+ TARGET — MS up PT 268 ล้อดีล Celestial AI + AI networking; ขายทำกำไรตามแผน ไม่ไล่ราคา"
+      "why": "252 พ้นเป้า 268 — MS PT 268 ล้อดีล Celestial AI พักตาม AI sentiment; ไล่ไม่ได้อีกแล้ว รอจบข่าว"
     },
     "SKHY": {
       "verdict": "hold",
@@ -169,25 +169,25 @@
       "verdict": "avoid",
       "risk": "med",
       "weight": "light",
-      "why": "199.08 TARGET >=200 — เด้งจากดีล AWS ชิป AI + demo optical interconnect ไปถึงเป้า ขายทำกำไร"
+      "why": "188 ย่อจากเป้า 200 แล้ว — เด้ง AWS ดีล + optical demo หมดโมเมนตัม; ที่ทำกำไรแล้วคือจบ รอบใหม่รอรอบล่างจริง"
     },
     "INTU": {
       "verdict": "buy",
-      "risk": "med",
-      "weight": "heavy",
-      "why": "277.13 DEEP-BUY — DEEP-BUY — Goldman หั่น PT เหลือ $276 + TurboTax ลูกค้าหนีเพราะราคา (guide FY27 โตช้าลง) แต่ Mizuho $430 ชี้ oversold; ไม้หนักตามโซน"
+      "risk": "high",
+      "weight": "mid",
+      "why": "269.8 DEEP-BUY <320 — JPM หั่นเหลือ Neutral $331 ชี้ความเสี่ยง agentic AI ลามถึง QuickBooks ( Goldman $276); Mizuho $430 — ไม้กลางไม่ใช่หนัก"
     },
     "AEM": {
       "verdict": "buy",
       "risk": "med",
       "weight": "mid",
-      "why": "193.88 BUY-ZONE — ในโซน 200-185 — gold hedge ท่ามกลาง hike+oil shock; ไม้แรก เพิ่ม 185"
+      "why": "184.2 หลุด DEEP-BUY <185 ตามแผน — แต่ทอง -3.3% $4,176 จาก odds hike ต.ค. 70%; Q2 FCF ทุบสถิติ — ไม้แรกเบา รอทองทรงตัว"
     },
     "CEG": {
       "verdict": "buy",
       "risk": "med",
       "weight": "mid",
-      "why": "261.62 BUY-ZONE — ในโซน 270-245 — nuclear+AI power contracts ไม่เปลี่ยน; yield กด utility = โอกาส"
+      "why": "260.6 ในโซน 270-245 — Q2 EPS $2.55 +34% raise FY26, เซ็น PPA Walmart, ซื้อโรงไฟฟ้า Rhode Island จาก Shell; MS PT 369; yield กดทั้ง sector = โอกาส"
     },
     "GEV": {
       "verdict": "hold",
@@ -199,13 +199,13 @@
       "verdict": "buy",
       "risk": "med",
       "weight": "heavy",
-      "why": "69.22 DEEP-BUY — DEEP-BUY <70 — robotaxi fear + guide Q3 อ่อน + ปลดคน 10% แต่ CEO ซื้อหุ้นเอง $10M เป้า $100+; ไม้หนัก"
+      "why": "68.4 DEEP-BUY <70 — CEO call หุ้น \"really cheap\", 120k AV-ready + 9→15 พาร์ทเนอร์; fear robotaxi + Q3 อ่อน price-in แล้ว; ไม้หนักตามโซน"
     },
     "SPOT": {
       "verdict": "buy",
       "risk": "med",
       "weight": "mid",
-      "why": "511.38 BUY-ZONE — กลางโซน 530-490 — margin expansion on track; ไม้กลางตามแผน"
+      "why": "500.7 กลางโซน 530-490 — Q2 record gross margin 33.4%, เป้าเฉลี่ย $602; แต่ CEO ขายหุ้น $11.4M = ระวัง; ไม้กลาง"
     },
     "ISRG": {
       "verdict": "hold",
@@ -216,8 +216,8 @@
     "ACN": {
       "verdict": "buy",
       "risk": "high",
-      "weight": "mid",
-      "why": "177.41 BUY-ZONE — ในโซน 185-170 — consulting ถูก rotate หนัก, FwdPE ~13 + buyback $2B; ไม้กลาง รอฟัง earnings"
+      "weight": "light",
+      "why": "174.8 ในโซน 185-170 — งบสัปดาห์นี้; รอบก่อน FY26 guidance ถูกหั่นเหลือ 3-4% organic; FwdPE ~13 + buyback $2B — เบาไว้ก่อนรอดูตัวเลข"
     },
     "AMAT": {
       "verdict": "buy",
@@ -247,13 +247,13 @@
       "verdict": "buy",
       "risk": "low",
       "weight": "mid",
-      "why": "896.48 BUY-ZONE — เข้าโซน 900-850 — sales ต่ำคาด+Fed hike กด discretionary; ไม้กลางแรก เพิ่มเมื่อลึก"
+      "why": "919 เด้งพ้น NEAR-BUY 900 — ยังไม่ใช่โซนเข้า เพิ่มเฉพาะย่อกลับ 900-850; anchor พอร์ตระยะยาว"
     },
     "SYK": {
       "verdict": "buy",
       "risk": "low",
       "weight": "heavy",
-      "why": "269.75 DEEP-BUY — DEEP-BUY <282 — Q2 beat คง guidance; yield กด healthcare = โอกาสสะสมไม้หนัก"
+      "why": "275.4 DEEP-BUY <282 — คง guidance organic 8.3-9.3% + EPS $14.95-15.10, กลับมา buyback ~$1B; 52w low $282 ถูกเจาะ = โอกาสสะสม"
     },
     "RKLB": {
       "verdict": "avoid",
