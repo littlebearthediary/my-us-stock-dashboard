@@ -1,13 +1,13 @@
 {
-  "updated": "2026-09-29T22:44+07:00",
+  "updated": "2026-09-29T23:06+07:00",
   "by": "haerin-news-review",
   "macro": "28 ก.ย.: สหรัฐปฏิเสธข้อเสนออิหร่านเปิดช่องแคบ Hormuz → น้ำมันเด้ง WTI $94.8, 10y 5.22%; hike ต.ค. odds 70%; OpenAI pause ฝึกโมเดลหลัก ทุบ AI capex chain; ทอง -3.3% เหลือ $4,176; สัปดาห์นี้ MU/ACN งบ + payrolls ศุกร์",
   "advice": {
     "AAPL": {
-      "verdict": "hold",
+      "verdict": "buy",
       "risk": "low",
-      "weight": "mid",
-      "why": "339.5 NEAR-TARGET 350 — new ATH 345 +17% ใน 10 วัน พ้นเป้า analyst 328 แล้ว; ไม้เดิมถือ/ทยอยทำกำไร ห้ามไล่"
+      "weight": "light",
+      "why": "331.9 (-1.7%) จ่อ NEAR-BUY 323.75 = SMA50 322 + 0.25 ATR (ใหม่ 29 ก.ย.) — ย่อจาก ATH 345, PE 38.8 + เป้า analyst 328 ต่ำกว่าราคา; ไม้แรกเบาเมื่อหลุด 324"
     },
     "MSFT": {
       "verdict": "buy",
@@ -34,10 +34,10 @@
       "why": "ยังล้ำเป้า 720 (721, -4% จากข่าว Amazon บล็อก Muse + AI-chain sell-off) — ขายทำกำไรตามแผน ถ้าย่อลึกค่อยรับใหม่"
     },
     "TSLA": {
-      "verdict": "avoid",
+      "verdict": "buy",
       "risk": "high",
       "weight": "light",
-      "why": "374 — robotaxi/margin ยังไม่ proof, ขึ้นตามตลาดไม่ใช่ปัจจัยตัวเอง; ไม่มีโซนซื้อรับ"
+      "why": "354.2 NEAR-BUY 346.5 (anchor cap 1M low, ATR 12.5) — ข่าว robotaxi ยังหนุนแต่ PE 371, EPS -36%, deep 315; ไม้จิ๋วเมื่อหลุด 346.5 เท่านั้น ห้ามถัว"
     },
     "NVDA": {
       "verdict": "hold",
