@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-30T00:46:30+07:00",
+  "updated": "2026-09-30T01:12:29+07:00",
   "by": "haerin-news-review",
   "macro": "28 ก.ย.: สหรัฐปฏิเสธข้อเสนออิหร่านเปิดช่องแคบ Hormuz → น้ำมันเด้ง WTI $94.8, 10y 5.22%; hike ต.ค. odds 70%; OpenAI pause ฝึกโมเดลหลัก ทุบ AI capex chain; ทอง -3.3% เหลือ $4,176; สัปดาห์นี้ MU/ACN งบ + payrolls ศุกร์",
   "advice": {
@@ -250,10 +250,10 @@
       "why": "913-917 ลงเข้า BUY-ZONE 918-867 (risk_on +2%) — CEO ยืนยันเป้า 30 สาขาใหม่/ปี ตปท., street เป้า 1,058; anchor ระยะยาว ไม้แรกได้"
     },
     "SYK": {
-      "verdict": "buy",
-      "risk": "low",
-      "weight": "heavy",
-      "why": "275.4 DEEP-BUY <282 — คง guidance organic 8.3-9.3% + EPS $14.95-15.10, กลับมา buyback ~$1B; 52w low $282 ถูกเจาะ = โอกาสสะสม"
+      "verdict": "hold",
+      "risk": "med",
+      "weight": "mid",
+      "why": "ปัญหาผลิต vascular ลากยาวถึง Q4 + Block&Leviton สอบสวน fraud, ราคา 52w low; พื้นฐานยังดี consensus target ~$386 — อย่ายิงมีด รอ 269 ยืนได้ค่อยเก็บ ไม้ลึก 257"
     },
     "RKLB": {
       "verdict": "avoid",
