@@ -212,7 +212,10 @@
     const i=Number(e.target.dataset.remove);if(!Number.isInteger(i))return;
     state.holdings.splice(i,1);saveState();renderAll();
   });
-  $("addBtn").addEventListener("click",()=>{state.holdings.push({symbol:"",shares:0,cost:0,manualPrice:0});saveState();renderHoldings();$("holdingsBody").lastElementChild?.querySelector('[data-field="symbol"]')?.focus();});
+  $("addBtn").addEventListener("click",()=>{
+    if(state.holdings.length>=LIMITS.holdings){$("saveStatus").textContent=`รองรับสูงสุด ${LIMITS.holdings} รายการ; ลบรายการก่อนเพิ่ม`;$("saveStatus").className="status warn";return;}
+    state.holdings.push({symbol:"",shares:0,cost:0,manualPrice:0});saveState();renderHoldings();$("holdingsBody").lastElementChild?.querySelector('[data-field="symbol"]')?.focus();
+  });
   $("clearBtn").addEventListener("click",()=>{
     if(!confirm("ล้างเงินสดและข้อมูลหุ้นที่บันทึกไว้ใน browser นี้?"))return;
     state={cash:0,goal:15,profile:"balanced",holdings:[]};saveState();fillControls();renderAll();
