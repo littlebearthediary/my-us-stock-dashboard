@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-29T22:36+07:00",
+  "updated": "2026-09-29T22:44+07:00",
   "by": "haerin-news-review",
   "macro": "28 ก.ย.: สหรัฐปฏิเสธข้อเสนออิหร่านเปิดช่องแคบ Hormuz → น้ำมันเด้ง WTI $94.8, 10y 5.22%; hike ต.ค. odds 70%; OpenAI pause ฝึกโมเดลหลัก ทุบ AI capex chain; ทอง -3.3% เหลือ $4,176; สัปดาห์นี้ MU/ACN งบ + payrolls ศุกร์",
   "advice": {
@@ -13,7 +13,7 @@
       "verdict": "buy",
       "risk": "med",
       "weight": "mid",
-      "why": "511 NEAR-BUY โซน 500 — ปรับ Copilot ชี้ชะตากับ Claude ทำ +3.7%ศุกร์; street target $566; Azure โต 40% — ไม้แรกตามโซน"
+      "why": "508 หลุดเข้า BUY-ZONE 510-479 (risk_on +2%) — Barron's ชี้ Copilot refresh หนุน close สูงสุด 10 เดือน; street เป้า 576, earnings 28 ต.ค.; ไม้แรกตามโซน เพิ่มลึก 480"
     },
     "GOOGL": {
       "verdict": "buy",
@@ -181,7 +181,7 @@
       "verdict": "buy",
       "risk": "med",
       "weight": "mid",
-      "why": "184.2 หลุด DEEP-BUY <185 ตามแผน — แต่ทอง -3.3% $4,176 จาก odds hike ต.ค. 70%; Q2 FCF ทุบสถิติ — ไม้แรกเบา รอทองทรงตัว"
+      "why": "187 (+1.6%) ยังใต้ DEEP-BUY ≤188.7 — ทองเด้งกลับ $4,286 หลังหลุด 4,200 เมื่อ 28 ก.ย. (AEM -4.9% วันนั้น); เป้า 216 งบ 28 ต.ค. — ไม้แรกตามโซน ทองนำค่อยเพิ่ม"
     },
     "CEG": {
       "verdict": "buy",
@@ -205,7 +205,7 @@
       "verdict": "buy",
       "risk": "med",
       "weight": "mid",
-      "why": "495.7 low 489 แตะ DEEP-BUY 490 — MAU Q3 guide 788M ต่ำกว่า street (จงใจกด free tier EM ดัน conversion); -16% YTD แต่ buyback $1.5B + BofA top pick เป้า $602; งบ 22 ต.ค. — ทยอยเก็บไม้ลึก"
+      "why": "495 ทดสอบ DEEP-BUY ≤499.8 (risk_on) intraday low 489 — PE 27 เป้า 603 (+22%) งบ 22 ต.ค.; โมเมนตัมยังลบ 2 วันติด — ทยอยไม้ลึก 490-489 ห้าม all-in"
     },
     "ISRG": {
       "verdict": "hold",
@@ -235,7 +235,7 @@
       "verdict": "hold",
       "risk": "low",
       "weight": "mid",
-      "why": "506 พ้นโซน 480-464 — anchor พอร์ตยังถูก แต่ราคาทิ้งจุดเข้า; cash ใหญ่ได้ประโยชน์จาก hike"
+      "why": "501.6 จ่อ NEAR-BUY 489.6 (risk_on ขยับโซน 480→489.6) — PE 12.5 เป้า 548; ยังไม่หลุดโซนจริง cash-rich ได้ประโยชน์จาก hike — รอ 490 ค่อยไม้แรก"
     },
     "LLY": {
       "verdict": "hold",
@@ -247,7 +247,7 @@
       "verdict": "buy",
       "risk": "low",
       "weight": "mid",
-      "why": "919 เด้งพ้น NEAR-BUY 900 — ยังไม่ใช่โซนเข้า เพิ่มเฉพาะย่อกลับ 900-850; anchor พอร์ตระยะยาว"
+      "why": "913-917 ลงเข้า BUY-ZONE 918-867 (risk_on +2%) — CEO ยืนยันเป้า 30 สาขาใหม่/ปี ตปท., street เป้า 1,058; anchor ระยะยาว ไม้แรกได้"
     },
     "SYK": {
       "verdict": "buy",
