@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-29T22:06+07:00",
+  "updated": "2026-09-29T22:36+07:00",
   "by": "haerin-news-review",
   "macro": "28 ก.ย.: สหรัฐปฏิเสธข้อเสนออิหร่านเปิดช่องแคบ Hormuz → น้ำมันเด้ง WTI $94.8, 10y 5.22%; hike ต.ค. odds 70%; OpenAI pause ฝึกโมเดลหลัก ทุบ AI capex chain; ทอง -3.3% เหลือ $4,176; สัปดาห์นี้ MU/ACN งบ + payrolls ศุกร์",
   "advice": {
@@ -118,10 +118,10 @@
       "why": "116.3 จ่อเป้า 120; +144% YTD ข่าว CPU shortage/agentic AI ขึ้นราคา 10% แต่ forward PE ~69 แพง ลุ้นทะลุ 120=ทยอยขายทำกำไร"
     },
     "ORCL": {
-      "verdict": "hold",
+      "verdict": "buy",
       "risk": "high",
       "weight": "light",
-      "why": "เด้ง +8% ข่าว NetApp-OCI storage พ้น BUY-ZONE ไป 143 — อย่าไล่ราคา รอย่อ 140/120 ไม้แรกเบา"
+      "why": "140.5 หลุดเข้า BUY-ZONE 140-120 — force majeure Project Jupiter + CDS ทุบสถิติ หนี้ 2056 yield >8% = high risk จริง แต่เด้ง +6% ข่าว NetApp-OCI storage; ไม้แรกเบา เพิ่มลึก 120"
     },
     "MRVL": {
       "verdict": "avoid",
