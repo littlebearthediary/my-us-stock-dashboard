@@ -24,7 +24,7 @@ textarea{width:100%;min-height:170px;resize:vertical;background:#0d1119;color:va
 <section class="card">
 <h2>บัญชีและเป้าหมาย</h2>
 <div class="formrow">
-<div class="field"><label for="cash">เงินสดพร้อมลงทุน (USD)</label><input id="cash" type="number" min="0" step="0.01" value="0"></div>
+<div class="field"><label for="cash">เงินสดพร้อมลงทุน (USD)</label><input id="cash" type="number" min="0" max="1000000000" step="0.01" value="0"></div>
 <div class="field"><label for="goal">เป้าผลตอบแทนต่อปี (%) — เป้าหมาย ไม่ใช่ forecast</label><input id="goal" type="number" min="0" max="100" step="0.5" value="15"></div>
 <div class="field"><label for="profile">ความเสี่ยงที่ยอมรับได้</label><select id="profile"><option value="conservative">ต่ำ</option><option value="balanced" selected>ปานกลาง</option><option value="aggressive">สูง</option></select></div>
 </div>

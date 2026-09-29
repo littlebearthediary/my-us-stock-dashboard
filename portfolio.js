@@ -13,6 +13,10 @@
   };
   const RISK_SCORE = {low:1,med:.75,high:.45,extreme:.20};
   const WEIGHT_SCORE = {heavy:3,mid:2,light:1};
+  const LIMITS = {cash:1e9, shares:1e6, price:1e6, holdings:100};
+  function boundedNumber(value,max,fallback=0){const n=Number(value);return Number.isFinite(n)&&n>=0&&n<=max?n:fallback;}
+  function validNumber(value,max){const n=Number(value);return Number.isFinite(n)&&n>=0&&n<=max;}
+  function normalizeHolding(h){h=h&&typeof h==="object"?h:{};return {symbol:cleanSym(h.symbol),shares:boundedNumber(h.shares,LIMITS.shares),cost:boundedNumber(h.cost,LIMITS.price),manualPrice:boundedNumber(h.manualPrice,LIMITS.price)};}
   state = loadState();
   const fmt = n => new Intl.NumberFormat("en-US",{style:"currency",currency:"USD",maximumFractionDigits:2}).format(Number.isFinite(n)?n:0);
   const fmtNum = (n,d=3) => Number.isFinite(n) ? n.toLocaleString("en-US",{maximumFractionDigits:d}) : "—";
@@ -26,9 +30,9 @@
       if(!raw || typeof raw!=="object") return base;
       const savedGoal=Number(raw.goal);
       return {
-        cash:Math.max(0,Number(raw.cash)||0), goal:Number.isFinite(savedGoal)?Math.max(0,Math.min(100,savedGoal)):15,
+        cash:boundedNumber(raw.cash,LIMITS.cash), goal:boundedNumber(savedGoal,100,15),
         profile:PROFILES[raw.profile]?raw.profile:"balanced",
-        holdings:Array.isArray(raw.holdings)?raw.holdings.map(h=>({symbol:cleanSym(h.symbol),shares:Math.max(0,Number(h.shares)||0),cost:Math.max(0,Number(h.cost)||0),manualPrice:Math.max(0,Number(h.manualPrice)||0)})):[]
+        holdings:Array.isArray(raw.holdings)?raw.holdings.slice(0,LIMITS.holdings).map(normalizeHolding):[]
       };
     }catch(_){return base;}
   }
@@ -79,13 +83,13 @@
       const p=mergedPositions().get(symbol);
       const live=quote>0;
       const priceCell=live?`<span class="quote">${fmt(quote)}</span><div class="small">watchlist</div>`:
-        `<input data-i="${i}" data-field="manualPrice" type="number" min="0" step="0.01" value="${h.manualPrice||""}" placeholder="ราคาปัจจุบัน">`;
+        `<input data-i="${i}" data-field="manualPrice" type="number" min="0" max="1000000" step="0.01" value="${h.manualPrice||""}" placeholder="ราคาปัจจุบัน">`;
       const mv=p?fmt(p.marketValue):"—", pnl=p?`${p.pnl>=0?"+":""}${fmt(p.pnl)}`:"—";
       const qty=Number(h.shares)||0, cost=Number(h.cost)||0;
       return `<tr>
         <td><input data-i="${i}" data-field="symbol" list="symbols" value="${esc(symbol)}" placeholder="เช่น MSFT" aria-label="ticker"></td>
-        <td><input data-i="${i}" data-field="shares" type="number" min="0" step="0.001" value="${qty||""}" placeholder="0" aria-label="จำนวนหุ้น"></td>
-        <td><input data-i="${i}" data-field="cost" type="number" min="0" step="0.01" value="${cost||""}" placeholder="USD/หุ้น" aria-label="ต้นทุนเฉลี่ย"></td>
+        <td><input data-i="${i}" data-field="shares" type="number" min="0" max="1000000" step="0.001" value="${qty||""}" placeholder="0" aria-label="จำนวนหุ้น"></td>
+        <td><input data-i="${i}" data-field="cost" type="number" min="0" max="1000000" step="0.01" value="${cost||""}" placeholder="USD/หุ้น" aria-label="ต้นทุนเฉลี่ย"></td>
         <td>${priceCell}</td><td class="quote">${mv}</td><td class="quote ${p&&p.pnl>=0?"positive":"negative"}">${pnl}</td>
         <td><button class="btn danger" data-remove="${i}" aria-label="ลบ">ลบ</button></td></tr>`;
     }).join("");
@@ -184,18 +188,24 @@
       <td class="recommend">${esc(r.text)}</td></tr>`).join("");
   }
   function renderAll(){renderHoldings();renderSummary();renderPlan();}
+  function rejectValue(el,current,label){el.value=current;return `${label}: รับเฉพาะ 0 ถึงค่าที่กำหนด; คงค่าเดิมไว้`;}
   function readControls(){
-    state.cash=Math.max(0,Number($("cash").value)||0);
-    state.goal=Math.max(0,Math.min(100,Number($("goal").value)||0));
+    const cashEl=$("cash"),goalEl=$("goal");let warning="";
+    if(validNumber(cashEl.value,LIMITS.cash))state.cash=Number(cashEl.value);else warning=rejectValue(cashEl,state.cash,"เงินสด");
+    if(validNumber(goalEl.value,100))state.goal=Number(goalEl.value);else warning=rejectValue(goalEl,state.goal,"เป้าหมาย");
     state.profile=PROFILES[$("profile").value]?$("profile").value:"balanced";
-    saveState();renderSummary();renderPlan();
+    saveState();if(warning){$("saveStatus").textContent=warning;$("saveStatus").className="status warn";}renderSummary();renderPlan();
   }
   $("cash").addEventListener("input",readControls);$("goal").addEventListener("input",readControls);$("profile").addEventListener("change",readControls);
   $("holdingsBody").addEventListener("input",e=>{
     const field=e.target.dataset.field, i=Number(e.target.dataset.i);if(!field||!Number.isInteger(i)||!state.holdings[i])return;
+    let warning="";
     if(field==="symbol")state.holdings[i][field]=cleanSym(e.target.value);
-    else state.holdings[i][field]=Math.max(0,Number(e.target.value)||0);
-    saveState();renderSummary();renderPlan();
+    else{
+      const max=field==="shares"?LIMITS.shares:LIMITS.price, previous=state.holdings[i][field];
+      if(validNumber(e.target.value,max))state.holdings[i][field]=Number(e.target.value);else warning=rejectValue(e.target,previous,field);
+    }
+    saveState();if(warning){$("saveStatus").textContent=warning;$("saveStatus").className="status warn";}renderSummary();renderPlan();
   });
   $("holdingsBody").addEventListener("change",e=>{if(e.target.dataset.field){renderHoldings();renderSummary();renderPlan();}});
   $("holdingsBody").addEventListener("click",e=>{
@@ -215,10 +225,12 @@
   $("importFile").addEventListener("change",async e=>{
     const file=e.target.files?.[0];if(!file)return;
     try{
-      const x=JSON.parse(await file.text());if(!Array.isArray(x.holdings))throw new Error("missing holdings");
-      const importedGoal=Number(x.goal);
-      state={cash:Math.max(0,Number(x.cash)||0),goal:Number.isFinite(importedGoal)?Math.max(0,Math.min(100,importedGoal)):15,profile:PROFILES[x.profile]?x.profile:"balanced",
-        holdings:x.holdings.map(h=>({symbol:cleanSym(h.symbol),shares:Math.max(0,Number(h.shares)||0),cost:Math.max(0,Number(h.cost)||0),manualPrice:Math.max(0,Number(h.manualPrice)||0)}))};
+      const x=JSON.parse(await file.text());
+      if(!Array.isArray(x.holdings)||x.holdings.length>LIMITS.holdings)throw new Error("invalid holdings list");
+      const importedGoal=x.goal==null?15:Number(x.goal);
+      if(!validNumber(x.cash,LIMITS.cash)||!validNumber(importedGoal,100))throw new Error("invalid balance/goal");
+      if(x.holdings.some(h=>!h||!validNumber(h.shares,LIMITS.shares)||!validNumber(h.cost,LIMITS.price)||!validNumber(h.manualPrice??0,LIMITS.price)))throw new Error("invalid holding numbers");
+      state={cash:Number(x.cash),goal:importedGoal,profile:PROFILES[x.profile]?x.profile:"balanced",holdings:x.holdings.map(normalizeHolding)};
       saveState();fillControls();renderAll();
     }catch(_){alert("ไฟล์สำรองไม่ถูกต้อง");}finally{e.target.value="";}
   });
