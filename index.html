@@ -19,6 +19,7 @@
   .pill.closed{background:#3b1f24;color:var(--red)}
   .pill.trend{font-size:11px;background:#18363b;color:#8be0d3}
   .trend-adj{font-size:10px;color:var(--dim);margin:1px 0 3px}
+  .target-note{font-size:9.5px;color:var(--amber);margin:-1px 0 3px}
   .toolbar{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
   .fbtn{background:var(--card);border:1px solid var(--line);color:var(--dim);padding:5px 12px;border-radius:8px;cursor:pointer;font:inherit;font-size:13px}
   .fbtn.on{border-color:var(--blue);color:var(--txt);background:#182236}
@@ -88,6 +89,7 @@
 <script>
 const FLAG_ORDER = ["DEEP-BUY","BUY-ZONE","NEAR-BUY","HOLD","NEAR-TARGET","TARGET","?"];
 const $ = id => document.getElementById(id);
+const escapeHtml = s => String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 let D = window.DASH;
 let active = "ALL";
 let changed = new Set();   // symbols whose price moved on last swap
@@ -179,13 +181,15 @@ function drawGrid(){
     const adjusted = s.base_buy != null && (s.base_buy !== s.buy || s.base_deep !== s.deep);
     const supportText = s.support1 ? `แนวรับ ${s.support_source} $${Number(s.support1).toFixed(2)} · ATR14 $${Number(s.atr14).toFixed(2)}` : (s.support_source || "ยังไม่มีแนวรับยืนยัน");
     const adj = adjusted ? `<div class="trend-adj" title="ระดับตั้งต้นใน CONFIG; ใช้เป็นเพดานกันไล่ราคา">ฐานเดิม ${s.base_buy}/${s.base_deep}</div>` : "";
+    const targetNote = s.target_note ? `<div class="target-note">${escapeHtml(s.target_note)}</div>` : "";
     return `<div class="card ${s.flag}">
       <div class="flag">${s.flag}</div>
       <div class="sym">${s.sym}</div>
       <div class="price ${fl}">${s.price? s.price.toFixed(2): "—"} <span style="font-size:11px;color:var(--dim)">USD</span></div>
       ${zoneLine(s.sym)}
       ${advBadge(s.sym)}
-      <div class="lv"><span>ซื้อ ${s.buy}</span><span>ลึก ${s.deep}</span><span>เป้า ${s.target}</span></div>
+      <div class="lv"><span>ซื้อ ${s.buy}</span><span>ลึก ${s.deep}</span><span title="${escapeHtml(s.target_note||"ระดับเป้าคงที่")}">เป้า ${s.target}${s.target_note?"*":""}</span></div>
+      ${targetNote}
       <div class="trend-adj" title="ไม้ลึก: ${s.deep_source||'ATR fallback'}">${supportText}</div>
       ${adj}
       ${posPct}
