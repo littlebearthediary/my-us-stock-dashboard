@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio — Haerin</title>
+<style>
+:root{--bg:#0b0e14;--card:#131722;--line:#252d3c;--txt:#dbe1ee;--dim:#91a0b5;--green:#2ecc71;--red:#ff6464;--amber:#ffb020;--blue:#4da3ff}
+*{box-sizing:border-box}body{margin:0;padding:20px;background:var(--bg);color:var(--txt);font:14px/1.55 "Noto Sans Thai",-apple-system,system-ui,sans-serif}
+.wrap{max-width:1100px;margin:auto}header{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-bottom:14px}h1{font-size:21px;margin-right:auto}h2{font-size:15px;margin:0 0 12px;color:#c6d2e4}h3{font-size:13px;margin:0 0 8px;color:var(--dim)}
+.nav{color:var(--txt);text-decoration:none;border:1px solid var(--line);background:var(--card);border-radius:8px;padding:6px 12px}.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px;margin:12px 0}.notice{border-color:#53411c;color:#f0d79e;background:#211c12}.privacy{border-color:#214252;color:#a8dce9;background:#101d25}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}.stat{background:#0e121b;border:1px solid var(--line);border-radius:9px;padding:11px}.label{font-size:11px;color:var(--dim)}.value{font-size:20px;font-weight:700;font-variant-numeric:tabular-nums}.positive{color:var(--green)}.negative{color:var(--red)}
+.formrow{display:flex;flex-wrap:wrap;gap:12px;align-items:end}.field{display:flex;flex-direction:column;gap:4px;min-width:145px;flex:1}.field label{font-size:12px;color:var(--dim)}input,select,button{font:inherit}input,select{width:100%;background:#0d1119;color:var(--txt);border:1px solid #354056;border-radius:7px;padding:8px}input[type=number]{font-variant-numeric:tabular-nums}.btn{border:1px solid #3b5475;background:#16283f;color:var(--txt);border-radius:8px;padding:8px 12px;cursor:pointer}.btn:hover{border-color:var(--blue)}.btn.secondary{background:#151a24;border-color:var(--line)}.btn.danger{background:#321b20;border-color:#67343c;color:#ffc1c1}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.tablewrap{overflow-x:auto}table{width:100%;border-collapse:collapse;min-width:720px;font-size:12.5px}th,td{padding:7px 6px;text-align:left;border-bottom:1px solid var(--line);vertical-align:middle}th{color:var(--dim);font-weight:600}td input{min-width:74px;padding:6px}.quote{font-variant-numeric:tabular-nums;white-space:nowrap}.muted{color:var(--dim)}.small{font-size:11px;color:var(--dim)}.status{margin:9px 0;font-size:12px;color:var(--dim)}.status.warn{color:var(--amber)}.status.ok{color:var(--green)}
+.signal{padding:2px 6px;border-radius:5px;font-size:10px;font-weight:700}.buy{color:var(--green)}.sell{color:var(--red)}.hold{color:var(--dim)}.recommend{color:var(--txt)}.nowrap{white-space:nowrap}.rebal table{min-width:760px}.rebal td{vertical-align:top}.pill{font-size:10px;border-radius:99px;padding:2px 7px;background:#222b3a;color:var(--dim)}
+textarea{width:100%;min-height:170px;resize:vertical;background:#0d1119;color:var(--txt);border:1px solid #354056;border-radius:8px;padding:10px;font:12px/1.5 ui-monospace,monospace}.hide{display:none}footer{font-size:11px;color:var(--dim);margin:20px 0}
+@media(max-width:600px){body{padding:12px}.card{padding:12px}h1{font-size:18px}.value{font-size:18px}}
+</style>
+</head>
+<body><main class="wrap">
+<header><h1>💼 Portfolio Manager</h1><button class="btn secondary" id="refreshDataBtn">↻ อัปเดตราคา/คำแนะนำ</button><a class="nav" href="index.html">← Watchlist</a></header>
+<div id="marketStatus" class="status">ราคากับคำแนะนำโหลดจากข้อมูลสาธารณะของ watchlist; refresh ทุก 1 นาทีค่ะ</div>
+<div class="card privacy"><b>ข้อมูลอยู่ใน browser เครื่องนี้</b> — เงินสด/จำนวนหุ้น/ต้นทุนเก็บใน localStorage ไม่ส่งขึ้น server. ปุ่ม “คัดลอก brief ให้ AI” จะคัดลอกเมื่อกดเท่านั้น; ผู้ใช้เลือกเองว่าจะนำไปวางในแชตค่ะ</div>
+<div class="card notice"><b>เป้าผลตอบแทนไม่ใช่คำรับประกัน</b> ระบบไม่คาดการณ์ว่าจะทำได้ 15–20% ต่อปี; เป้าหมายใช้เป็นข้อมูลประกอบ ไม่ไล่เพิ่มความเสี่ยงเพื่อบังคับให้ถึงเป้า และไม่มีคำสั่งซื้อขายจริง</div>
+<section class="card">
+<h2>บัญชีและเป้าหมาย</h2>
+<div class="formrow">
+<div class="field"><label for="cash">เงินสดพร้อมลงทุน (USD)</label><input id="cash" type="number" min="0" step="0.01" value="0"></div>
+<div class="field"><label for="goal">เป้าผลตอบแทนต่อปี (%) — เป้าหมาย ไม่ใช่ forecast</label><input id="goal" type="number" min="0" max="100" step="0.5" value="15"></div>
+<div class="field"><label for="profile">ความเสี่ยงที่ยอมรับได้</label><select id="profile"><option value="conservative">ต่ำ</option><option value="balanced" selected>ปานกลาง</option><option value="aggressive">สูง</option></select></div>
+</div>
+<div class="actions"><button class="btn secondary" id="exportBtn">ดาวน์โหลดสำรอง</button><button class="btn secondary" id="importBtn">นำเข้าสำรอง</button><input id="importFile" type="file" accept="application/json,.json" class="hide"><button class="btn danger" id="clearBtn">ล้างข้อมูลพอร์ต</button></div>
+<div id="saveStatus" class="status">ข้อมูลจะบันทึกใน browser นี้อัตโนมัติ</div>
+</section>
+<section class="card">
+<h2>หุ้นที่ถืออยู่</h2>
+<div class="small">กรอก ticker, จำนวนหุ้น, ต้นทุนเฉลี่ยต่อหุ้น. หุ้นใน watchlist ใช้ราคาปัจจุบันอัตโนมัติ; ticker อื่นกรอกราคาปัจจุบันเองค่ะ</div>
+<div class="tablewrap"><table><thead><tr><th>Ticker</th><th>จำนวน</th><th>ต้นทุนเฉลี่ย</th><th>ราคาปัจจุบัน</th><th>มูลค่าตลาด</th><th>กำไร/ขาดทุนยังไม่รับรู้</th><th></th></tr></thead><tbody id="holdingsBody"></tbody></table></div>
+<datalist id="symbols"></datalist><div class="actions"><button class="btn" id="addBtn">＋ เพิ่มหุ้น</button></div>
+</section>
+<section class="card"><h2>ภาพรวมพอร์ต</h2><div class="grid">
+<div class="stat"><div class="label">มูลค่าพอร์ตโดยประมาณ</div><div class="value" id="navValue">$0.00</div></div>
+<div class="stat"><div class="label">เงินสด</div><div class="value" id="cashValue">$0.00</div></div>
+<div class="stat"><div class="label">มูลค่าหุ้น</div><div class="value" id="investedValue">$0.00</div></div>
+<div class="stat"><div class="label">กำไร/ขาดทุนที่ยังไม่รับรู้</div><div class="value" id="pnlValue">$0.00</div></div>
+</div><div id="portfolioNote" class="status"></div></section>
+<section class="card"><h2>ข้อเสนอปรับพอร์ต</h2><div id="adviceStatus" class="status">กำลังอ่านข้อมูลคำแนะนำและราคา…</div>
+<div class="small">กฎใช้เฉพาะหุ้น verdict “แนะนำ” ที่ราคาเข้า BUY-ZONE/DEEP-BUY; กันเงินสดสำรองตามระดับเสี่ยง; จำกัดน้ำหนักรายหุ้น. หุ้น “เลี่ยง” เสนอให้ทบทวน/ลด ไม่สั่งขายอัตโนมัติ.</div>
+<div class="tablewrap rebal"><table><thead><tr><th>Action</th><th>หุ้น</th><th>ราคา/โซน</th><th>จำนวนโดยประมาณ</th><th>มูลค่า</th><th>เหตุผล / ข้อจำกัด</th></tr></thead><tbody id="recommendations"></tbody></table></div>
+</section>
+<section class="card"><h2>ส่ง brief ให้ AI ในแชต</h2><div class="small">ไม่มีการเรียก AI หรือส่งข้อมูลจากหน้านี้. กดปุ่มเพื่อสร้าง/copy snapshot รวมยอดเงินสด, holdings, risk labels และข้อเสนอ; จากนั้นผู้ใช้เลือกวางในแชตเองค่ะ</div>
+<div class="actions"><button class="btn" id="copyBtn">คัดลอก brief ให้ AI</button></div><div id="copyStatus" class="status"></div><textarea id="aiBrief" readonly placeholder="กดปุ่มเพื่อสร้าง brief"></textarea></section>
+<footer>คำนวณโดยกฎที่แสดงได้ ไม่ใช่คำแนะนำการลงทุนเฉพาะบุคคล. ใช้ราคาปัจจุบันของ watchlist; ราคาหุ้นนอก watchlist เป็นราคาที่กรอกเอง. ตรวจสอบยอด/ภาษี/ค่าธรรมเนียมกับโบรกเกอร์ก่อนทำรายการค่ะ</footer>
+</main><script src="data/stocks.js"></script><script src="portfolio.js"></script></body></html>
