@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-30T01:12:29+07:00",
+  "updated": "2026-09-30T02:12:34+07:00",
   "by": "haerin-news-review",
   "macro": "28 ก.ย.: สหรัฐปฏิเสธข้อเสนออิหร่านเปิดช่องแคบ Hormuz → น้ำมันเด้ง WTI $94.8, 10y 5.22%; hike ต.ค. odds 70%; OpenAI pause ฝึกโมเดลหลัก ทุบ AI capex chain; ทอง -3.3% เหลือ $4,176; สัปดาห์นี้ MU/ACN งบ + payrolls ศุกร์",
   "advice": {
@@ -175,7 +175,7 @@
       "verdict": "buy",
       "risk": "high",
       "weight": "mid",
-      "why": "หลุด 265.54 เข้า BUY-ZONE 265.54-246.21 — Goldman หั่นเป้า $276 + JPM Neutral $331 ปม agentic AI กระทบ QuickBooks; ไม้แรก 265 เพิ่มลึก 246 ไม้กลางไม่ใช่หนัก"
+      "why": "265 หลุด DEEP-BUY ≤320 (โซนใหม่ support+ATR) — Goldman หั่นเป้า $276 ปม agentic AI, YTD -55% แต่ street เป้า 406; class action ค้าง = ไม้กลาง ไม่ใช่หนัก"
     },
     "AEM": {
       "verdict": "buy",
@@ -187,7 +187,7 @@
       "verdict": "buy",
       "risk": "med",
       "weight": "mid",
-      "why": "260.6 ในโซน 270-245 — Q2 EPS $2.55 +34% raise FY26; ซื้อโรงไฟฟ้า RI จาก Shell; MS PT 369; yield กดทั้ง sector = โอกาส"
+      "why": "265 จ่อ NEAR-BUY 263.55 — ร่วง 13% ทั้งสัปดาห์จาก yield กด sector nuclear/AI-power แต่ analyst ยังเห็น upside ~37%, P/E 25.7; ไม้แรกเมื่อหลุดโซน"
     },
     "GEV": {
       "verdict": "hold",
@@ -260,6 +260,12 @@
       "risk": "extreme",
       "weight": "light",
       "why": "69.7 ไล่ขึ้นจากโซน 60 แล้ว — Neutron ยังไม่ launch; ผิดทางเจ็บลึก ไม้จิ๋ว if ever"
+    },
+    "CIEN": {
+      "verdict": "buy",
+      "risk": "med",
+      "weight": "light",
+      "why": "350 จ่อ NEAR-BUY 343.09 (เข้าบอร์ดครั้งแรก) — -14%/เดือนจาก supply constraint แต่ backlog $8.5B AI optical + Barclays PT 548; เป้า 478+ — ไม้แรกเบา"
     }
   }
 }
