@@ -17,11 +17,7 @@
   .pill{display:inline-block;padding:2px 10px;border-radius:99px;font-size:12px;font-weight:600}
   .pill.open{background:#123b24;color:var(--green)}
   .pill.closed{background:#3b1f24;color:var(--red)}
-  .pill.trend{font-size:11px}
-  .pill.trend.risk_on{background:#123b24;color:var(--green)}
-  .pill.trend.mixed{background:#232a3b;color:var(--dim)}
-  .pill.trend.correction{background:#3b2c10;color:var(--amber)}
-  .pill.trend.bear{background:#3b1f24;color:var(--red)}
+  .pill.trend{font-size:11px;background:#18363b;color:#8be0d3}
   .trend-adj{font-size:10px;color:var(--dim);margin:1px 0 3px}
   .toolbar{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
   .fbtn{background:var(--card);border:1px solid var(--line);color:var(--dim);padding:5px 12px;border-radius:8px;cursor:pointer;font:inherit;font-size:13px}
@@ -69,7 +65,7 @@
 <header>
   <h1>📊 US Stock Watchlist</h1>
   <span id="sess" class="pill closed">…</span>
-  <span id="trend" class="pill trend mixed" title="SPY+QQQ vs SMA50/SMA200">แนวโน้ม: …</span>
+  <span id="trend" class="pill trend" title="ระดับไม้จากแนวรับและ ATR รายหุ้น">ไม้: แนวรับ+ATR14</span>
   <span class="meta" id="upd"></span>
   <span class="meta" id="cd"></span>
   <button class="ref" id="refBtn" onclick="refresh(true)">↻ รีเฟรช</button>
@@ -85,7 +81,7 @@
   <table id="hist"></table>
 </section>
 
-<footer>ข้อมูลจาก TradingView scanner · ไม้แรก/ไม้ลึกปรับตาม trend SPY+QQQ (SMA50/200); เป้าขายคงที่ · ไม่ใช่คำแนะนำการลงทุน</footer>
+<footer>TradingView: แนวรับใช้ low 1 เดือน, monthly pivot, SMA50/200 ที่อยู่ใต้ราคา; ไม้แรก = แนวรับ + 0.25 ATR14, ไม้ลึก = แนวรับถัดไป หรือไม้แรก − 1.5 ATR14 · ทบทวนหลังปิดตลาด · ระดับฐานเป็นเพดานกันไล่ราคา; เป้าขายคงที่ · ไม่ใช่คำแนะนำการลงทุน</footer>
 
 <script src="data/stocks.js"></script>
 <script>
@@ -125,12 +121,10 @@ function advBadge(sym){
 function drawHeader(){
   $("sess").textContent = D.session === "open" ? "ตลาดเปิด" : "ตลาดปิด";
   $("sess").className = "pill " + (D.session === "open" ? "open" : "closed");
-  const m = D.market_trend || {regime:"mixed",label:"ผสม/sideways",buy_factor:1,deep_factor:1};
   const trendEl = $("trend");
   if(trendEl){
-    trendEl.textContent = "แนวโน้ม: " + m.label;
-    trendEl.className = "pill trend " + m.regime;
-    trendEl.title = `อิง SPY+QQQ vs SMA50/SMA200 · ไม้แรก ${((m.buy_factor-1)*100).toFixed(0)}% · ไม้ลึก ${((m.deep_factor-1)*100).toFixed(0)}%`;
+    trendEl.textContent = D.levels_complete ? "ไม้: แนวรับ+ATR14" : "ไม้: แนวรับ+ATR14 (ชั่วคราว)";
+    trendEl.title = D.levels_complete ? `คำนวณจากแนวรับรายหุ้น + ATR14 · ล่าสุด ${D.levels_asof||"—"}` : `ระดับชั่วคราวจากข้อมูลระหว่างวัน · จะยืนยันหลังปิดตลาด · ${D.levels_asof||"—"}`;
   }
   $("upd").textContent = D.updated ? ("อัปเดต: " + new Date(D.updated).toLocaleString("th-TH")) : "";
 }
@@ -182,7 +176,8 @@ function drawGrid(){
     const dd = (v)=> v==null ? "—" : `<span class="chg ${v>0?'up':'down'}">${v>0?'+':''}${v.toFixed(1)}%</span>`;
     const fl = changed.has(s.sym) ? "flash" : "";
     const adjusted = s.base_buy != null && (s.base_buy !== s.buy || s.base_deep !== s.deep);
-    const adj = adjusted ? `<div class="trend-adj" title="ระดับฐานก่อนปรับตามแนวโน้มตลาด">ปรับจากฐาน ${s.base_buy}/${s.base_deep}</div>` : "";
+    const supportText = s.support1 ? `แนวรับ ${s.support_source} $${Number(s.support1).toFixed(2)} · ATR14 $${Number(s.atr14).toFixed(2)}` : (s.support_source || "ยังไม่มีแนวรับยืนยัน");
+    const adj = adjusted ? `<div class="trend-adj" title="ระดับตั้งต้นใน CONFIG; ใช้เป็นเพดานกันไล่ราคา">ฐานเดิม ${s.base_buy}/${s.base_deep}</div>` : "";
     return `<div class="card ${s.flag}">
       <div class="flag">${s.flag}</div>
       <div class="sym">${s.sym}</div>
@@ -190,6 +185,7 @@ function drawGrid(){
       ${zoneLine(s.sym)}
       ${advBadge(s.sym)}
       <div class="lv"><span>ซื้อ ${s.buy}</span><span>ลึก ${s.deep}</span><span>เป้า ${s.target}</span></div>
+      <div class="trend-adj" title="ไม้ลึก: ${s.deep_source||'ATR fallback'}">${supportText}</div>
       ${adj}
       ${posPct}
       <div class="dist">จากซื้อ1 ${dd(distBuy)} · จากเป้า ${dd(distTgt)}</div>
