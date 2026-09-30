@@ -1,6 +1,6 @@
 {
-  "updated": "2026-09-30T02:12:34+07:00",
-  "by": "haerin-news-review",
+  "updated": "2026-09-30T20:54:00+07:00",
+  "by": "haerin-event-refresh",
   "macro": "28 ก.ย.: สหรัฐปฏิเสธข้อเสนออิหร่านเปิดช่องแคบ Hormuz → น้ำมันเด้ง WTI $94.8, 10y 5.22%; hike ต.ค. odds 70%; OpenAI pause ฝึกโมเดลหลัก ทุบ AI capex chain; ทอง -3.3% เหลือ $4,176; สัปดาห์นี้ MU/ACN งบ + payrolls ศุกร์",
   "advice": {
     "AAPL": {
@@ -112,10 +112,10 @@
       "why": "semicap cyclic ล้อตาม capex — ไม่มี edge เฉพาะตัวชัด ไม้เบา"
     },
     "INTC": {
-      "verdict": "hold",
+      "verdict": "avoid",
       "risk": "high",
       "weight": "light",
-      "why": "116.3 จ่อเป้า 120; +144% YTD ข่าว CPU shortage/agentic AI ขึ้นราคา 10% แต่ forward PE ~69 แพง ลุ้นทะลุ 120=ทยอยขายทำกำไร"
+      "why": "118.2 +1.9% ทดสอบ 120 intraday = บรรลุเป้า — street เป้า 116 ต่ำกว่าราคา, FwdPE 69, ข่าว Northland up PT 120 หนุนหมดแล้ว; ทยอยขายทำกำไร ห้ามไม้ใหม่"
     },
     "ORCL": {
       "verdict": "buy",
@@ -160,10 +160,10 @@
       "why": "452 NEAR-BUY — ร่วงตามกลุ่ม AI-storage ยีลด์สูง ไม่มีข่าวลบรายตัว PE 18.7 เป้านักวิเคราะห์ 665 ไม้แรกเบาเมื่อหลุด 440"
     },
     "APP": {
-      "verdict": "hold",
+      "verdict": "buy",
       "risk": "high",
       "weight": "light",
-      "why": "312.5 NEAR-BUY 300 — class action ปมโอ้อวดความคืบหน้า AI + BTIG หั่นเป้า $396; PE 23.7 ถูกแต่คดีค้างคา รอยืน 300 ชัดก่อน"
+      "why": "300.3 (-1.8%) เข้า BUY-ZONE 304-264 แล้ว (intraday low 294.6) — FwdPE 17 เป้า 497 (+66%) แต่ class action ปมโอ้อวด AI ค้าง; ไม้แรกเบา เพิ่มลึก 264"
     },
     "QCOM": {
       "verdict": "avoid",
@@ -185,9 +185,9 @@
     },
     "CEG": {
       "verdict": "buy",
-      "risk": "med",
-      "weight": "mid",
-      "why": "265 จ่อ NEAR-BUY 263.55 — ร่วง 13% ทั้งสัปดาห์จาก yield กด sector nuclear/AI-power แต่ analyst ยังเห็น upside ~37%, P/E 25.7; ไม้แรกเมื่อหลุดโซน"
+      "risk": "high",
+      "weight": "light",
+      "why": "249.5 ร่วง -5.7% เข้า BUY-ZONE 263.5-252.8 ทะลุปลายล่าง — yield กดทั้ง sector ไม่มีข่าวรายตัว; FwdPE 20 เป้า 347 (+39%); ทยอยรับเป็นไม้ ๆ ห้าม all-in"
     },
     "GEV": {
       "verdict": "hold",
@@ -232,10 +232,10 @@
       "why": "NET 353 จ่อเป้า 365 (high 52w 367) forward PE ~239 แพงจัด, เป้านักวิเคราะห์เฉลี่ย 337 ต่ำกว่าราคา — ทยอยขายทำกำไร ห้ามไล่ไม้ใหม่"
     },
     "BRK.B": {
-      "verdict": "hold",
+      "verdict": "buy",
       "risk": "low",
       "weight": "mid",
-      "why": "501.6 จ่อ NEAR-BUY 489.6 (risk_on ขยับโซน 480→489.6) — PE 12.5 เป้า 548; ยังไม่หลุดโซนจริง cash-rich ได้ประโยชน์จาก hike — รอ 490 ค่อยไม้แรก"
+      "why": "500.3 เข้า BUY-ZONE 501.7-487.2 — PE 12.5 เป้า 548; Abel กลับมาซื้อสุทธิ $20B ครั้งแรกใน 15 ไตรมาส = สัญญาณ floor; ไม้กลางตามโซน"
     },
     "LLY": {
       "verdict": "hold",
@@ -252,8 +252,8 @@
     "SYK": {
       "verdict": "hold",
       "risk": "med",
-      "weight": "mid",
-      "why": "ปัญหาผลิต vascular ลากยาวถึง Q4 + Block&Leviton สอบสวน fraud, ราคา 52w low; พื้นฐานยังดี consensus target ~$386 — อย่ายิงมีด รอ 269 ยืนได้ค่อยเก็บ ไม้ลึก 257"
+      "weight": "light",
+      "why": "274.6 จ่อ NEAR-BUY 269.05 — ใกล้ 52w low 267; fraud probe Block&Leviton + ปม vascular ค้าง แต่ FwdPE 17.4 เป้า 369 (+34%); รอยืน 269 ก่อนเก็บ, ไม้ลึก 257"
     },
     "RKLB": {
       "verdict": "avoid",
@@ -265,7 +265,7 @@
       "verdict": "buy",
       "risk": "med",
       "weight": "light",
-      "why": "350 จ่อ NEAR-BUY 343.09 (เข้าบอร์ดครั้งแรก) — -14%/เดือนจาก supply constraint แต่ backlog $8.5B AI optical + Barclays PT 548; เป้า 478+ — ไม้แรกเบา"
+      "why": "NEAR-BUY 343.09 flag แล้ว — -14%/เดือนจาก supply constraint แต่ backlog $8.5B AI optical + Barclays PT 548; เป้า 478+ — ไม้แรกเบา"
     }
   }
 }
