@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-01T00:07:39+07:00",
+  "updated": "2026-10-01T00:38:00+07:00",
   "by": "haerin-event-refresh",
   "macro": "28 ก.ย.: สหรัฐปฏิเสธข้อเสนออิหร่านเปิดช่องแคบ Hormuz → น้ำมันเด้ง WTI $94.8, 10y 5.22%; hike ต.ค. odds 70%; OpenAI pause ฝึกโมเดลหลัก ทุบ AI capex chain; ทอง -3.3% เหลือ $4,176; สัปดาห์นี้ MU/ACN งบ + payrolls ศุกร์",
   "advice": {
@@ -19,7 +19,7 @@
       "verdict": "buy",
       "risk": "med",
       "weight": "mid",
-      "why": "350.7 NEAR-BUY 340.49 = SMA200+0.25ATR (ATR 8.2), deep 329.8 = 1M low — Q1 รายได้ $110B +22%, Cloud $20B +63%, street เป้า 415; capex ใหญ่ยังกด mood — ไม้กลางเมื่อหลุด 340"
+      "why": "ปิด 340.92 แตะ buy1 340.49 (SMA200+0.25ATR, ATR 8.2) แล้วเด้ง +2.7% วันนี้ — ศาลไม่บังคับแยก ad-tech หนุน, PE 17 เป้า street 429; ยังไม่ยืนใต้ 340 — ไม้กลางรอยืนยันหลุด, deep 329.8"
     },
     "AMZN": {
       "verdict": "buy",
