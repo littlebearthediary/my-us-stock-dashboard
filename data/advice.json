@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-30T21:36:00+07:00",
+  "updated": "2026-09-30T22:16:28+07:00",
   "by": "haerin-event-refresh",
   "macro": "28 ก.ย.: สหรัฐปฏิเสธข้อเสนออิหร่านเปิดช่องแคบ Hormuz → น้ำมันเด้ง WTI $94.8, 10y 5.22%; hike ต.ค. odds 70%; OpenAI pause ฝึกโมเดลหลัก ทุบ AI capex chain; ทอง -3.3% เหลือ $4,176; สัปดาห์นี้ MU/ACN งบ + payrolls ศุกร์",
   "advice": {
@@ -264,8 +264,8 @@
     "CIEN": {
       "verdict": "buy",
       "risk": "med",
-      "weight": "light",
-      "why": "NEAR-BUY 343.09 flag แล้ว — -14%/เดือนจาก supply constraint แต่ backlog $8.5B AI optical + Barclays PT 548; เป้า 478+ — ไม้แรกเบา"
+      "weight": "mid",
+      "why": "หลุด 343.09 เข้า BUY-ZONE (Pivot S1+0.25ATR, ATR14 21.8) -3.9% ตาม sector เทขาย AI capex; backlog $8.5B, forward PE 32.9, เป้า 516 — ไม้แรกได้, deep 317"
     }
   }
 }
