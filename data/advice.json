@@ -1,271 +1,271 @@
 {
-  "updated": "2026-10-01T22:37:56+07:00",
-  "by": "haerin-event-refresh",
-  "macro": "28 ก.ย.: สหรัฐปฏิเสธข้อเสนออิหร่านเปิดช่องแคบ Hormuz → น้ำมันเด้ง WTI $94.8, 10y 5.22%; hike ต.ค. odds 70%; OpenAI pause ฝึกโมเดลหลัก ทุบ AI capex chain; ทอง -3.3% เหลือ $4,176; สัปดาห์นี้ MU/ACN งบ + payrolls ศุกร์",
-  "advice": {
-    "AAPL": {
-      "verdict": "buy",
-      "risk": "low",
-      "weight": "light",
-      "why": "331.9 (-1.7%) จ่อ NEAR-BUY 323.75 = SMA50 322 + 0.25 ATR (ใหม่ 29 ก.ย.) — ย่อจาก ATH 345, PE 38.8 + เป้า analyst 328 ต่ำกว่าราคา; ไม้แรกเบาเมื่อหลุด 324"
-    },
-    "MSFT": {
-      "verdict": "buy",
-      "risk": "med",
-      "weight": "mid",
-      "why": "508 หลุดเข้า BUY-ZONE 510-479 (risk_on +2%) — Barron's ชี้ Copilot refresh หนุน close สูงสุด 10 เดือน; street เป้า 576, earnings 28 ต.ค.; ไม้แรกตามโซน เพิ่มลึก 480"
-    },
-    "GOOGL": {
-      "verdict": "buy",
-      "risk": "med",
-      "weight": "mid",
-      "why": "341 หลุดเข้า BUY-ZONE 340.7-329.85 (buy1=SMA200+0.25ATR, ATR14≈8.2) — Gemini 4 Argon เปิดตัวแต่เสียง underperform+rollout ช้า ทุบ -2.7% ในINTRADAY; PE 17.2 เป้า 429 Strong Buy, ad-tech case คลายแล้ว; ไม้กลางในโซน, deep 329.8"
-    },
-    "AMZN": {
-      "verdict": "buy",
-      "risk": "med",
-      "weight": "mid",
-      "why": "246 ในโซน 255-235 — -16% จากยอด พ.ค. จาก capex $200B; forward PE 30 vs ค่าเฉลี่ย 45, เป้าเฉลี่ย $316 Strong Buy — ไม้กลาง"
-    },
-    "META": {
-      "verdict": "avoid",
-      "risk": "med",
-      "weight": "light",
-      "why": "ยังล้ำเป้า 720 (721, -4% จากข่าว Amazon บล็อก Muse + AI-chain sell-off) — ขายทำกำไรตามแผน ถ้าย่อลึกค่อยรับใหม่"
-    },
-    "TSLA": {
-      "verdict": "hold",
-      "risk": "high",
-      "weight": "light",
-      "why": "เด้งหลุดโซนซื้อ 358.4 (NEAR-BUY 346.5 หมดอายุ) — Cybercab เลื่อนเปิดใน California เป็น 2027 แต่ราคดีด; PE 368 ห้ามไล่ไม้, รอย่อแตะ 346.5 ใหม่"
-    },
-    "NVDA": {
-      "verdict": "hold",
-      "risk": "med",
-      "weight": "mid",
-      "why": "229 สวนกระแส +1% — ประกาศ buyback $150B ใหญ่สุดในประวัติศาสตร์ + AI safety platform; ผู้นำจริงแต่ odds hike ต.ค. 70% = multiple headwind รอ 200"
-    },
-    "AMD": {
-      "verdict": "avoid",
-      "risk": "high",
-      "weight": "light",
-      "why": "605 ยังเหนือ TARGET 600 — แตะ $1T market cap 21 ก.ย. แล้วเย็นลงตาม OpenAI pause; ขายทำกำไรตามแผน"
-    },
-    "AVGO": {
-      "verdict": "buy",
-      "risk": "med",
-      "weight": "light",
-      "why": "348.6 NEAR-BUY 338.7 = Pivot S1 336.0 + 0.25 ATR 10.6 (ระดับ recal จาก 30 ก.ย.) — OpenAI pause ทุบ AI chip ทั้งกระดาน + GM กดจาก memory cost, Marvell แย่งดีล TPU; ไม้จิ๋วเมื่อหลุด 339, deep 304"
-    },
-    "TSM": {
-      "verdict": "hold",
-      "risk": "med",
-      "weight": "mid",
-      "why": "442 พ้นโซน 400 ขึ้นไป — earnings ไม่เปลี่ยน แต่ราคาวิ่งล่วงหน้า รอ pullback 400"
-    },
-    "PLTR": {
-      "verdict": "avoid",
-      "risk": "high",
-      "weight": "light",
-      "why": "181 valuation สุดขั้ว + political exposure — ไม่เหมาะไม้หนักทุกกรณี"
-    },
-    "CRWD": {
-      "verdict": "avoid",
-      "risk": "med",
-      "weight": "light",
-      "why": "259.67 TARGET — ล้ำเป้า 240 — ทำกำไรส่วนเกิน ไม่ใช่โซนซื้อ"
-    },
-    "ANET": {
-      "verdict": "avoid",
-      "risk": "high",
-      "weight": "light",
-      "why": "202 ดีดเข้าใกล้เป้า 220 — ยิ่งห้ามไล่; in-housing risk ยังอยู่ครบ"
-    },
-    "VRT": {
-      "verdict": "buy",
-      "risk": "high",
-      "weight": "light",
-      "why": "NEAR-BUY 235 — pre-market 241 (-3.2%): yield กดกลุ่ม data center, RBC หั่นเป้า 418→337 ยัง Outperform, Q2 mixed — ไม้แรกเมื่อแตะ 235 เบาๆ"
-    },
-    "MU": {
-      "verdict": "hold",
-      "risk": "high",
-      "weight": "light",
-      "why": "1055 ใกล้เป้า 1150 + งบ 30 ก.ย. นี้ (ทุกธุรกิจ HBM โตสามหลัก) — event risk สด ห้ามเปิดไม้ใหม่ก่อนงบ"
-    },
-    "ARM": {
-      "verdict": "avoid",
-      "risk": "high",
-      "weight": "light",
-      "why": "285 (-11% จาก 319) ลงตาม OpenAI pause แต่ยังห่างโซน 225 — P/E ยาว vs FV คงห้ามไล่"
-    },
-    "ASML": {
-      "verdict": "hold",
-      "risk": "med",
-      "weight": "mid",
-      "why": "1782 ทิ้งโซน 1650 ไกลขึ้น — EUV thesis ไม่เปลี่ยน ถือรอ 1650"
-    },
-    "KLAC": {
-      "verdict": "hold",
-      "risk": "med",
-      "weight": "light",
-      "why": "semicap cyclic ล้อตาม capex — ไม่มี edge เฉพาะตัวชัด ไม้เบา"
-    },
-    "INTC": {
-      "verdict": "avoid",
-      "risk": "high",
-      "weight": "light",
-      "why": "118.2 +1.9% ทดสอบ 120 intraday = บรรลุเป้า — street เป้า 116 ต่ำกว่าราคา, FwdPE 69, ข่าว Northland up PT 120 หนุนหมดแล้ว; ทยอยขายทำกำไร ห้ามไม้ใหม่"
-    },
-    "ORCL": {
-      "verdict": "buy",
-      "risk": "high",
-      "weight": "light",
-      "why": "138.0 เข้า NEAR-BUY (buy1 134.9 = Pivot S1 133.1 + 0.25 ATR7.0, deep 118.9 = S2) หลัง force majeure Jupiter + หนี้ 130B — ไม้เล็กเมื่อหลุด 135"
-    },
-    "MRVL": {
-      "verdict": "avoid",
-      "risk": "high",
-      "weight": "light",
-      "why": "คอนเฟิร์ม TARGET 265 (ราคา 265.0, high วันนี้ 266.99, ปิดก่อนหน้า 264.21) — เด้งรับข่าว AI silicon; PE 89 แพง, trim ทำกำไรตามแผน, ห้ามไม้ใหม่, รอย่อ 257"
-    },
-    "SKHY": {
-      "verdict": "hold",
-      "risk": "high",
-      "weight": "light",
-      "why": "188 ใกล้เป้า 200 — HBM catch-up วิ่งก่อนพื้นฐาน; ไม้เบาสุดถ้าจะเล่น"
-    },
-    "SNPS": {
-      "verdict": "buy",
-      "risk": "med",
-      "weight": "light",
-      "why": "430 หลุดเข้า BUY-ZONE 430-400 — งบ Aug beat+raise แต่ sell-the-news + China export กด, ใกล้ low 52w, เป้า analyst 546; ไม้แรกตามแผน เพิ่มที่ 400"
-    },
-    "ADI": {
-      "verdict": "hold",
-      "risk": "med",
-      "weight": "light",
-      "why": "analog ฟื้นช้ากว่า digital cycle — ถือเบา ห้ามไล่ 350"
-    },
-    "STX": {
-      "verdict": "hold",
-      "risk": "high",
-      "weight": "light",
-      "why": "873 พ้นโซน 780 ไกล — HDD ดีมานด์จริงแต่ขึ้นกับ storage cycle"
-    },
-    "WDC": {
-      "verdict": "hold",
-      "risk": "high",
-      "weight": "light",
-      "why": "452 NEAR-BUY — ร่วงตามกลุ่ม AI-storage ยีลด์สูง ไม่มีข่าวลบรายตัว PE 18.7 เป้านักวิเคราะห์ 665 ไม้แรกเบาเมื่อหลุด 440"
-    },
-    "APP": {
-      "verdict": "buy",
-      "risk": "high",
-      "weight": "light",
-      "why": "300.3 (-1.8%) เข้า BUY-ZONE 304-264 แล้ว (intraday low 294.6) — FwdPE 17 เป้า 497 (+66%) แต่ class action ปมโอ้อวด AI ค้าง; ไม้แรกเบา เพิ่มลึก 264"
-    },
-    "QCOM": {
-      "verdict": "avoid",
-      "risk": "med",
-      "weight": "light",
-      "why": "188 ย่อจากเป้า 200 แล้ว — เด้ง AWS ดีล + optical demo หมดโมเมนตัม; ที่ทำกำไรแล้วคือจบ รอบใหม่รอรอบล่างจริง"
-    },
-    "INTU": {
-      "verdict": "buy",
-      "risk": "high",
-      "weight": "mid",
-      "why": "ย่อใกล้ buy 265.59 (low 1M 262.32+0.25 ATR14 13.07) — FY27 guided อ่อน Goldman หั่นเป้า $276, fwd PE 11.3, street $406; class action ค้าง ไม้กลางรอ 265"
-    },
-    "AEM": {
-      "verdict": "buy",
-      "risk": "med",
-      "weight": "mid",
-      "why": "182.9 เข้า BUY-ZONE 182.89-158.03 (1M low+0.25ATR) ทองย่อ 4,200 แต่เป้า analyst ขึ้น 210→225 งบ Q3 ท้าย ต.ค. — ทยอยตามโซน"
-    },
-    "CEG": {
-      "verdict": "buy",
-      "risk": "med",
-      "weight": "light",
-      "why": "หลุด DEEP 252.8 ที่ 249.5 (-5.7%) ต่ำกว่า 1M low 250.55 — สาเหตุ overhang หุ้น Calpine secondary + บอนด์ยีลด์กดนิวเคลียร์ ไม่ใช่พื้นฐาน (guide up, เป้า 347 +38%, FwdPE 20) — ทยอยเก็บไม้ลึก"
-    },
-    "GEV": {
-      "verdict": "buy",
-      "risk": "med",
-      "weight": "light",
-      "why": "949.7 NEAR-BUY 923 = SMA200 914.4 + 0.25 ATR 34.3 — ย่อ -20% จาก 52w high 1,196 ตามน้ำมัน+ยีลด์กด แต่พื้นฐานแน่น: backlog $176B, gas turbine 116GW, เป้า street ~1,257; ไม้จิ๋วเมื่อหลุด 923, deep 840"
-    },
-    "UBER": {
-      "verdict": "buy",
-      "risk": "med",
-      "weight": "mid",
-      "why": "68.21 เข้า BUY-ZONE = 1M low 67.73 + 0.25 ATR(1.91), deep 59.76 = Pivot S2; ข่าวร้าย robotaxi/Waymo rift + Q3 guide ต่ำคาด แต่ PE 18.5, FCF 8.4%, CEO ซื้อหุ้นเอง ~$10M เป้า 102 — เก็บไม้แรก ระวังหลุด 65.41"
-    },
-    "SPOT": {
-      "verdict": "buy",
-      "risk": "med",
-      "weight": "mid",
-      "why": "489 หลุด buy1 489.98 ยืนยัน BUY-ZONE 489.98-431.78 — โมเมนตัมลบจาก premium subscriber growth ฝืด; PE 27 เป้า 603 (+22%) งบ 22 ต.ค. — ทยอยตามโซน หลุด 431 รอยืนยันก่อน"
-    },
-    "ISRG": {
-      "verdict": "hold",
-      "risk": "med",
-      "weight": "mid",
-      "why": "398 เด้งพ้นโซน 360 แล้ว — medtech ดีแต่ไม่ใช่ราคาวันนี้; รอ 360"
-    },
-    "ACN": {
-      "verdict": "buy",
-      "risk": "high",
-      "weight": "light",
-      "why": "174.8 ในโซน 185-170 — งบสัปดาห์นี้; รอบก่อน FY26 guidance ถูกหั่นเหลือ 3-4% organic; FwdPE ~13 + buyback $2B — เบาไว้ก่อนรอดูตัวเลข"
-    },
-    "AMAT": {
-      "verdict": "buy",
-      "risk": "med",
-      "weight": "light",
-      "why": "466 (-1.7%) NEAR-BUY 450 — Q3 beat+guidance up แต่หุ้นยังลง (semicap ย่อจากยอด -37%, ข่าว AI-pace slowdown กดทั้งกลุ่ม); ไม้แรกเมื่อแตะ 450"
-    },
-    "NET": {
-      "verdict": "avoid",
-      "risk": "high",
-      "weight": "light",
-      "why": "NET 353 จ่อเป้า 365 (high 52w 367) forward PE ~239 แพงจัด, เป้านักวิเคราะห์เฉลี่ย 337 ต่ำกว่าราคา — ทยอยขายทำกำไร ห้ามไล่ไม้ใหม่"
-    },
-    "BRK.B": {
-      "verdict": "buy",
-      "risk": "low",
-      "weight": "mid",
-      "why": "500.3 เข้า BUY-ZONE 501.7-487.2 — PE 12.5 เป้า 548; Abel กลับมาซื้อสุทธิ $20B ครั้งแรกใน 15 ไตรมาส = สัญญาณ floor; ไม้กลางตามโซน"
-    },
-    "LLY": {
-      "verdict": "buy",
-      "risk": "high",
-      "weight": "light",
-      "why": "1150.7 เข้า NEAR-BUY (buy1 1121.6 = 1M low 1113 + 0.25 ATR33, deep 1050 cap) ตามข่าว Foundayo ยอดเริ่มต้นอ่อน + price war — ไม้แรกเบาในโซน"
-    },
-    "COST": {
-      "verdict": "buy",
-      "risk": "low",
-      "weight": "mid",
-      "why": "913-917 ลงเข้า BUY-ZONE 918-867 (risk_on +2%) — CEO ยืนยันเป้า 30 สาขาใหม่/ปี ตปท., street เป้า 1,058; anchor ระยะยาว ไม้แรกได้"
-    },
-    "SYK": {
-      "verdict": "hold",
-      "risk": "med",
-      "weight": "light",
-      "why": "274.6 จ่อ NEAR-BUY 269.05 — ใกล้ 52w low 267; fraud probe Block&Leviton + ปม vascular ค้าง แต่ FwdPE 17.4 เป้า 369 (+34%); รอยืน 269 ก่อนเก็บ, ไม้ลึก 257"
-    },
-    "RKLB": {
-      "verdict": "avoid",
-      "risk": "extreme",
-      "weight": "light",
-      "why": "69.7 ไล่ขึ้นจากโซน 60 แล้ว — Neutron ยังไม่ launch; ผิดทางเจ็บลึก ไม้จิ๋ว if ever"
-    },
-    "CIEN": {
-      "verdict": "buy",
-      "risk": "med",
-      "weight": "mid",
-      "why": "หลุด 343.09 เข้า BUY-ZONE (Pivot S1+0.25ATR, ATR14 21.8) -3.9% ตาม sector เทขาย AI capex; backlog $8.5B, forward PE 32.9, เป้า 516 — ไม้แรกได้, deep 317"
-    }
+ "updated": "2026-10-01T22:51:57+07:00",
+ "by": "haerin-event-refresh",
+ "macro": "28 ก.ย.: สหรัฐปฏิเสธข้อเสนออิหร่านเปิดช่องแคบ Hormuz → น้ำมันเด้ง WTI $94.8, 10y 5.22%; hike ต.ค. odds 70%; OpenAI pause ฝึกโมเดลหลัก ทุบ AI capex chain; ทอง -3.3% เหลือ $4,176; สัปดาห์นี้ MU/ACN งบ + payrolls ศุกร์",
+ "advice": {
+  "AAPL": {
+   "verdict": "buy",
+   "risk": "low",
+   "weight": "light",
+   "why": "331.9 (-1.7%) จ่อ NEAR-BUY 323.75 = SMA50 322 + 0.25 ATR (ใหม่ 29 ก.ย.) — ย่อจาก ATH 345, PE 38.8 + เป้า analyst 328 ต่ำกว่าราคา; ไม้แรกเบาเมื่อหลุด 324"
+  },
+  "MSFT": {
+   "verdict": "buy",
+   "risk": "med",
+   "weight": "mid",
+   "why": "508 หลุดเข้า BUY-ZONE 510-479 (risk_on +2%) — Barron's ชี้ Copilot refresh หนุน close สูงสุด 10 เดือน; street เป้า 576, earnings 28 ต.ค.; ไม้แรกตามโซน เพิ่มลึก 480"
+  },
+  "GOOGL": {
+   "verdict": "buy",
+   "risk": "med",
+   "weight": "mid",
+   "why": "341 หลุดเข้า BUY-ZONE 340.7-329.85 (buy1=SMA200+0.25ATR, ATR14≈8.2) — Gemini 4 Argon เปิดตัวแต่เสียง underperform+rollout ช้า ทุบ -2.7% ในINTRADAY; PE 17.2 เป้า 429 Strong Buy, ad-tech case คลายแล้ว; ไม้กลางในโซน, deep 329.8"
+  },
+  "AMZN": {
+   "verdict": "buy",
+   "risk": "med",
+   "weight": "mid",
+   "why": "246 ในโซน 255-235 — -16% จากยอด พ.ค. จาก capex $200B; forward PE 30 vs ค่าเฉลี่ย 45, เป้าเฉลี่ย $316 Strong Buy — ไม้กลาง"
+  },
+  "META": {
+   "verdict": "avoid",
+   "risk": "med",
+   "weight": "light",
+   "why": "ยังล้ำเป้า 720 (721, -4% จากข่าว Amazon บล็อก Muse + AI-chain sell-off) — ขายทำกำไรตามแผน ถ้าย่อลึกค่อยรับใหม่"
+  },
+  "TSLA": {
+   "verdict": "hold",
+   "risk": "high",
+   "weight": "light",
+   "why": "358 จ่อ 346.5 (SMA50+0.25 ATR, cap anchor) ข่าว Cybercab โดน NHTSA สอบ + sell-the-news, PE 368, งบ 21 ต.ค. — รอย่อหลุด 346 ก่อนไม้แรกเบา"
+  },
+  "NVDA": {
+   "verdict": "hold",
+   "risk": "med",
+   "weight": "mid",
+   "why": "229 สวนกระแส +1% — ประกาศ buyback $150B ใหญ่สุดในประวัติศาสตร์ + AI safety platform; ผู้นำจริงแต่ odds hike ต.ค. 70% = multiple headwind รอ 200"
+  },
+  "AMD": {
+   "verdict": "avoid",
+   "risk": "high",
+   "weight": "light",
+   "why": "605 ยังเหนือ TARGET 600 — แตะ $1T market cap 21 ก.ย. แล้วเย็นลงตาม OpenAI pause; ขายทำกำไรตามแผน"
+  },
+  "AVGO": {
+   "verdict": "buy",
+   "risk": "med",
+   "weight": "light",
+   "why": "348.6 NEAR-BUY 338.7 = Pivot S1 336.0 + 0.25 ATR 10.6 (ระดับ recal จาก 30 ก.ย.) — OpenAI pause ทุบ AI chip ทั้งกระดาน + GM กดจาก memory cost, Marvell แย่งดีล TPU; ไม้จิ๋วเมื่อหลุด 339, deep 304"
+  },
+  "TSM": {
+   "verdict": "hold",
+   "risk": "med",
+   "weight": "mid",
+   "why": "442 พ้นโซน 400 ขึ้นไป — earnings ไม่เปลี่ยน แต่ราคาวิ่งล่วงหน้า รอ pullback 400"
+  },
+  "PLTR": {
+   "verdict": "avoid",
+   "risk": "high",
+   "weight": "light",
+   "why": "181 valuation สุดขั้ว + political exposure — ไม่เหมาะไม้หนักทุกกรณี"
+  },
+  "CRWD": {
+   "verdict": "avoid",
+   "risk": "med",
+   "weight": "light",
+   "why": "259.67 TARGET — ล้ำเป้า 240 — ทำกำไรส่วนเกิน ไม่ใช่โซนซื้อ"
+  },
+  "ANET": {
+   "verdict": "avoid",
+   "risk": "high",
+   "weight": "light",
+   "why": "202 ดีดเข้าใกล้เป้า 220 — ยิ่งห้ามไล่; in-housing risk ยังอยู่ครบ"
+  },
+  "VRT": {
+   "verdict": "buy",
+   "risk": "high",
+   "weight": "light",
+   "why": "NEAR-BUY 235 — pre-market 241 (-3.2%): yield กดกลุ่ม data center, RBC หั่นเป้า 418→337 ยัง Outperform, Q2 mixed — ไม้แรกเมื่อแตะ 235 เบาๆ"
+  },
+  "MU": {
+   "verdict": "hold",
+   "risk": "high",
+   "weight": "light",
+   "why": "1055 ใกล้เป้า 1150 + งบ 30 ก.ย. นี้ (ทุกธุรกิจ HBM โตสามหลัก) — event risk สด ห้ามเปิดไม้ใหม่ก่อนงบ"
+  },
+  "ARM": {
+   "verdict": "avoid",
+   "risk": "high",
+   "weight": "light",
+   "why": "285 (-11% จาก 319) ลงตาม OpenAI pause แต่ยังห่างโซน 225 — P/E ยาว vs FV คงห้ามไล่"
+  },
+  "ASML": {
+   "verdict": "hold",
+   "risk": "med",
+   "weight": "mid",
+   "why": "1782 ทิ้งโซน 1650 ไกลขึ้น — EUV thesis ไม่เปลี่ยน ถือรอ 1650"
+  },
+  "KLAC": {
+   "verdict": "hold",
+   "risk": "med",
+   "weight": "light",
+   "why": "semicap cyclic ล้อตาม capex — ไม่มี edge เฉพาะตัวชัด ไม้เบา"
+  },
+  "INTC": {
+   "verdict": "avoid",
+   "risk": "high",
+   "weight": "light",
+   "why": "118.2 +1.9% ทดสอบ 120 intraday = บรรลุเป้า — street เป้า 116 ต่ำกว่าราคา, FwdPE 69, ข่าว Northland up PT 120 หนุนหมดแล้ว; ทยอยขายทำกำไร ห้ามไม้ใหม่"
+  },
+  "ORCL": {
+   "verdict": "buy",
+   "risk": "high",
+   "weight": "light",
+   "why": "138.0 เข้า NEAR-BUY (buy1 134.9 = Pivot S1 133.1 + 0.25 ATR7.0, deep 118.9 = S2) หลัง force majeure Jupiter + หนี้ 130B — ไม้เล็กเมื่อหลุด 135"
+  },
+  "MRVL": {
+   "verdict": "avoid",
+   "risk": "high",
+   "weight": "light",
+   "why": "คอนเฟิร์ม TARGET 265 (ราคา 265.0, high วันนี้ 266.99, ปิดก่อนหน้า 264.21) — เด้งรับข่าว AI silicon; PE 89 แพง, trim ทำกำไรตามแผน, ห้ามไม้ใหม่, รอย่อ 257"
+  },
+  "SKHY": {
+   "verdict": "hold",
+   "risk": "high",
+   "weight": "light",
+   "why": "188 ใกล้เป้า 200 — HBM catch-up วิ่งก่อนพื้นฐาน; ไม้เบาสุดถ้าจะเล่น"
+  },
+  "SNPS": {
+   "verdict": "buy",
+   "risk": "med",
+   "weight": "light",
+   "why": "430 หลุดเข้า BUY-ZONE 430-400 — งบ Aug beat+raise แต่ sell-the-news + China export กด, ใกล้ low 52w, เป้า analyst 546; ไม้แรกตามแผน เพิ่มที่ 400"
+  },
+  "ADI": {
+   "verdict": "hold",
+   "risk": "med",
+   "weight": "light",
+   "why": "analog ฟื้นช้ากว่า digital cycle — ถือเบา ห้ามไล่ 350"
+  },
+  "STX": {
+   "verdict": "hold",
+   "risk": "high",
+   "weight": "light",
+   "why": "873 พ้นโซน 780 ไกล — HDD ดีมานด์จริงแต่ขึ้นกับ storage cycle"
+  },
+  "WDC": {
+   "verdict": "hold",
+   "risk": "high",
+   "weight": "light",
+   "why": "452 NEAR-BUY — ร่วงตามกลุ่ม AI-storage ยีลด์สูง ไม่มีข่าวลบรายตัว PE 18.7 เป้านักวิเคราะห์ 665 ไม้แรกเบาเมื่อหลุด 440"
+  },
+  "APP": {
+   "verdict": "buy",
+   "risk": "high",
+   "weight": "light",
+   "why": "300.3 (-1.8%) เข้า BUY-ZONE 304-264 แล้ว (intraday low 294.6) — FwdPE 17 เป้า 497 (+66%) แต่ class action ปมโอ้อวด AI ค้าง; ไม้แรกเบา เพิ่มลึก 264"
+  },
+  "QCOM": {
+   "verdict": "avoid",
+   "risk": "med",
+   "weight": "light",
+   "why": "188 ย่อจากเป้า 200 แล้ว — เด้ง AWS ดีล + optical demo หมดโมเมนตัม; ที่ทำกำไรแล้วคือจบ รอบใหม่รอรอบล่างจริง"
+  },
+  "INTU": {
+   "verdict": "buy",
+   "risk": "high",
+   "weight": "mid",
+   "why": "ย่อใกล้ buy 265.59 (low 1M 262.32+0.25 ATR14 13.07) — FY27 guided อ่อน Goldman หั่นเป้า $276, fwd PE 11.3, street $406; class action ค้าง ไม้กลางรอ 265"
+  },
+  "AEM": {
+   "verdict": "buy",
+   "risk": "med",
+   "weight": "mid",
+   "why": "182.9 เข้า BUY-ZONE 182.89-158.03 (1M low+0.25ATR) ทองย่อ 4,200 แต่เป้า analyst ขึ้น 210→225 งบ Q3 ท้าย ต.ค. — ทยอยตามโซน"
+  },
+  "CEG": {
+   "verdict": "buy",
+   "risk": "med",
+   "weight": "light",
+   "why": "หลุด DEEP 252.8 ที่ 249.5 (-5.7%) ต่ำกว่า 1M low 250.55 — สาเหตุ overhang หุ้น Calpine secondary + บอนด์ยีลด์กดนิวเคลียร์ ไม่ใช่พื้นฐาน (guide up, เป้า 347 +38%, FwdPE 20) — ทยอยเก็บไม้ลึก"
+  },
+  "GEV": {
+   "verdict": "buy",
+   "risk": "med",
+   "weight": "light",
+   "why": "949.7 NEAR-BUY 923 = SMA200 914.4 + 0.25 ATR 34.3 — ย่อ -20% จาก 52w high 1,196 ตามน้ำมัน+ยีลด์กด แต่พื้นฐานแน่น: backlog $176B, gas turbine 116GW, เป้า street ~1,257; ไม้จิ๋วเมื่อหลุด 923, deep 840"
+  },
+  "UBER": {
+   "verdict": "buy",
+   "risk": "med",
+   "weight": "mid",
+   "why": "68.21 เข้า BUY-ZONE = 1M low 67.73 + 0.25 ATR(1.91), deep 59.76 = Pivot S2; ข่าวร้าย robotaxi/Waymo rift + Q3 guide ต่ำคาด แต่ PE 18.5, FCF 8.4%, CEO ซื้อหุ้นเอง ~$10M เป้า 102 — เก็บไม้แรก ระวังหลุด 65.41"
+  },
+  "SPOT": {
+   "verdict": "buy",
+   "risk": "med",
+   "weight": "mid",
+   "why": "489 หลุด buy1 489.98 ยืนยัน BUY-ZONE 489.98-431.78 — โมเมนตัมลบจาก premium subscriber growth ฝืด; PE 27 เป้า 603 (+22%) งบ 22 ต.ค. — ทยอยตามโซน หลุด 431 รอยืนยันก่อน"
+  },
+  "ISRG": {
+   "verdict": "hold",
+   "risk": "med",
+   "weight": "mid",
+   "why": "398 เด้งพ้นโซน 360 แล้ว — medtech ดีแต่ไม่ใช่ราคาวันนี้; รอ 360"
+  },
+  "ACN": {
+   "verdict": "buy",
+   "risk": "high",
+   "weight": "light",
+   "why": "174.8 ในโซน 185-170 — งบสัปดาห์นี้; รอบก่อน FY26 guidance ถูกหั่นเหลือ 3-4% organic; FwdPE ~13 + buyback $2B — เบาไว้ก่อนรอดูตัวเลข"
+  },
+  "AMAT": {
+   "verdict": "buy",
+   "risk": "med",
+   "weight": "light",
+   "why": "466 (-1.7%) NEAR-BUY 450 — Q3 beat+guidance up แต่หุ้นยังลง (semicap ย่อจากยอด -37%, ข่าว AI-pace slowdown กดทั้งกลุ่ม); ไม้แรกเมื่อแตะ 450"
+  },
+  "NET": {
+   "verdict": "avoid",
+   "risk": "high",
+   "weight": "light",
+   "why": "NET 353 จ่อเป้า 365 (high 52w 367) forward PE ~239 แพงจัด, เป้านักวิเคราะห์เฉลี่ย 337 ต่ำกว่าราคา — ทยอยขายทำกำไร ห้ามไล่ไม้ใหม่"
+  },
+  "BRK.B": {
+   "verdict": "buy",
+   "risk": "low",
+   "weight": "mid",
+   "why": "500.3 เข้า BUY-ZONE 501.7-487.2 — PE 12.5 เป้า 548; Abel กลับมาซื้อสุทธิ $20B ครั้งแรกใน 15 ไตรมาส = สัญญาณ floor; ไม้กลางตามโซน"
+  },
+  "LLY": {
+   "verdict": "buy",
+   "risk": "high",
+   "weight": "light",
+   "why": "1150.7 เข้า NEAR-BUY (buy1 1121.6 = 1M low 1113 + 0.25 ATR33, deep 1050 cap) ตามข่าว Foundayo ยอดเริ่มต้นอ่อน + price war — ไม้แรกเบาในโซน"
+  },
+  "COST": {
+   "verdict": "buy",
+   "risk": "low",
+   "weight": "mid",
+   "why": "913-917 ลงเข้า BUY-ZONE 918-867 (risk_on +2%) — CEO ยืนยันเป้า 30 สาขาใหม่/ปี ตปท., street เป้า 1,058; anchor ระยะยาว ไม้แรกได้"
+  },
+  "SYK": {
+   "verdict": "hold",
+   "risk": "med",
+   "weight": "light",
+   "why": "274.6 จ่อ NEAR-BUY 269.05 — ใกล้ 52w low 267; fraud probe Block&Leviton + ปม vascular ค้าง แต่ FwdPE 17.4 เป้า 369 (+34%); รอยืน 269 ก่อนเก็บ, ไม้ลึก 257"
+  },
+  "RKLB": {
+   "verdict": "avoid",
+   "risk": "extreme",
+   "weight": "light",
+   "why": "69.7 ไล่ขึ้นจากโซน 60 แล้ว — Neutron ยังไม่ launch; ผิดทางเจ็บลึก ไม้จิ๋ว if ever"
+  },
+  "CIEN": {
+   "verdict": "buy",
+   "risk": "med",
+   "weight": "mid",
+   "why": "หลุด 343.09 เข้า BUY-ZONE (Pivot S1+0.25ATR, ATR14 21.8) -3.9% ตาม sector เทขาย AI capex; backlog $8.5B, forward PE 32.9, เป้า 516 — ไม้แรกได้, deep 317"
   }
+ }
 }
