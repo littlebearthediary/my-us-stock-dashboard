@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-01T20:57:48+07:00",
+  "updated": "2026-10-01T21:07:05+07:00",
   "by": "haerin-event-refresh",
   "macro": "28 ก.ย.: สหรัฐปฏิเสธข้อเสนออิหร่านเปิดช่องแคบ Hormuz → น้ำมันเด้ง WTI $94.8, 10y 5.22%; hike ต.ค. odds 70%; OpenAI pause ฝึกโมเดลหลัก ทุบ AI capex chain; ทอง -3.3% เหลือ $4,176; สัปดาห์นี้ MU/ACN งบ + payrolls ศุกร์",
   "advice": {
@@ -198,8 +198,8 @@
     "UBER": {
       "verdict": "buy",
       "risk": "med",
-      "weight": "heavy",
-      "why": "68.4 DEEP-BUY <70 — CEO call หุ้น \"really cheap\", 120k AV-ready + 9→15 พาร์ทเนอร์; fear robotaxi + Q3 อ่อน price-in แล้ว; ไม้หนักตามโซน"
+      "weight": "mid",
+      "why": "68.21 เข้า BUY-ZONE = 1M low 67.73 + 0.25 ATR(1.91), deep 59.76 = Pivot S2; ข่าวร้าย robotaxi/Waymo rift + Q3 guide ต่ำคาด แต่ PE 18.5, FCF 8.4%, CEO ซื้อหุ้นเอง ~$10M เป้า 102 — เก็บไม้แรก ระวังหลุด 65.41"
     },
     "SPOT": {
       "verdict": "buy",
