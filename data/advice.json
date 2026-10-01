@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-01T21:22:14+07:00",
+  "updated": "2026-10-01T21:56:39+07:00",
   "by": "haerin-event-refresh",
   "macro": "28 ก.ย.: สหรัฐปฏิเสธข้อเสนออิหร่านเปิดช่องแคบ Hormuz → น้ำมันเด้ง WTI $94.8, 10y 5.22%; hike ต.ค. odds 70%; OpenAI pause ฝึกโมเดลหลัก ทุบ AI capex chain; ทอง -3.3% เหลือ $4,176; สัปดาห์นี้ MU/ACN งบ + payrolls ศุกร์",
   "advice": {
@@ -127,7 +127,7 @@
       "verdict": "avoid",
       "risk": "high",
       "weight": "light",
-      "why": "257 เด้ง +2.1% NEAR-TARGET 265 — Cantor up PT 330 + Analyst Day 6 ต.ค. หนุนต่อ; ห้ามไล่ไม้ใหม่ ถือแตะ 265 ขายทำกำไร"
+      "why": "ทะลุเป้า 265 สำเร็จ (high วันนี้ 265.92 ราคา ~269) — เด้งรับข่าว AI silicon; trim ทำกำไรตามแผน, ห้ามไล่ไม้ใหม่, รอย่อ 256 (low วันนี้)"
     },
     "SKHY": {
       "verdict": "hold",
