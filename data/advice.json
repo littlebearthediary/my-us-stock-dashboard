@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-01T22:51:57+07:00",
+ "updated": "2026-10-02T00:05:40+07:00",
  "by": "haerin-event-refresh",
  "macro": "28 ก.ย.: สหรัฐปฏิเสธข้อเสนออิหร่านเปิดช่องแคบ Hormuz → น้ำมันเด้ง WTI $94.8, 10y 5.22%; hike ต.ค. odds 70%; OpenAI pause ฝึกโมเดลหลัก ทุบ AI capex chain; ทอง -3.3% เหลือ $4,176; สัปดาห์นี้ MU/ACN งบ + payrolls ศุกร์",
  "advice": {
@@ -115,7 +115,7 @@
    "verdict": "avoid",
    "risk": "high",
    "weight": "light",
-   "why": "118.2 +1.9% ทดสอบ 120 intraday = บรรลุเป้า — street เป้า 116 ต่ำกว่าราคา, FwdPE 69, ข่าว Northland up PT 120 หนุนหมดแล้ว; ทยอยขายทำกำไร ห้ามไม้ใหม่"
+   "why": "123 คอนเฟิร์ม TARGET >=120 (Morningstar 123, bears band 122.8-126.9) — FwdPE 69, Northland up PT หมดแล้ว; ทยอย trim ทำกำไร ห้ามไม้ใหม่"
   },
   "ORCL": {
    "verdict": "buy",
