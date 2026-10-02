@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-02T01:56:42+07:00",
+  "updated": "2026-10-02T20:35:03+07:00",
   "by": "haerin-event-refresh",
   "macro": "28 ก.ย.: สหรัฐปฏิเสธข้อเสนออิหร่านเปิดช่องแคบ Hormuz → น้ำมันเด้ง WTI $94.8, 10y 5.22%; hike ต.ค. odds 70%; OpenAI pause ฝึกโมเดลหลัก ทุบ AI capex chain; ทอง -3.3% เหลือ $4,176; สัปดาห์นี้ MU/ACN งบ + payrolls ศุกร์",
   "advice": {
@@ -19,7 +19,7 @@
       "verdict": "buy",
       "risk": "med",
       "weight": "mid",
-      "why": "341 หลุดเข้า BUY-ZONE 340.7-329.85 (buy1=SMA200+0.25ATR, ATR14≈8.2) — Gemini 4 Argon เปิดตัวแต่เสียง underperform+rollout ช้า ทุบ -2.7% ในINTRADAY; PE 17.2 เป้า 429 Strong Buy, ad-tech case คลายแล้ว; ไม้กลางในโซน, deep 329.8"
+      "why": "หลุด BUY-ZONE เดิมเมื่อรีเฟรชระดับ — buy1 ใหม่ 328.8 (Pivot S1 +0.25 ATR14 9.1) ราคา 338 ยังห่าง +2.9%; PE 17.2 เป้า 429 — รอถอยแตะโซนก่อน"
     },
     "AMZN": {
       "verdict": "buy",
@@ -85,7 +85,7 @@
       "verdict": "buy",
       "risk": "high",
       "weight": "light",
-      "why": "NEAR-BUY 235 — pre-market 241 (-3.2%): yield กดกลุ่ม data center, RBC หั่นเป้า 418→337 ยัง Outperform, Q2 mixed — ไม้แรกเมื่อแตะ 235 เบาๆ"
+      "why": "246 ยังเหนือ buy ใหม่ 241 (1M low +0.25 ATR14 12.2); yield กดกลุ่ม DC, RBC หั่นเป้า 337 ยัง Outperform — ไม้แรกเมื่อแตะ 241"
     },
     "MU": {
       "verdict": "hold",
@@ -163,7 +163,7 @@
       "verdict": "buy",
       "risk": "high",
       "weight": "light",
-      "why": "300.3 (-1.8%) เข้า BUY-ZONE 304-264 แล้ว (intraday low 294.6) — FwdPE 17 เป้า 497 (+66%) แต่ class action ปมโอ้อวด AI ค้าง; ไม้แรกเบา เพิ่มลึก 264"
+      "why": "281 จ่อ buy ใหม่ 279 (1M low +0.25 ATR14 15.7, deep 262); fwd PE ~17 เป้า 497 แต่ class action ปม AI ค้าง — ไม้แรกเบา"
     },
     "QCOM": {
       "verdict": "avoid",
@@ -175,7 +175,7 @@
       "verdict": "buy",
       "risk": "high",
       "weight": "mid",
-      "why": "ย่อใกล้ buy 265.59 (low 1M 262.32+0.25 ATR14 13.07) — FY27 guided อ่อน Goldman หั่นเป้า $276, fwd PE 11.3, street $406; class action ค้าง ไม้กลางรอ 265"
+      "why": "282.8 จ่อ buy ใหม่ 280.6 (1M low +0.25 ATR14 13.0, deep 240.7); Goldman หั่นเป้า 276, PE 11.3 ถูกแต่โมเมนตัมลบ — ไม้กลางรอ 280"
     },
     "AEM": {
       "verdict": "buy",
@@ -205,7 +205,7 @@
       "verdict": "buy",
       "risk": "med",
       "weight": "mid",
-      "why": "489 หลุด buy1 489.98 ยืนยัน BUY-ZONE 489.98-431.78 — โมเมนตัมลบจาก premium subscriber growth ฝืด; PE 27 เป้า 603 (+22%) งบ 22 ต.ค. — ทยอยตามโซน หลุด 431 รอยืนยันก่อน"
+      "why": "491.4 เหนือ buy ใหม่ 489.2 แค่ +0.5% (1M low +0.25 ATR14 17.2); premium growth ฝืด งบ 22 ต.ค. PE 27 เป้า 603 — ไม้แรกจ่อโซน"
     },
     "ISRG": {
       "verdict": "hold",
