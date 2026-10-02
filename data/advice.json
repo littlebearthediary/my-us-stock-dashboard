@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-02T23:16:00+07:00",
+  "updated": "2026-10-03T00:41:00+07:00",
   "by": "haerin-event-refresh",
   "macro": "28 ก.ย.: สหรัฐปฏิเสธข้อเสนออิหร่านเปิดช่องแคบ Hormuz → น้ำมันเด้ง WTI $94.8, 10y 5.22%; hike ต.ค. odds 70%; OpenAI pause ฝึกโมเดลหลัก ทุบ AI capex chain; ทอง -3.3% เหลือ $4,176; สัปดาห์นี้ MU/ACN งบ + payrolls ศุกร์",
   "advice": {
@@ -64,10 +64,10 @@
       "why": "462 จ่อ TARGET 480 (= high 52w) — 2nm/ASML หนุน ATH ต่อ แต่ถึงโซนทำกำไรแล้ว งบ 15 ต.ค.; ถือต่อ ห้ามไล่ไม้ใหม่ trim เมื่อแตะ 480"
     },
     "PLTR": {
-      "verdict": "avoid",
+      "verdict": "buy",
       "risk": "high",
       "weight": "light",
-      "why": "181 valuation สุดขั้ว + political exposure — ไม่เหมาะไม้หนักทุกกรณี"
+      "why": "190.5 จ่อ NEAR-BUY 183.75 (cap 105% anchor 175) — fwdPE 100 เป้า street 195.6 เท่าราคา ไล่ไม่ได้; Rosenblatt Buy 225 งบ 2 พ.ย. — ไม้จิ๋วเมื่อหลุด 184 เท่านั้น"
     },
     "CRWD": {
       "verdict": "avoid",
