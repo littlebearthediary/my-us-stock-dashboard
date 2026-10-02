@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-02T20:35:03+07:00",
+  "updated": "2026-10-02T20:48:17+07:00",
   "by": "haerin-event-refresh",
   "macro": "28 ก.ย.: สหรัฐปฏิเสธข้อเสนออิหร่านเปิดช่องแคบ Hormuz → น้ำมันเด้ง WTI $94.8, 10y 5.22%; hike ต.ค. odds 70%; OpenAI pause ฝึกโมเดลหลัก ทุบ AI capex chain; ทอง -3.3% เหลือ $4,176; สัปดาห์นี้ MU/ACN งบ + payrolls ศุกร์",
   "advice": {
@@ -61,7 +61,7 @@
       "verdict": "hold",
       "risk": "med",
       "weight": "mid",
-      "why": "442 พ้นโซน 400 ขึ้นไป — earnings ไม่เปลี่ยน แต่ราคาวิ่งล่วงหน้า รอ pullback 400"
+      "why": "462 จ่อ TARGET 480 (= high 52w) — 2nm/ASML หนุน ATH ต่อ แต่ถึงโซนทำกำไรแล้ว งบ 15 ต.ค.; ถือต่อ ห้ามไล่ไม้ใหม่ trim เมื่อแตะ 480"
     },
     "PLTR": {
       "verdict": "avoid",
@@ -145,25 +145,25 @@
       "verdict": "hold",
       "risk": "med",
       "weight": "light",
-      "why": "analog ฟื้นช้ากว่า digital cycle — ถือเบา ห้ามไล่ 350"
+      "why": "420 (+3.9%) จ่อ TARGET 430 — Q3 ทุบสถิติ รายได้ +40% YoY จาก AI datacenter; upside ถึงเป้า street 470 เหลือบาง; ถือ ทยอย trim 430 ห้ามไม้ใหม่"
     },
     "STX": {
-      "verdict": "hold",
+      "verdict": "buy",
       "risk": "high",
       "weight": "light",
-      "why": "873 พ้นโซน 780 ไกล — HDD ดีมานด์จริงแต่ขึ้นกับ storage cycle"
+      "why": "827 (-12.6%) เข้า BUY-ZONE 819-735 — Toshiba ขยายผลิต HDD ฟิลิปปินส์ แข่งเดือด หลังหุ้นวิ่ง +240% YTD; fwdPE 26.4 เป้า 1125; ไม้จิ๋วเมื่อแตะ 819, ลึก 735"
     },
     "WDC": {
-      "verdict": "hold",
+      "verdict": "buy",
       "risk": "high",
       "weight": "light",
-      "why": "452 NEAR-BUY — ร่วงตามกลุ่ม AI-storage ยีลด์สูง ไม่มีข่าวลบรายตัว PE 18.7 เป้านักวิเคราะห์ 665 ไม้แรกเบาเมื่อหลุด 440"
+      "why": "420 (-9.2%) ในโซน 446.6-415.8 — ข่าว Toshiba HDD เหมือน STX แต่ถูกกว่า fwdPE 23 เป้า 665 (+58%); ไม้แรกตามโซน, ไม้ลึก 416"
     },
     "APP": {
       "verdict": "buy",
       "risk": "high",
       "weight": "light",
-      "why": "281 จ่อ buy ใหม่ 279 (1M low +0.25 ATR14 15.7, deep 262); fwd PE ~17 เป้า 497 แต่ class action ปม AI ค้าง — ไม้แรกเบา"
+      "why": "273 ในโซน 279-262 ใกล้ low 52w (267.7) — เป้าถูกหั่นต่อเนื่อง (Needham 475) + class action ค้าง แต่ fwdPE 15.6 vs เป้า 497; ไม้จิ๋วรอยืน 270 หลุด 262 หยุดเพิ่ม"
     },
     "QCOM": {
       "verdict": "avoid",
