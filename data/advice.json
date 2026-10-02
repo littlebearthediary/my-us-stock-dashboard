@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-03T00:41:00+07:00",
+  "updated": "2026-10-03T01:01:51+07:00",
   "by": "haerin-event-refresh",
   "macro": "28 ก.ย.: สหรัฐปฏิเสธข้อเสนออิหร่านเปิดช่องแคบ Hormuz → น้ำมันเด้ง WTI $94.8, 10y 5.22%; hike ต.ค. odds 70%; OpenAI pause ฝึกโมเดลหลัก ทุบ AI capex chain; ทอง -3.3% เหลือ $4,176; สัปดาห์นี้ MU/ACN งบ + payrolls ศุกร์",
   "advice": {
@@ -215,9 +215,9 @@
     },
     "ACN": {
       "verdict": "buy",
-      "risk": "high",
+      "risk": "med",
       "weight": "light",
-      "why": "174.8 ในโซน 185-170 — งบสัปดาห์นี้; รอบก่อน FY26 guidance ถูกหั่นเหลือ 3-4% organic; FwdPE ~13 + buyback $2B — เบาไว้ก่อนรอดูตัวเลข"
+      "why": "ย่อ -5.8% หลังงบ Q4 (Baird ชี้ strong, บุ๊คกิ้งเหนือคาด) แต่ห่วงเป้า FY27 โต 3-6%; NEAR-BUY 194.25≈SMA200, FwdPE 14.5 เป้า street 221 — ไม้แรกเบา"
     },
     "AMAT": {
       "verdict": "buy",
