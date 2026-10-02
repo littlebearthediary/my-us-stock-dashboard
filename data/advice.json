@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-02T20:48:17+07:00",
+  "updated": "2026-10-02T20:52:32+07:00",
   "by": "haerin-event-refresh",
   "macro": "28 ก.ย.: สหรัฐปฏิเสธข้อเสนออิหร่านเปิดช่องแคบ Hormuz → น้ำมันเด้ง WTI $94.8, 10y 5.22%; hike ต.ค. odds 70%; OpenAI pause ฝึกโมเดลหลัก ทุบ AI capex chain; ทอง -3.3% เหลือ $4,176; สัปดาห์นี้ MU/ACN งบ + payrolls ศุกร์",
   "advice": {
@@ -175,7 +175,7 @@
       "verdict": "buy",
       "risk": "high",
       "weight": "mid",
-      "why": "282.8 จ่อ buy ใหม่ 280.6 (1M low +0.25 ATR14 13.0, deep 240.7); Goldman หั่นเป้า 276, PE 11.3 ถูกแต่โมเมนตัมลบ — ไม้กลางรอ 280"
+      "why": "280.3 หลุดเข้า BUY-ZONE 280.6-240.7 (1M low 277.3+0.25 ATR14 13.0, deep Pivot S1 237.5) — Goldman หั่นเป้า 519→276, TurboTax ฝืด FY27 โต 9-10%, PE 11.3 เป้า street 406; ไม้กลางตามโซน, ลึก 241"
     },
     "AEM": {
       "verdict": "buy",
@@ -205,7 +205,7 @@
       "verdict": "buy",
       "risk": "med",
       "weight": "mid",
-      "why": "491.4 เหนือ buy ใหม่ 489.2 แค่ +0.5% (1M low +0.25 ATR14 17.2); premium growth ฝืด งบ 22 ต.ค. PE 27 เป้า 603 — ไม้แรกจ่อโซน"
+      "why": "482.1 เข้า BUY-ZONE 489.2-461.7 (1M low 484.9+0.25 ATR14 17.2, deep Pivot S1 457.4) — premium growth ฝืด, -16% YTD แต่ BofA top pick เป้า 598, งบ 22 ต.ค.; ไม้กลางตามโซน เพิ่มลึก 462"
     },
     "ISRG": {
       "verdict": "hold",
