@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-05T21:17:10+07:00",
+  "updated": "2026-10-05T21:45:00+07:00",
   "by": "haerin-event-refresh",
   "macro": "28 ก.ย.: สหรัฐปฏิเสธข้อเสนออิหร่านเปิดช่องแคบ Hormuz → น้ำมันเด้ง WTI $94.8, 10y 5.22%; hike ต.ค. odds 70%; OpenAI pause ฝึกโมเดลหลัก ทุบ AI capex chain; ทอง -3.3% เหลือ $4,176; สัปดาห์นี้ MU/ACN งบ + payrolls ศุกร์",
   "advice": {
@@ -239,9 +239,9 @@
     },
     "LLY": {
       "verdict": "buy",
-      "risk": "high",
+      "risk": "med",
       "weight": "light",
-      "why": "1144.5 ทะลุ 1147.9 เข้า BUY-ZONE (1M low 1139.85+0.25ATR32, deep 1050=SMA200 cap); ลงตาม yield 5.2%+น้ำมัน ไม่ใช่พื้นฐาน — Berenberg เป้า 1400, GS 1371, Foundayo 30% ใบสั่งยาลดน้ำหนักใหม่; ไม้แรกเบา"
+      "why": "1149.5 สลับเข้า NEAR-BUY 1116.56 (Pivot S1 1108.6+0.25 ATR14 31.9, deep 1050=SMA200 cap) — EloraTZP ลดน้ำหนัก 23.3% beats tirzepatide, Foundayo ATAIN-1 data + Jaypirca FDA เพิ่มข้อบ่งชี้, เป้า street 1328 fwdPE 27, งบ 29 ต.ค.; ไม้จิ๋วเมื่อแตะ 1117"
     },
     "COST": {
       "verdict": "buy",
