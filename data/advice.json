@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-05T20:57:18+07:00",
+  "updated": "2026-10-05T21:02:51+07:00",
   "by": "haerin-event-refresh",
   "macro": "28 ก.ย.: สหรัฐปฏิเสธข้อเสนออิหร่านเปิดช่องแคบ Hormuz → น้ำมันเด้ง WTI $94.8, 10y 5.22%; hike ต.ค. odds 70%; OpenAI pause ฝึกโมเดลหลัก ทุบ AI capex chain; ทอง -3.3% เหลือ $4,176; สัปดาห์นี้ MU/ACN งบ + payrolls ศุกร์",
   "advice": {
@@ -58,10 +58,10 @@
       "why": "348.6 NEAR-BUY 338.7 = Pivot S1 336.0 + 0.25 ATR 10.6 (ระดับ recal จาก 30 ก.ย.) — OpenAI pause ทุบ AI chip ทั้งกระดาน + GM กดจาก memory cost, Marvell แย่งดีล TPU; ไม้จิ๋วเมื่อหลุด 339, deep 304"
     },
     "TSM": {
-      "verdict": "hold",
+      "verdict": "avoid",
       "risk": "med",
-      "weight": "mid",
-      "why": "462 จ่อ TARGET 480 (= high 52w) — 2nm/ASML หนุน ATH ต่อ แต่ถึงโซนทำกำไรแล้ว งบ 15 ต.ค.; ถือต่อ ห้ามไล่ไม้ใหม่ trim เมื่อแตะ 480"
+      "weight": "light",
+      "why": "480 แตะ TARGET (=high 52w, pre-mkt +1.5%) — AI demand หนุน ATH แต่ fwdPE 20.6, งบ 15 ต.ค. + เสี่ยง US capex 265B; ทยอย trim, ไม้ใหม่รอ 420"
     },
     "PLTR": {
       "verdict": "buy",
@@ -181,7 +181,7 @@
       "verdict": "buy",
       "risk": "med",
       "weight": "mid",
-      "why": "182.9 เข้า BUY-ZONE 182.89-158.03 (1M low+0.25ATR) ทองย่อ 4,200 แต่เป้า analyst ขึ้น 210→225 งบ Q3 ท้าย ต.ค. — ทยอยตามโซน"
+      "why": "180.5 เข้า BUY-ZONE ใหม่ 181.9-175.1 (1M low 180.2 +0.25ATR 6.7 / Pivot S1 173.4) — ทองย่อ profit-taking -14%/30วัน, PE 15.5 เป้า 216; ไม้แรก 181 ลึก 175"
     },
     "CEG": {
       "verdict": "buy",
