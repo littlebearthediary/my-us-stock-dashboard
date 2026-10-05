@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-05T21:07:30+07:00",
+  "updated": "2026-10-05T21:17:10+07:00",
   "by": "haerin-event-refresh",
   "macro": "28 ก.ย.: สหรัฐปฏิเสธข้อเสนออิหร่านเปิดช่องแคบ Hormuz → น้ำมันเด้ง WTI $94.8, 10y 5.22%; hike ต.ค. odds 70%; OpenAI pause ฝึกโมเดลหลัก ทุบ AI capex chain; ทอง -3.3% เหลือ $4,176; สัปดาห์นี้ MU/ACN งบ + payrolls ศุกร์",
   "advice": {
@@ -67,7 +67,7 @@
       "verdict": "buy",
       "risk": "high",
       "weight": "light",
-      "why": "190.5 จ่อ NEAR-BUY 183.75 (cap 105% anchor 175) — fwdPE 100 เป้า street 195.6 เท่าราคา ไล่ไม่ได้; Rosenblatt Buy 225 งบ 2 พ.ย. — ไม้จิ๋วเมื่อหลุด 184 เท่านั้น"
+      "why": "สลับเข้า NEAR-BUY 183.75 แล้ว (1M low+0.25 ATR6.3 cap 105% anchor 175, deep 168=SMA50 cap) — ราคา 188.8 เป้า street 195.6 fwdPE 99 ไล่ไม่ได้; Rosenblatt Buy 225 งบ 2 พ.ย. — ไม้จิ๋วเมื่อหลุด 184 เท่านั้น"
     },
     "CRWD": {
       "verdict": "avoid",
