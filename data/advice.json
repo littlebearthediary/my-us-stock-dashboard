@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-06T21:36:00+07:00",
+  "updated": "2026-10-06T21:41:00+07:00",
   "by": "haerin-event-refresh",
   "macro": "28 ก.ย.: สหรัฐปฏิเสธข้อเสนออิหร่านเปิดช่องแคบ Hormuz → น้ำมันเด้ง WTI $94.8, 10y 5.22%; hike ต.ค. odds 70%; OpenAI pause ฝึกโมเดลหลัก ทุบ AI capex chain; ทอง -3.3% เหลือ $4,176; สัปดาห์นี้ MU/ACN งบ + payrolls ศุกร์",
   "advice": {
@@ -174,8 +174,8 @@
     "INTU": {
       "verdict": "buy",
       "risk": "high",
-      "weight": "mid",
-      "why": "279.9 หลุด buy1 280.6 เข้า BUY-ZONE ตามแผน — ไม้กลางแรกเปิดได้ FY27 guide ชะลอ 9-10% + Goldman หั่น 276 + TurboTax ลูกค้าหลุดเพราะราคา แต่ fwdPE 11.8 เป้า 406 (+45%); เพิ่มแถวลึก 241, หยุดถ้าหลุด 235"
+      "weight": "light",
+      "why": "288 สลับ HOLD→NEAR-BUY 280.4 = 1M low 277.3 +0.25 ATR14 12.4 (deep 240.6=Pivot S1, ยืนยัน 05 ต.ค.) — Goldman หั่น Sell + FY27 โต 9-10% ชะลอจาก 14%, TurboTax DIY share -3ppt, fears GPT-6 กด SaaS; แต่ fwdPE ~12 ใกล้ 52w low, UBS/Evercore เป้า 385-400 ยัง Buy, buyback เหลือ $7.9B — ไม้จิ๋วเมื่อแตะ 280, เพิ่มลึก 241"
     },
     "AEM": {
       "verdict": "buy",
