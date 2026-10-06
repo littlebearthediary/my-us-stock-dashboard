@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-05T23:26:03+07:00",
+  "updated": "2026-10-06T20:52:03+07:00",
   "by": "haerin-event-refresh",
   "macro": "28 ก.ย.: สหรัฐปฏิเสธข้อเสนออิหร่านเปิดช่องแคบ Hormuz → น้ำมันเด้ง WTI $94.8, 10y 5.22%; hike ต.ค. odds 70%; OpenAI pause ฝึกโมเดลหลัก ทุบ AI capex chain; ทอง -3.3% เหลือ $4,176; สัปดาห์นี้ MU/ACN งบ + payrolls ศุกร์",
   "advice": {
@@ -151,13 +151,13 @@
       "verdict": "buy",
       "risk": "high",
       "weight": "light",
-      "why": "-12.6% ทุบลง 792 แตะ BUY-ZONE แล้วเด้งกลับ 826 เหนือ 819 — อย่าไล่ราคา รอหลุด 819 ซ้ำค่อยเข้า ไม้จิ๋ว, ลึก 735, หยุดใต้ 700; fwdPE 26.4 เป้า 1,125 Strong Buy, งบ 27 ต.ค."
+      "why": "836.5 สลับเข้า NEAR-BUY 819 (1M low+0.25 ATR) — puke จากข่าว Toshiba จ่อขยายผลิต HDD 2 เท่า (Nikkei 2 ต.ค. STX/WDC -10%) แต่analyst ชี้ STX นำเทคโนโลยี Toshiba เยอะ demand ล้น supply; fwdPE 26.4 เป้า 1,125 งบ 27 ต.ค. — ไม้จิ๋วเมื่อหลุด 819, deep 735"
     },
     "WDC": {
       "verdict": "buy",
       "risk": "high",
       "weight": "mid",
-      "why": "420 (-9.2%) แตะ DEEP-BUY 415.8 — WDC redeem convertible notes 3% $109.5M + ทั้งกลุ่ม storage ร่วง (SNDK/MU/SKHY) ปม AI demand risk; ถูกกว่า STX: fwdPE 23 เป้า 665 (+58%); ไม้ลึกตามแผน 416, หยุดเพิ่มถ้าหลุด 400"
+      "why": "421.4 เข้า NEAR-BUY 416.5 — เดียวกับ STX: ข่าว Toshiba เพิ่ม supply HDD กด pricing power (2 ต.ค. -10.2%); ถูกกว่า STX fwdPE 23 เป้า 665 (+58%) + redeem notes จบแล้ว; ไม้แรกเมื่อแตะ 416, หยุดเพิ่มถ้าหลุด 400"
     },
     "APP": {
       "verdict": "buy",
@@ -229,7 +229,7 @@
       "verdict": "avoid",
       "risk": "high",
       "weight": "light",
-      "why": "คอนเฟิร์ม TARGET >=365 (intraday สัมผัสโซน, 52w high 367.43) — fwdPE 242.6 แพงจัด, เป้า street 336.8 ต่ำกว่าราคา -6%, งบ 29 ต.ค. — trim ทำกำไรตามแผน ห้ามไม้ใหม่ รอย่อลึก"
+      "why": "TARGET >=365 คอนเฟิร์มจริง (367.5 = New 52w high ต่อเนื่อง จาก Q2 beat + AI traffic/security demand + yield ลงหนุน software) — fwdPE 242 แพงจัด เป้า street 336 ต่ำกว่าราคา, งบ 29 ต.ค. — trim ตามแผน ห้ามไม้ใหม่"
     },
     "BRK.B": {
       "verdict": "buy",
