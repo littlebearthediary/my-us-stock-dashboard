@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-06T21:17:01+07:00",
+  "updated": "2026-10-06T21:36:00+07:00",
   "by": "haerin-event-refresh",
   "macro": "28 ก.ย.: สหรัฐปฏิเสธข้อเสนออิหร่านเปิดช่องแคบ Hormuz → น้ำมันเด้ง WTI $94.8, 10y 5.22%; hike ต.ค. odds 70%; OpenAI pause ฝึกโมเดลหลัก ทุบ AI capex chain; ทอง -3.3% เหลือ $4,176; สัปดาห์นี้ MU/ACN งบ + payrolls ศุกร์",
   "advice": {
@@ -250,10 +250,10 @@
       "why": "913-917 ลงเข้า BUY-ZONE 918-867 (risk_on +2%) — CEO ยืนยันเป้า 30 สาขาใหม่/ปี ตปท., street เป้า 1,058; anchor ระยะยาว ไม้แรกได้"
     },
     "SYK": {
-      "verdict": "hold",
+      "verdict": "buy",
       "risk": "med",
-      "weight": "light",
-      "why": "274.6 จ่อ NEAR-BUY 269.05 — ใกล้ 52w low 267; fraud probe Block&Leviton + ปม vascular ค้าง แต่ FwdPE 17.4 เป้า 369 (+34%); รอยืน 269 ก่อนเก็บ, ไม้ลึก 257"
+      "weight": "mid",
+      "why": "280.7 จ่อ NEAR-BUY ใหม่ 273.23 = 1M low 271.21 +0.25 ATR14 8.07 — ร่วง 21% จาก cyberattack/Q1 miss, consensus Buy เป้า ~376; ไม้แรก 273, ลึก 253 (Pivot S1)"
     },
     "RKLB": {
       "verdict": "avoid",
