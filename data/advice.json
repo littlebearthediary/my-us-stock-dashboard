@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-07T23:46:23+07:00",
+  "updated": "2026-10-09T22:25:34+07:00",
   "by": "haerin-event-refresh",
   "macro": "28 ก.ย.: สหรัฐปฏิเสธข้อเสนออิหร่านเปิดช่องแคบ Hormuz → น้ำมันเด้ง WTI $94.8, 10y 5.22%; hike ต.ค. odds 70%; OpenAI pause ฝึกโมเดลหลัก ทุบ AI capex chain; ทอง -3.3% เหลือ $4,176; สัปดาห์นี้ MU/ACN งบ + payrolls ศุกร์",
   "advice": {
@@ -160,10 +160,10 @@
       "why": "404.9 เข้า BUY-ZONE 404–371 (ไม้แรก=1M low 396.6+0.25ATR14 29.6, deep=Pivot S2 364+0.25ATR); Toshiba เพิ่มผลิตกดราคาแต่ Citi/MS/Rosenblatt ชี้ดีมานด์ AI ล้น PE 17 เป้า 666 งบ 29 ต.ค."
     },
     "APP": {
-      "verdict": "buy",
+      "verdict": "avoid",
       "risk": "high",
       "weight": "light",
-      "why": "278.25 แตะ BUY-ZONE ใหม่ 278.39-262.37 (support+ATR) — Q2/26 miss guidance ครั้งแรกหลัง IPO, -58% YTD, เป้าถูกหั่นอื้อ (BofA 410) + class action; fwdPE ~15 ไม้จิ๋ว ทยอย 270/262 หลุด 262 หยุดเพิ่ม"
+      "why": "เข้า BUY-ZONE 278.08–262.07 แต่ San Diego County ฟ้องกล่าวหาโฆษณาผู้ใหญ่/เก็บข้อมูลเด็ก; คดีหลักทรัพย์และแรงกดดัน Unity เพิ่มความเสี่ยง รอ Q3 4 พ.ย."
     },
     "QCOM": {
       "verdict": "avoid",
