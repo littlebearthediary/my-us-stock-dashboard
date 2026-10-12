@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-09T22:25:34+07:00",
+  "updated": "2026-10-12T20:50:16+07:00",
   "by": "haerin-event-refresh",
   "macro": "28 ก.ย.: สหรัฐปฏิเสธข้อเสนออิหร่านเปิดช่องแคบ Hormuz → น้ำมันเด้ง WTI $94.8, 10y 5.22%; hike ต.ค. odds 70%; OpenAI pause ฝึกโมเดลหลัก ทุบ AI capex chain; ทอง -3.3% เหลือ $4,176; สัปดาห์นี้ MU/ACN งบ + payrolls ศุกร์",
   "advice": {
@@ -85,7 +85,7 @@
       "verdict": "buy",
       "risk": "high",
       "weight": "light",
-      "why": "246 ยังเหนือ buy ใหม่ 241 (1M low +0.25 ATR14 12.2); yield กดกลุ่ม DC, RBC หั่นเป้า 337 ยัง Outperform — ไม้แรกเมื่อแตะ 241"
+      "why": "237.77 เข้า BUY-ZONE 241.13–216.55 (แนวรับ 1M low + 0.25 ATR14 11.34); Q2 ยอดขาย +24% และเพิ่มคาดการณ์ปี 2026 แต่มี execution/supply-chain risk — ไม้เบา"
     },
     "MU": {
       "verdict": "hold",
@@ -148,16 +148,16 @@
       "why": "420 (+3.9%) จ่อ TARGET 430 — Q3 ทุบสถิติ รายได้ +40% YoY จาก AI datacenter; upside ถึงเป้า street 470 เหลือบาง; ถือ ทยอย trim 430 ห้ามไม้ใหม่"
     },
     "STX": {
-      "verdict": "buy",
+      "verdict": "hold",
       "risk": "high",
-      "weight": "mid",
-      "why": "816.6 หลุดเข้า BUY-ZONE 819–735 แล้ว (buy1=SMA50+0.25ATR, deep=1M low, ATR14 55.6) ข่าว Toshiba เพิ่มผลิต HDD 2 เท่ายังกด sentiment แต่ demand AI ล้น เป้า 1050 งบ 27 ต.ค. — ไม้แรกได้แล้ว ระวังหลุด 791 (S2)"
+      "weight": "light",
+      "why": "761.03 เข้า BUY-ZONE 779.20–702.07 (แนวรับ 1M low + 0.25 ATR14 52.44); Toshiba เตรียมเพิ่มกำลัง HDD และข่าวประมูล TDK เสี่ยงกดราคา/งบดุล — รอดูงบ 27 ต.ค."
     },
     "WDC": {
-      "verdict": "buy",
+      "verdict": "hold",
       "risk": "high",
-      "weight": "mid",
-      "why": "404.9 เข้า BUY-ZONE 404–371 (ไม้แรก=1M low 396.6+0.25ATR14 29.6, deep=Pivot S2 364+0.25ATR); Toshiba เพิ่มผลิตกดราคาแต่ Citi/MS/Rosenblatt ชี้ดีมานด์ AI ล้น PE 17 เป้า 666 งบ 29 ต.ค."
+      "weight": "light",
+      "why": "387.52 เข้า BUY-ZONE 392.65–352.79 (แนวรับ 1M low + 0.25 ATR14 26.58); Toshiba วางแผนเพิ่ม HDD ราวเท่าตัว เสี่ยงกด pricing power — รอดูงบ 22 ต.ค."
     },
     "APP": {
       "verdict": "avoid",
