@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-12T21:25:45+07:00",
+  "updated": "2026-10-12T21:40:16+07:00",
   "by": "haerin-event-refresh",
   "macro": "28 ก.ย.: สหรัฐปฏิเสธข้อเสนออิหร่านเปิดช่องแคบ Hormuz → น้ำมันเด้ง WTI $94.8, 10y 5.22%; hike ต.ค. odds 70%; OpenAI pause ฝึกโมเดลหลัก ทุบ AI capex chain; ทอง -3.3% เหลือ $4,176; สัปดาห์นี้ MU/ACN งบ + payrolls ศุกร์",
   "advice": {
@@ -82,10 +82,10 @@
       "why": "210 (-2.3% วันนี้ หลังพุ่งทำ high 52w 216 วานนี้) ยังใน NEAR-TARGET 220 — fwd PE 46 ไม่ไล่; street เป้า 242 แต่งบ 3 พ.ย. — ย่อลึกใกล้ 200 ค่อยพิจารณา"
     },
     "VRT": {
-      "verdict": "buy",
+      "verdict": "hold",
       "risk": "high",
       "weight": "light",
-      "why": "237.77 เข้า BUY-ZONE 241.13–216.55 (แนวรับ 1M low + 0.25 ATR14 11.34); Q2 ยอดขาย +24% และเพิ่มคาดการณ์ปี 2026 แต่มี execution/supply-chain risk — ไม้เบา"
+      "why": "ราคา $240.77 เข้า BUY-ZONE $241.13–216.55; Q2 โต 24% และเพิ่ม guidance แต่ GLJ ให้ Sell/$188, เสี่ยง valuation กับ supply chain — ไม้เบา รอดูงบ 28 ต.ค."
     },
     "MU": {
       "verdict": "hold",
