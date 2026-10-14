@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-14T23:00:59+07:00",
+  "updated": "2026-10-15T00:00:00+07:00",
   "by": "haerin-event-refresh",
   "macro": "28 ก.ย.: สหรัฐปฏิเสธข้อเสนออิหร่านเปิดช่องแคบ Hormuz → น้ำมันเด้ง WTI $94.8, 10y 5.22%; hike ต.ค. odds 70%; OpenAI pause ฝึกโมเดลหลัก ทุบ AI capex chain; ทอง -3.3% เหลือ $4,176; สัปดาห์นี้ MU/ACN งบ + payrolls ศุกร์",
   "advice": {
@@ -100,10 +100,10 @@
       "why": "285 (-11% จาก 319) ลงตาม OpenAI pause แต่ยังห่างโซน 225 — P/E ยาว vs FV คงห้ามไล่"
     },
     "ASML": {
-      "verdict": "hold",
+      "verdict": "buy",
       "risk": "med",
       "weight": "mid",
-      "why": "1782 ทิ้งโซน 1650 ไกลขึ้น — EUV thesis ไม่เปลี่ยน ถือรอ 1650"
+      "why": "BUY-ZONE $1,692.62 ใกล้ buy1 $1,694.99; Q3 ยอดขาย €11.7bn กำไร €5bn, คาด FY26 €44–45bn; เสี่ยง export controls"
     },
     "KLAC": {
       "verdict": "hold",
