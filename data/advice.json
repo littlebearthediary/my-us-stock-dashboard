@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-15T01:10:09+07:00",
+  "updated": "2026-10-15T01:20:53+07:00",
   "by": "haerin-event-refresh",
   "macro": "28 ก.ย.: สหรัฐปฏิเสธข้อเสนออิหร่านเปิดช่องแคบ Hormuz → น้ำมันเด้ง WTI $94.8, 10y 5.22%; hike ต.ค. odds 70%; OpenAI pause ฝึกโมเดลหลัก ทุบ AI capex chain; ทอง -3.3% เหลือ $4,176; สัปดาห์นี้ MU/ACN งบ + payrolls ศุกร์",
   "advice": {
@@ -16,10 +16,10 @@
       "why": "508 หลุดเข้า BUY-ZONE 510-479 (risk_on +2%) — Barron's ชี้ Copilot refresh หนุน close สูงสุด 10 เดือน; street เป้า 576, earnings 28 ต.ค.; ไม้แรกตามโซน เพิ่มลึก 480"
     },
     "GOOGL": {
-      "verdict": "buy",
-      "risk": "med",
-      "weight": "mid",
-      "why": "หลุด BUY-ZONE เดิมเมื่อรีเฟรชระดับ — buy1 ใหม่ 328.8 (Pivot S1 +0.25 ATR14 9.1) ราคา 338 ยังห่าง +2.9%; PE 17.2 เป้า 429 — รอถอยแตะโซนก่อน"
+      "verdict": "hold",
+      "risk": "high",
+      "weight": "light",
+      "why": "ราคา 347.65 เข้า BUY-ZONE 347.83–337.54 (SMA50+0.25 ATR14); คดีผู้ถือหุ้นเรื่อง Gemini และ AI capex เสี่ยงสูง—ถือไม้เบา รอความคืบหน้าก่อนเพิ่ม"
     },
     "AMZN": {
       "verdict": "hold",
