@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-15T00:45:00+07:00",
+  "updated": "2026-10-15T01:10:09+07:00",
   "by": "haerin-event-refresh",
   "macro": "28 ก.ย.: สหรัฐปฏิเสธข้อเสนออิหร่านเปิดช่องแคบ Hormuz → น้ำมันเด้ง WTI $94.8, 10y 5.22%; hike ต.ค. odds 70%; OpenAI pause ฝึกโมเดลหลัก ทุบ AI capex chain; ทอง -3.3% เหลือ $4,176; สัปดาห์นี้ MU/ACN งบ + payrolls ศุกร์",
   "advice": {
@@ -52,10 +52,10 @@
       "why": "605 ยังเหนือ TARGET 600 — แตะ $1T market cap 21 ก.ย. แล้วเย็นลงตาม OpenAI pause; ขายทำกำไรตามแผน"
     },
     "AVGO": {
-      "verdict": "buy",
-      "risk": "med",
+      "verdict": "hold",
+      "risk": "high",
       "weight": "light",
-      "why": "348.6 NEAR-BUY 338.7 = Pivot S1 336.0 + 0.25 ATR 10.6 (ระดับ recal จาก 30 ก.ย.) — OpenAI pause ทุบ AI chip ทั้งกระดาน + GM กดจาก memory cost, Marvell แย่งดีล TPU; ไม้จิ๋วเมื่อหลุด 339, deep 304"
+      "why": "ราคา $345.70 เข้า BUY-ZONE $346.03–319.09; AI chip โตแรงแต่เงินทุนลูกค้าและดีลสินเชื่อ Anthropic เพิ่มความเสี่ยงกระจุกตัว—ถือไม้เบา รอดูเงินทุน"
     },
     "TSM": {
       "verdict": "avoid",
