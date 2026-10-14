@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-15T01:20:53+07:00",
+  "updated": "2026-10-15T01:35:00+07:00",
   "by": "haerin-event-refresh",
   "macro": "28 ก.ย.: สหรัฐปฏิเสธข้อเสนออิหร่านเปิดช่องแคบ Hormuz → น้ำมันเด้ง WTI $94.8, 10y 5.22%; hike ต.ค. odds 70%; OpenAI pause ฝึกโมเดลหลัก ทุบ AI capex chain; ทอง -3.3% เหลือ $4,176; สัปดาห์นี้ MU/ACN งบ + payrolls ศุกร์",
   "advice": {
@@ -190,10 +190,10 @@
       "why": "ดีดจาก DEEP 249.5 → 256.7 จ่อ NEAR-BUY 250.22 (Pivot S2+0.25ATR, ATR14 9.6) — ย่อเพราะ investor day ไร้ดีล data center ใหม่ + PJM/Calpine overhang แต่ดีล Amazon 20 ปี, เป้า 347 ยังอยู่; ไม้แรกเมื่อหลุด 250"
     },
     "GEV": {
-      "verdict": "buy",
-      "risk": "med",
+      "verdict": "hold",
+      "risk": "high",
       "weight": "light",
-      "why": "949.7 NEAR-BUY 923 = SMA200 914.4 + 0.25 ATR 34.3 — ย่อ -20% จาก 52w high 1,196 ตามน้ำมัน+ยีลด์กด แต่พื้นฐานแน่น: backlog $176B, gas turbine 116GW, เป้า street ~1,257; ไม้จิ๋วเมื่อหลุด 923, deep 840"
+      "why": "ราคา $923 เข้า BUY-ZONE $924–840; backlog Q2 $176B โต แต่ forward P/E ~66 สูงมาก—รอดูงบ 28 ต.ค. ยืนยันการเติบโตก่อนเพิ่ม"
     },
     "UBER": {
       "verdict": "buy",
