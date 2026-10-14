@@ -263,9 +263,9 @@
     },
     "CIEN": {
       "verdict": "buy",
-      "risk": "med",
-      "weight": "mid",
-      "why": "หลุด 343.09 เข้า BUY-ZONE (Pivot S1+0.25ATR, ATR14 21.8) -3.9% ตาม sector เทขาย AI capex; backlog $8.5B, forward PE 32.9, เป้า 516 — ไม้แรกได้, deep 317"
+      "risk": "high",
+      "weight": "light",
+      "why": "ราคา 61.13 แตะ BUY-ZONE; ATR14 6.25, แนวรับ SMA50+0.25ATR. รายได้โต 37% แต่ valuation สูงและเสี่ยงจาก AI capex/hyperscaler — เข้าทีละน้อย"
     }
   }
 }
