@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-15T01:40:09+07:00",
+  "updated": "2026-10-17T00:14:05+07:00",
   "by": "haerin-event-refresh",
   "macro": "28 ก.ย.: สหรัฐปฏิเสธข้อเสนออิหร่านเปิดช่องแคบ Hormuz → น้ำมันเด้ง WTI $94.8, 10y 5.22%; hike ต.ค. odds 70%; OpenAI pause ฝึกโมเดลหลัก ทุบ AI capex chain; ทอง -3.3% เหลือ $4,176; สัปดาห์นี้ MU/ACN งบ + payrolls ศุกร์",
   "advice": {
@@ -94,10 +94,10 @@
       "why": "1055 ใกล้เป้า 1150 + งบ 30 ก.ย. นี้ (ทุกธุรกิจ HBM โตสามหลัก) — event risk สด ห้ามเปิดไม้ใหม่ก่อนงบ"
     },
     "ARM": {
-      "verdict": "avoid",
+      "verdict": "hold",
       "risk": "high",
       "weight": "light",
-      "why": "285 (-11% จาก 319) ลงตาม OpenAI pause แต่ยังห่างโซน 225 — P/E ยาว vs FV คงห้ามไล่"
+      "why": "$234.66 เพิ่งเข้า BUY-ZONE แถว $235.44; ATR14 $17.43, Pivot S1. คดี Qualcomm ยังเสี่ยง royalty หลายพันล้าน รอคำตัดสินศาล"
     },
     "ASML": {
       "verdict": "buy",
@@ -262,10 +262,10 @@
       "why": "69.7 ไล่ขึ้นจากโซน 60 แล้ว — Neutron ยังไม่ launch; ผิดทางเจ็บลึก ไม้จิ๋ว if ever"
     },
     "CIEN": {
-      "verdict": "buy",
+      "verdict": "hold",
       "risk": "high",
       "weight": "light",
-      "why": "ราคา $361.13 ใน BUY-ZONE; ATR14 $26.25, แนวรับ SMA50+0.25ATR. รายได้โต 37% แต่ valuation สูงและเสี่ยง AI capex/hyperscaler — ทยอยเข้า"
+      "why": "$339.50 เข้า BUY-ZONE $340; ATR14 $27.42, 1M low. AI demand แกร่งแต่หุ้นย่อจาก valuation/ทำกำไร; เสี่ยง hyperscaler capex"
     }
   }
 }
