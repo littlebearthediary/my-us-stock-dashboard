@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-19T23:21:17+07:00",
+  "updated": "2026-10-20T21:50:25+07:00",
   "by": "haerin-event-refresh",
   "macro": "28 ก.ย.: สหรัฐปฏิเสธข้อเสนออิหร่านเปิดช่องแคบ Hormuz → น้ำมันเด้ง WTI $94.8, 10y 5.22%; hike ต.ค. odds 70%; OpenAI pause ฝึกโมเดลหลัก ทุบ AI capex chain; ทอง -3.3% เหลือ $4,176; สัปดาห์นี้ MU/ACN งบ + payrolls ศุกร์",
   "advice": {
@@ -226,10 +226,10 @@
       "why": "464.28 เข้า BUY-ZONE 472.50–420; Q3 รายได้สถิติ $9.12B และ Q4 guide $10.25B หนุน แต่ forward P/E ~40x, จีน 28% และข้อจำกัดส่งออกยังเสี่ยง — รอดูยืนโซน"
     },
     "NET": {
-      "verdict": "avoid",
+      "verdict": "hold",
       "risk": "high",
       "weight": "light",
-      "why": "TARGET >=365 คอนเฟิร์มจริง (367.5 = New 52w high ต่อเนื่อง จาก Q2 beat + AI traffic/security demand + yield ลงหนุน software) — fwdPE 242 แพงจัด เป้า street 336 ต่ำกว่าราคา, งบ 29 ต.ค. — trim ตามแผน ห้ามไม้ใหม่"
+      "why": "Q2 รายได้โต 36% และเพิ่ม guidance หนุนธุรกิจ แต่ราคาแพงราว 34x forward sales; รอผลประกอบการก่อนเพิ่มน้ำหนัก"
     },
     "BRK.B": {
       "verdict": "buy",
