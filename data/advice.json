@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-20T22:30:25+07:00",
+  "updated": "2026-10-21T01:48:25+07:00",
   "by": "event",
   "macro": "28 ก.ย.: สหรัฐปฏิเสธข้อเสนออิหร่านเปิดช่องแคบ Hormuz → น้ำมันเด้ง WTI $94.8, 10y 5.22%; hike ต.ค. odds 70%; OpenAI pause ฝึกโมเดลหลัก ทุบ AI capex chain; ทอง -3.3% เหลือ $4,176; สัปดาห์นี้ MU/ACN งบ + payrolls ศุกร์",
   "advice": {
@@ -193,7 +193,7 @@
       "verdict": "hold",
       "risk": "high",
       "weight": "light",
-      "why": "ราคา $923 เข้า BUY-ZONE $924–840; backlog Q2 $176B โต แต่ forward P/E ~66 สูงมาก—รอดูงบ 28 ต.ค. ยืนยันการเติบโตก่อนเพิ่ม"
+      "why": "เข้า BUY-ZONE $895.19–829.41; backlog $176B และยก guidance แต่ forward P/E ~66, เสี่ยงแปลง backlog/AI demand; งบ 28 ต.ค. รอยืนยันก่อนเพิ่ม"
     },
     "UBER": {
       "verdict": "buy",
