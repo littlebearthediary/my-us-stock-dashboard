@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-21T01:48:25+07:00",
+  "updated": "2026-10-22T20:48:59+07:00",
   "by": "event",
   "macro": "28 ก.ย.: สหรัฐปฏิเสธข้อเสนออิหร่านเปิดช่องแคบ Hormuz → น้ำมันเด้ง WTI $94.8, 10y 5.22%; hike ต.ค. odds 70%; OpenAI pause ฝึกโมเดลหลัก ทุบ AI capex chain; ทอง -3.3% เหลือ $4,176; สัปดาห์นี้ MU/ACN งบ + payrolls ศุกร์",
   "advice": {
@@ -19,7 +19,7 @@
       "verdict": "hold",
       "risk": "high",
       "weight": "light",
-      "why": "ราคา 347.65 เข้า BUY-ZONE 347.83–337.54 (SMA50+0.25 ATR14); คดีผู้ถือหุ้นเรื่อง Gemini และ AI capex เสี่ยงสูง—ถือไม้เบา รอความคืบหน้าก่อนเพิ่ม"
+      "why": "$330.43 เข้า BUY-ZONE; Cloud สละรายได้ให้ AI compute, capex $195–205B และ outage/คดีเพิ่มความเสี่ยง; งบ 28 ต.ค."
     },
     "AMZN": {
       "verdict": "hold",
@@ -55,13 +55,13 @@
       "verdict": "hold",
       "risk": "high",
       "weight": "light",
-      "why": "ราคา $345.70 เข้า BUY-ZONE $346.03–319.09; AI chip โตแรงแต่เงินทุนลูกค้าและดีลสินเชื่อ Anthropic เพิ่มความเสี่ยงกระจุกตัว—ถือไม้เบา รอดูเงินทุน"
+      "why": "เข้า BUY-ZONE; AI revenue โตแรงแต่พึ่ง capex ลูกค้าและกำลังผลิต TSMC, ตลาดกังวลผลตอบแทนลงทุน AI; รอฐานยืนยัน"
     },
     "TSM": {
-      "verdict": "avoid",
+      "verdict": "hold",
       "risk": "med",
       "weight": "light",
-      "why": "คอนเฟิร์ม TARGET >=480 (pre-mkt 479.98 = 52w high, ปิด 472.78 +2.96%) — fwdPE 20.6 ยังถูกแต่เต็มโซน, งบ 15 ต.ค. + Barron's ห่วง US capex 265B พอง; ทยอย trim, ไม้ใหม่รอ 420"
+      "why": "เข้า BUY-ZONE; Moody’s อัปเครดิต Aa2 หนุนความแข็งแกร่งและ AI demand แต่หุ้นชิปถูกเทขายก่อนเปิดตลาด"
     },
     "PLTR": {
       "verdict": "buy",
@@ -79,7 +79,7 @@
       "verdict": "hold",
       "risk": "high",
       "weight": "light",
-      "why": "ราคา 193.97 เข้า BUY-ZONE 194.25–173.25 (SMA50+0.25 ATR14 7.40); insider sales ตามแผน 10b5-1 และ P/E >60 เสี่ยงผันผวน—ถือไม้เบา รอดูงบ 3 พ.ย."
+      "why": "เข้า BUY-ZONE; TD Cowen ลดเป้าหมายท่ามกลางแรงขาย AI; เครือข่ายยังได้ประโยชน์ cloud แต่ valuation/งบ 3 พ.ย. เสี่ยง"
     },
     "VRT": {
       "verdict": "hold",
@@ -97,25 +97,25 @@
       "verdict": "hold",
       "risk": "high",
       "weight": "light",
-      "why": "$234.66 เพิ่งเข้า BUY-ZONE แถว $235.44; ATR14 $17.43, Pivot S1. คดี Qualcomm ยังเสี่ยง royalty หลายพันล้าน รอคำตัดสินศาล"
+      "why": "เข้า BUY-ZONE; คดี Qualcomm เรื่องละเมิดสัญญาไลเซนส์ยังค้าง และหุ้นชิปโดนเทขาย; งบ 4 พ.ย."
     },
     "ASML": {
       "verdict": "buy",
       "risk": "med",
       "weight": "mid",
-      "why": "ราคา $1,692.88 เข้า BUY-ZONE $1,694.99–1,575; Q3 ยอดขายสถิติ €11.7B, เพิ่มคาดการณ์ปี 2026 เป็น €44–45B; ดีมานด์ AI หนุน แต่ยังเสี่ยงข้อจำกัดส่งออกจีน"
+      "why": "เข้า BUY-ZONE; Q3 ยอดขายสถิติ €11.7B และเพิ่มคาดการณ์ปี 2026 เป็น €44–45B; เสี่ยงข้อจำกัดส่งออกจีน"
     },
     "KLAC": {
       "verdict": "hold",
-      "risk": "med",
-      "weight": "light",
-      "why": "semicap cyclic ล้อตาม capex — ไม่มี edge เฉพาะตัวชัด ไม้เบา"
-    },
-    "INTC": {
-      "verdict": "avoid",
       "risk": "high",
       "weight": "light",
-      "why": "123 คอนเฟิร์ม TARGET >=120 (Morningstar 123, bears band 122.8-126.9) — FwdPE 69, Northland up PT หมดแล้ว; ทยอย trim ทำกำไร ห้ามไม้ใหม่"
+      "why": "เข้า BUY-ZONE; ร่วงตาม LRCX หลังชี้ข้อจำกัดซัพพลายและจีน แม้ผลดี; รอดูงบ 28 ต.ค. ก่อนเพิ่ม"
+    },
+    "INTC": {
+      "verdict": "hold",
+      "risk": "high",
+      "weight": "light",
+      "why": "เข้า BUY-ZONE; premarket ร่วงราว 5% ตามแรงขายชิป; Terafab หนุนแต่ execution/งบ 29 ต.ค. ยังเสี่ยง"
     },
     "ORCL": {
       "verdict": "buy",
@@ -133,13 +133,13 @@
       "verdict": "hold",
       "risk": "high",
       "weight": "light",
-      "why": "เข้า BUY-ZONE $140.04 (ซื้อ≤$140.70); เสี่ยงสูง แผนโรงงานสหรัฐฯ ผูกใบอนุญาตส่งเครื่องมือจีนและ CXMT แข่งเพิ่ม—รอผล 28 ต.ค."
+      "why": "เข้า BUY-ZONE; premarket ร่วงราว 4.9% ตามหุ้นหน่วยความจำเอเชียและกังวล AI spending; รอแรงขายสงบ"
     },
     "SNPS": {
       "verdict": "hold",
       "risk": "med",
       "weight": "light",
-      "why": "คอนเฟิร์มธง NEAR-TARGET 520 — ดีล AWS ออกแบบชิป $1B+ + ASR ซื้อคืน $1B (JPM) + HSBC up PT street-high 700; บวกจากโซน 430 ~18% PE 73 — ห้ามไล่ ถือ ทยอย trim 520"
+      "why": "เข้า BUY-ZONE; Morgan Stanley เพิ่มเป้า $500→$574 และบริษัททำ buyback $1B; แต่ valuation สูงและตลาด AI ผันผวน"
     },
     "ADI": {
       "verdict": "hold",
@@ -151,13 +151,13 @@
       "verdict": "hold",
       "risk": "high",
       "weight": "light",
-      "why": "761.03 เข้า BUY-ZONE 779.20–702.07 (แนวรับ 1M low + 0.25 ATR14 52.44); Toshiba เตรียมเพิ่มกำลัง HDD และข่าวประมูล TDK เสี่ยงกดราคา/งบดุล — รอดูงบ 27 ต.ค."
+      "why": "เข้า BUY-ZONE; MS/BoA เพิ่มเป้า $1,200 แต่ Toshiba เพิ่มกำลัง HDD เป็นความเสี่ยง; งบ 27 ต.ค."
     },
     "WDC": {
       "verdict": "hold",
       "risk": "high",
       "weight": "light",
-      "why": "เข้า BUY-ZONE $370.42–331.84; UBS ลดเป้า $525→470 คง Neutral จากกังวล Toshiba เพิ่มกำลัง HDD; Evercore Tactical Outperform 12 ต.ค.; รอดูงบ 22 ต.ค."
+      "why": "เข้า BUY-ZONE; งบวันนี้เป็นตัวเร่ง, BoA มองบวกแต่ UBS ลดเป้า $525→$470 จากความเสี่ยงกำลังผลิต HDD"
     },
     "APP": {
       "verdict": "hold",
@@ -193,7 +193,7 @@
       "verdict": "hold",
       "risk": "high",
       "weight": "light",
-      "why": "เข้า BUY-ZONE $895.19–829.41; backlog $176B และยก guidance แต่ forward P/E ~66, เสี่ยงแปลง backlog/AI demand; งบ 28 ต.ค. รอยืนยันก่อนเพิ่ม"
+      "why": "เข้า BUY-ZONE; backlog ราว $176B หนุน แต่ valuation สูงและความเสี่ยง execution; รอดูงบ 28 ต.ค."
     },
     "UBER": {
       "verdict": "buy",
@@ -221,9 +221,9 @@
     },
     "AMAT": {
       "verdict": "hold",
-      "risk": "med",
+      "risk": "high",
       "weight": "light",
-      "why": "464.28 เข้า BUY-ZONE 472.50–420; Q3 รายได้สถิติ $9.12B และ Q4 guide $10.25B หนุน แต่ forward P/E ~40x, จีน 28% และข้อจำกัดส่งออกยังเสี่ยง — รอดูยืนโซน"
+      "why": "เข้า BUY-ZONE; premarket ร่วงราว 5% ตาม LRCX จากข้อจำกัดซัพพลาย/จีนและกังวล AI spending; งบ 12 พ.ย."
     },
     "NET": {
       "verdict": "hold",
