@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-26T23:59:06+07:00",
+  "updated": "2026-10-28T21:50:14+07:00",
   "by": "event",
   "macro": "28 ก.ย.: สหรัฐปฏิเสธข้อเสนออิหร่านเปิดช่องแคบ Hormuz → น้ำมันเด้ง WTI $94.8, 10y 5.22%; hike ต.ค. odds 70%; OpenAI pause ฝึกโมเดลหลัก ทุบ AI capex chain; ทอง -3.3% เหลือ $4,176; สัปดาห์นี้ MU/ACN งบ + payrolls ศุกร์",
   "advice": {
@@ -197,9 +197,9 @@
     },
     "UBER": {
       "verdict": "hold",
-      "risk": "med",
+      "risk": "high",
       "weight": "light",
-      "why": "67.65 เข้า BUY-ZONE ≤67.67; bookings โต >20% ต่อเนื่องและเพิ่มรายได้โฆษณา แต่ robotaxi, ต้นทุนแรงงาน และกำไรที่บิดจาก tax benefit เสี่ยง—ไม้เบา รอดู"
+      "why": "$64.91 เข้า BUY-ZONE $65.15–61.35; bookings Q2 +22%, FCF >$10B แต่ robotaxi เสี่ยงแย่ง margin และงบ 4 พ.ย.; ถือไม้เบา รอดูงบ"
     },
     "SPOT": {
       "verdict": "hold",
